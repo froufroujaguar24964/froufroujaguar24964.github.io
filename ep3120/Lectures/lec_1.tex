@@ -1,0 +1,77 @@
+\chapter{Thermodynamics(Review)}
+\lecture{1}{25 July 2022}{First Lecture}
+\section{Preliminaries}
+\begin{definition}
+    A \emph{Thermodynamic system} is any macroscopic system.
+\end{definition}
+\begin{definition}
+    \emph{Thermodynamic Parameters} are measurable macroscopic quantities associated with the system, such as the pressure P, the volume V, the temperature T, and the magnetic field H. They are defined experimentally.
+\end{definition}
+\begin{definition} 
+    A \emph{Thermodynamic state} is specified by a set of values of all the thermodynamic parameters necessary for the description of the system.
+\end{definition}   
+\begin{definition}
+    \emph{Thermodynamic equilibrium} prevails when the thermodynamic system does not change with time.
+\end{definition}
+\begin{definition}
+    The \emph{equation of state} is a functional relationship among the thermodynamic parameters for a system in equilibrium. If P, V, and T are the thermodynamic parameters of the system, the equation of state takes the form 
+    \[
+        f(P,V,T) = 0
+    \]
+    which reduces the number of independent variables of the system from three to two. The function \(f\) is assumed to be given as part of the specification of the system. It is customary to represent the state of such a system by a point in the three-dimensional P-V-T space. The equation of state then defines a surface in this space, as shown in Fig.1.1. Any point lying on this surface represent a state in equilibrium. In thermodynamics a state is automatically means a state in equilibrium unless otherwise specified. 
+\end{definition}   
+\begin{definition}
+    A \emph{thermodynamic transformation} is a change of state. If the initial state is an equilibrium sate, the transformation can be brought about only by changes in the external condition of the system. The transformation is quasi-static if the external condition changes so slowly that at any moment the system is approximately in equilibrium. It is reversible if the transformation retraces its history in time when the external condition retraces its history in time. A reversible transformation is quasi-static, but the converge is not necessarily true. For example, a gas that freely expands into successive infinitesimal volume elements undergoes a quasi=static transformation but not a reversible one.
+\end{definition}
+\begin{definition}  
+    The \emph{P-V diagram} of a system is the projection of the surface of the equation of state onto the P-V plane. Every point on the P-V diagram therefore represents an equilibrium state. A reversible transformation is a continuos path on the P-V diagram. Reversible transformations of specific types give rise to paths with specific names, such as \emph{isotherms, adiabatics}, etc. A transformation that is not reversible cannot be so represented.
+\end{definition} 
+\begin{definition}
+    The concept of \emph{work} is taken over from mechanics. For example, for a system whose parameters are P, V, and T, the work dW done by a system in an infinitesimal transformation in which the volume increases by dV is given by 
+    \[
+        dW = PdV
+    \]
+\end{definition}
+\begin{definition}  
+   \emph{Heat} is what absorbed by a homogeneous system if its temperature increases while no work is done. If \(\Delta Q\) is a small amount of the heat absorbed, and \(\Delta T \) is the small change in temperature accompanying the absorption of heat, the heat capacity C is defined by
+\[
+    \Delta Q = C \Delta T
+\]
+The heat capacity depends on the detailed nature of the system and is given as a part of the specification of the system. It is an experimental fact that, for the same \(\Delta T\), \(\Delta Q\) is different for different ways of heating up the system. Correspondingly, the heat capacity depends on the manner of heating. Commonly considered heat capacities are \(C_v\) and \(C_{p} \) which respectively correspond to heating at constants V and P. Heat capacities per unit mass or per mole of a substance are called specific heats.
+\end{definition}   
+\begin{definition}
+    A \emph{heat reservoir,} is a system so large that the gain or loss of any finite amount of heat does not change its temperature.
+\end{definition}
+\begin{definition}
+    A system is \emph{thermally isolated} if no heat exchange can take place between it and the external world. Thermal isolation may be achieved by surrounding a system with an adiabatic wall. Any transformation the system can undergo in thermal isolation is said to take place adiabatically.
+\end{definition}
+\begin{definition}
+    A thermodynamic quantity is said to be \emph{extensive} if it is proportional to the amount of substance in the system under consideration and is said to be \emph{intensive} if it is independent of the amount of substance in the system under consideration. It is an important empirical fact to a good approximation thermodynamic quantities are either extensive or intensive.
+    \begin{eg}
+        \emph{extensive}:- volume V, No. of molecules N.
+        \emph{intensive}:- pressure P, temperature T,specific density \(n = \frac{N}{V}\) , specific volume \(\vartheta = \frac{V}{N}\) 
+    \end{eg}
+\end{definition}
+\begin{definition}
+    The \emph{ideal gas} is an important idealized thermodynamic system. Experimentally all gases behave in a universal way when they are sufficiently dilute. The ideal gas is an idealization of this limiting behavior. The parameters for an ideal gas are pressure P, volume V, temperature T, and number of molecules N. The equation of state is given by Boyle's law:
+    \[
+        \frac{PV}{N} = constant  
+    \] (for constant temperature)\\
+    The value of this constant depends on the experimental scale of temperature used.
+\end{definition}
+\begin{definition}
+    The equation of state of an ideal gas in fact defines a temperature scale, The ideal-gas temperature T:
+    \[
+        PV = N k_{b}  T
+    \]
+    where
+    \[
+        k_{b} = 1.38 x 10^{-16} \frac{erg}{deg} 
+    \]
+    which is called Boltzmann's constant. Its value is determined by the conventional choice of temperature intervals, namely, the Centigrade degree. This scale has a universal character because the ideal gas has a universal character. The origin T = 0 is here arbitrarily chosen. Later we see that it actually has an absolute meaning according to the second law of thermodynamics.
+\end{definition}
+\section{Thermodynamic Laws}
+\subsection{Zeroth law }
+\begin{definition}
+    If A is in Thermodynamic equilibrium with B and B is in Thermodynamic equilibrium with C, then C is in thermodynamic equilibrium with A. 
+\end{definition}

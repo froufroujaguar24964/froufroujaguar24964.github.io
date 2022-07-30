@@ -1,0 +1,140 @@
+\lecture{2}{26 July 2022}{Second Lecture}
+\section{Thermodynamic Laws}
+\subsection{Zeroth Law }
+\begin{definition}
+    If A is in Thermodynamic equilibrium with B and B is in Thermodynamic equilibrium with C, then C is in thermodynamic equilibrium with A. This law defines the notion of temperature (T).
+    \begin{figure}[H]
+        \centering
+        \incfig{zeroth_law}
+        \caption{Zeroth Law}
+        \label{fig:zeroth_law}
+    \end{figure}
+\end{definition}
+\subsection{First Law}
+\textbf{Work Done}\\
+Conjugate variables\\
+P \(\to\) \(\Delta V\) \\
+\(\mu\)(Chemical Potential) \(\to \) \(\Delta N\)  \\
+F \(\to \) \(\Delta L\)  \\
+\textbf{Quasi-static process}: \( PdV \) = infinitesimal work done.
+\[
+    \Delta W = \int _{A}^{B} P dV
+\]
+Since, Work done is path dependent it is inexact differential and written as \( d(bar)W\)
+\textbf{Heat exchange} : It is also path dependent so, an inexact differential \(d(bar)Q = SdT\) 
+\begin{definition}[First Law]
+    There exists a quantity called "Internal Energy" 
+    \[
+        \Delta U = \Delta Q - \Delta W
+    \]
+    \[
+        dU = dQ - dW
+    \]
+    dU is an exact differential, depends only on initial and final states. \\
+    It is an extensive quantity.\\
+\end{definition}
+\textbf{Ideal gas}: State is defined by (P, V, T) \\
+Equation of state is given by \(P V = N k_{b} T\). This is a constraint so, independent variables reduce to 2.
+\[
+    U(P,V)\implies 
+    dU = \left(\frac{\partial U}{\partial P}\right)_{V} dP + \left(\frac{\partial U}{\partial V}\right)_{P} dV
+\]
+\[
+    U(T,V)\implies 
+    dU = \left(\frac{\partial U}{\partial T}\right)_{V} dT + \left(\frac{\partial U}{\partial V}\right)_{T} dV
+\]
+\[
+    U(P,T)\implies 
+    dU = \left(\frac{\partial U}{\partial P}\right)_{T} dP + \left(\frac{\partial U}{\partial T}\right)_{P} dT
+\]
+\begin{definition}[Specific Heat]
+   \(dQ = C_{V} dT\) or \(C_{P} dT\)  
+   response of the system to heat.
+\end{definition}
+\textbf{Constant Volume Process}: 
+\[
+    dU = dQ - PdV
+\]
+we know for a constant volume process \(dQ = C_{V} dT\),
+\[
+    dU = C_{V} dT - PdV
+\]
+we also know, 
+\[
+    dU = \left(\frac{\partial U}{\partial T}\right)_{V} dT + \left(\frac{\partial U}{\partial V}\right)_{T} dV
+\]
+\(\because \) V is constant \(\implies \) dV = 0.\\
+
+Equating the above 2 equations gives, 
+\[
+    C_{V} = \left(\frac{\partial U}{\partial T}\right)_{V}
+\]
+\textbf{Constant}  \textbf{Pressure} \textbf{process} :\\
+
+we know, 
+\[
+    dQ = C_{P} dT
+\]
+\[
+    dU = C_{P} dT - PdV
+\]
+we also know,
+\[
+    dU = \left(\frac{\partial U}{\partial P}\right)_{T} dP + \left(\frac{\partial U}{\partial T}\right)_{P} dT
+\] 
+dV term is there in the equation. Since, V is a function of P and T we can write,
+\[
+    dV = \left(\frac{\partial V}{\partial P}\right)_{T} dP + \left(\frac{\partial V}{\partial T}\right)_{P} dT
+\]
+Substituting dV in first equation,
+\[
+    dU = C_{P} dT - P\left(\left(\frac{\partial V}{\partial P}\right)_{T} dP + \left(\frac{\partial V}{\partial T}\right)_{P} dT\right)
+\]
+since, constant pressure dP = 0. Therefore, 
+\[
+    C_{P} = P \left(\frac{\partial V}{\partial T}\right)_{P} +  \left(\frac{\partial U}{\partial T}\right)_{P}
+\]
+\begin{definition}[Enthalpy, H]
+    Thermodynamic Potential, Enthalpy H = U + PV
+    \[
+        dH = dU + PdV
+    \]
+    \[
+        C_{P} = \left(\frac{\partial H}{\partial T}\right)_{P} 
+    \]
+\end{definition}
+\textbf{Heat} \textbf{Engine} :\\
+\textbf{Isothermal} \textbf{Process} \\
+\begin{figure}[H]
+    \centering
+    \incfig{cyclic}
+    \caption{cyclic process}
+    \label{fig:cyclic}
+\end{figure}
+\textbf{Adiabatic} \textbf{Process} : Constant heat Process.
+\[
+    dQ = 0
+\]
+\[
+    dU = -dW
+\]
+\[
+    dU = -PdV
+\]
+\begin{eg}[Ideal Gas Adibatic free expansion]
+    \begin{figure}[H]
+        \centering
+        \incfig{expansion}
+        \caption{Free expansion}
+        \label{fig:expansion}
+    \end{figure}
+    \[
+        dQ = 0 \because Adiabatic
+    \]
+    \[
+        dW = 0 \because Free Expansion
+    \]Since, Free expansion. 
+    \[
+        \therefore dU = 0 \to f(P,V) = 0
+    \]
+\end{eg}

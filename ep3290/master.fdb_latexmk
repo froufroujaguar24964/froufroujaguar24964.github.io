@@ -1,13 +1,14 @@
 # Fdb version 3
-["biber master"] 1653464740 "master.bcf" "master.bbl" "master" 1653464914
-  "master.bcf" 1653464914 107207 c31541ebf7815892db907ec0150078cf "pdflatex"
+["biber master"] 1658845945 "master.bcf" "master.bbl" "master" 1658845952
+  "master.bcf" 1658845952 107207 c31541ebf7815892db907ec0150078cf "pdflatex"
   "ref.bib" 1653463735 230 0089041083ca21492e527b2a77c0601a ""
   (generated)
   "master.bbl"
   "master.blg"
-["pdflatex"] 1653464912 "/Users/siddhartha/Documents/Academic-Template/Notes/master.tex" "master.pdf" "master" 1653464914
+["pdflatex"] 1658845950 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3290/master.tex" "master.pdf" "master" 1658845952
   "/Users/siddhartha/Documents/Academic-Template/Math.tex" 1653463735 2326 8cb4edad8a217aaffaacda2c1906b076 ""
-  "/Users/siddhartha/Documents/Academic-Template/Notes/master.tex" 1653464912 1453 c739560323c8d36752f0b0caf22a5a3b ""
+  "/Users/siddhartha/Documents/Academic-Template/Notes/header.tex" 1653464743 10230 bfead1a2b212e0229e5cff07201bd9dd ""
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3290/master.tex" 1653464912 1453 c739560323c8d36752f0b0caf22a5a3b ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -373,17 +374,18 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653407412 2826441 75866e91331a61c6062316dd19b23e74 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
+  "Figures//bas.pdf" 1658845921 1407 87335ad5b7cf4acf2d5f3d71357023cc ""
   "Figures//test.pdf" 1653463735 9160 123252763a6c42d2fb5ad857f25d682f ""
+  "Figures/bas.pdf_tex" 1658845921 2052 3cd70cc80d1e10c2360e0545265f82a9 ""
   "Figures/test.pdf_tex" 1653463735 2602 477dcc149c8a9af2e6f8c03ab7cf50cc ""
-  "Lectures/lec_1.tex" 1653463735 8349 b31645931f8088acaf876abe941f6750 ""
+  "Lectures/lec_1.tex" 1658845882 8440 e04c1ab3022c553e33f71b6d0aae3bb4 ""
   "appendix.tex" 1653463735 232 811fc357d6eb5a56e19d941299af32e2 ""
-  "header.tex" 1653464743 10230 bfead1a2b212e0229e5cff07201bd9dd ""
-  "master.aux" 1653464914 10336 a0d7d261bf8f46ec83e2c5e7d1f96b1c "pdflatex"
-  "master.bbl" 1653464761 1720 40c94841c571092369a698a1d119b859 "biber master"
-  "master.out" 1653464914 1022 4b0e9d1bcb1e48c6fa06233bf52e8b3e "pdflatex"
-  "master.run.xml" 1653464914 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
+  "master.aux" 1658845952 10532 0433bff13bc5b31914add9cbb17bd546 "pdflatex"
+  "master.bbl" 1658845946 1720 40c94841c571092369a698a1d119b859 "biber master"
+  "master.out" 1658845952 1022 4b0e9d1bcb1e48c6fa06233bf52e8b3e "pdflatex"
+  "master.run.xml" 1658845952 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
   "master.tex" 1653464912 1453 c739560323c8d36752f0b0caf22a5a3b ""
-  "master.toc" 1653464914 832 291a9c765104d022e66c329097e57d7f "pdflatex"
+  "master.toc" 1658845952 832 c0314ea1136155066a578404a31bc305 "pdflatex"
   (generated)
   "master.aux"
   "master.bcf"

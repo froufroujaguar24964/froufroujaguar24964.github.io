@@ -7,5 +7,5 @@
 \contentsline {section}{\numberline {1.5}Known Bugs}{4}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Footnote Environment}{4}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Mdframe Environment}{5}{subsection.1.5.2}%
-\contentsline {chapter}{\numberline {A}Additional Proofs}{7}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{7}{appendix.A.1}%
+\contentsline {chapter}{\numberline {A}Additional Proofs}{8}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{8}{appendix.A.1}%

@@ -1,0 +1,93 @@
+\lecture{3}{27 July 2022}{Third Lecture}
+\[
+    dU = dQ - dW
+\]
+\textbf{Free} \textbf{expansion} 
+Irreversible Process
+\[
+    \Delta W = 0, \Delta Q = 0 \implies \Delta U = 0
+\]
+\[
+    U(P,V,T) = U(V,T) \left(\because PV = Nk_{B}T\right)
+\]
+\[
+    \implies U(V_{i} , T) = U(V_{f} , T)
+\]
+Internal energy is purely a function of T.
+\[
+    C_{V} =\left(\frac{\partial U}{\partial T}\right)_{V}  = \frac{dU}{dT}
+\]
+\[
+    H = U + PV = U(T)+N k_{B} T 
+\]
+\[
+    \implies H=H(T) 
+\]
+\[
+   \because C_{P} = \left(\frac{\partial H}{\partial T}\right)_{P} 
+\]
+\[
+   \implies C_P = \frac{dU}{dT} + N k_{B} 
+\]
+\[
+    \implies C_P = C_V + N k_{B} \implies \gamma = \frac{C_{P} }{C_{V}}>1
+\]\newpage
+\textbf{Adiabatic Process [Ideal Gas]}:\\
+\[
+    dQ = 0
+\]
+\[
+    \implies dU = dW = -PdV
+\]
+\[
+    C_{V} dT = -P dV
+\]
+\[
+    C_{V} PdV + C_{V} VdP + P N k_{B} dV = 0 \left(\because PdV + VdP = N k_{B} dT \right)
+\]
+\[
+  \implies   C_{P} P dV + C_{V} V dP = 0
+\]
+\[
+    \implies \gamma \frac{dV}{V} + \frac{dP}{P} = 0
+\]
+\[
+    \implies PV^\gamma = Constant.
+\]
+\begin{note}
+    In class a question is raised which is worth discussing.
+    \begin{exercise}
+        Ideal gas law \(\implies PV = \) constant for free expansion(Adiabatic Irreversible process.)
+        Adiabatic Process \(\implies PV^\gamma =\)  constant.
+        \[
+            P_1 V_1 = P_2 V_2
+        \]
+        \[
+            P_1 V_1 ^ \gamma = P_2 V_2 ^ \gamma
+        \]
+        dividing both equations gives\dots
+        \[
+            V_1 ^ {\gamma-1} = V_2 ^ {\gamma -1} \implies V_1 = V_2 
+        \]
+        But the process is free \textbf{expansion}.
+        Can you explain why?
+        \begin{answer}
+            We obtained \(PV^\gamma =\) constant equation by taking $dW = -PdV$ which means the process is reversible.\\
+            Where as the free expansion process is Irreversible so, we cannot use \(PV^\gamma =\) constant for this process.
+        \end{answer}
+    \end{exercise}
+\end{note}
+\subsection{Second Law}
+\begin{definition}[Second Law]
+    \begin{enumerate}
+        \item The sole amount of a cyclic process cannot be the conversion of heat to work. 
+        \item (corollary) Efficiency of a carnot engine \(\neq  1\) . 
+        \item It is not possible to have a cyclic process whose sole outcome is transfer of heat form cooler bath to a heater bath.
+    \end{enumerate}
+\end{definition}
+\begin{figure}[H]
+    \centering
+    \incfig{carnot}
+    \caption{carnot cycle}
+    \label{fig:carnot}
+\end{figure}

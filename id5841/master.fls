@@ -1,8 +1,8 @@
-PWD /Users/siddhartha/Documents/Academic-Template/Notes
+PWD /Users/siddhartha/Documents/froufroujaguar24964.github.io/id5841
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/siddhartha/Documents/Academic-Template/Notes/master.tex
+INPUT /Users/siddhartha/Documents/froufroujaguar24964.github.io/id5841/master.tex
 OUTPUT master.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
@@ -1919,6 +1919,15 @@ INPUT ./Figures//test.pdf
 INPUT ./Figures//test.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT ./Figures/testing.pdf_tex
+INPUT ./Figures/testing.pdf_tex
+INPUT ./Figures/testing.pdf_tex
+INPUT ./Figures/testing.pdf_tex
+INPUT ./Figures//testing.pdf
+INPUT ./Figures//testing.pdf
+INPUT ./Figures//testing.pdf
+INPUT ./Figures//testing.pdf
+INPUT ./Figures//testing.pdf
 INPUT ./appendix.tex
 INPUT appendix.tex
 INPUT ./appendix.tex

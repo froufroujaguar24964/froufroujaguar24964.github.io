@@ -1,0 +1,8 @@
+table.announcement-table td{
+    color:red;
+    background-color: yellow;
+    border-left: 100px;
+}
+h2{
+    color:blue;
+}

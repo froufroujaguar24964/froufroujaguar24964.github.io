@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber master"] 1658987988 "master.bcf" "master.bbl" "master" 1658989765
-  "master.bcf" 1658989764 107079 f9911133cd0597fa68874376d1af1bbf "pdflatex"
+["biber master"] 1658987988 "master.bcf" "master.bbl" "master" 1659180942
+  "master.bcf" 1659180942 107079 f9911133cd0597fa68874376d1af1bbf "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
-["pdflatex"] 1658989763 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3120/master.tex" "master.pdf" "master" 1658989765
+["pdflatex"] 1659180941 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3120/master.tex" "master.pdf" "master" 1659180942
   "/Users/siddhartha/Documents/Academic-Template/Math.tex" 1653463735 2326 8cb4edad8a217aaffaacda2c1906b076 ""
   "/Users/siddhartha/Documents/Academic-Template/Notes/header.tex" 1653464743 10230 bfead1a2b212e0229e5cff07201bd9dd ""
   "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3120/master.tex" 1658984621 2702 11502d8adc774ede96d9c7e51eb8e8fa ""
@@ -362,14 +362,14 @@
   "Figures/zeroth_law.pdf_tex" 1658864179 2490 6a3df4e55b4f8e5c765b2c3b4cd952a0 ""
   "Lectures/lec_1.tex" 1658862370 6374 69c20979deca8dfb51ad43f3c2eecea2 ""
   "Lectures/lec_2.tex" 1658874639 4070 82c43bb1097133c4c05a2b7b43d61742 ""
-  "Lectures/lec_3.tex" 1658988197 2493 26f20d59cb099a32f38f434d4cb49f0f ""
+  "Lectures/lec_3.tex" 1659180940 2494 95c180553d82068c43a6416773cd6482 ""
   "appendix.tex" 0 -1 0 ""
-  "master.aux" 1658989764 8257 7991037565e0824ca85da24d03132d59 "pdflatex"
+  "master.aux" 1659180942 8257 7991037565e0824ca85da24d03132d59 "pdflatex"
   "master.bbl" 1658987989 466 ee04f40f768daeed26442158e95aba61 "biber master"
-  "master.out" 1658989764 425 820c7625382877f06e8e29a110ecbf86 "pdflatex"
-  "master.run.xml" 1658989764 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
+  "master.out" 1659180942 425 820c7625382877f06e8e29a110ecbf86 "pdflatex"
+  "master.run.xml" 1659180942 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
   "master.tex" 1658984621 2702 11502d8adc774ede96d9c7e51eb8e8fa ""
-  "master.toc" 1658989764 469 72f81667d515a6da9230394cb336e953 "pdflatex"
+  "master.toc" 1659180942 469 72f81667d515a6da9230394cb336e953 "pdflatex"
   (generated)
   "master.aux"
   "master.bcf"

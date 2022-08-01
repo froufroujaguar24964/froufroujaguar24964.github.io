@@ -4,7 +4,7 @@
 % Set the title of the current document to be produced.
 \newcommand{\doctitle}{Assignment I}
 % Command for the due date of the homework.
-\newcommand{\duedate}{\color{rltblue}{\faCalendarCheckO { }Due date: August 5th, before midnight \faCalendarCheckO	}}
+\newcommand{\duedate}{\color{rltblue}{\faCalendarCheckO { }Due date: August 10th, in class \faCalendarCheckO	}}
 \newcommand{\myname}{\color{rltred} {}\textbf{Chaganti}  \textbf{Kamaraja}  \textbf{Siddhartha} }
 \newcommand{\rollnumber}{\color{rltred}{}\textbf{EP20B012} }
 %------------------------------------------------------------
@@ -50,8 +50,38 @@
 
 \clearpage
     
-\section{Homework 1.1}      
-\label{sec:1.1} 
+\section{Problem 1}      
+\label{sec:1} 
+Fermi's golden rule:- The rate at which the scattering occurs will be proportional to the matrix element squared \(\left\vert V_{if}^\prime  \right\vert^2 \) 
+\[
+    V_{if} ^\prime  = \int \psi^*_{f} V(r) \psi_{i} d\tau
+\]
+Given,
+\[
+    \psi_{f} = e^ {(i \bar{k_f}.\bar{r})}
+\]
+\[
+    \psi_{i} = e^ {(i \bar{k_i}.\bar{r}) }
+\]
+Potential V(r) is,
+\[
+    V(r) = -\frac{Ze^2}{4 \pi \epsilon_{o}}\int \frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime  
+\]
+\[
+    V_{if} ^\prime = \int   (e^ {(-i \bar{k_f}.\bar{r})})(e^ {(i \bar{k_i}.\bar{r}) })\left(-\frac{Ze^2}{4 \pi \epsilon_{o}}\int \frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime\right) d\tau
+\]
+\[
+    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int e^{i\bar{q}.\bar{r}}\left(\int\frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime\right)d\tau \hspace{.5cm} (\because \bar{q} = \bar{k_i}-\bar{k_{f}})
+\]
+multiplying with \(e^{+i\bar{q}.\bar{r^\prime }}\) and \(e^{-i\bar{q}.\bar{r^\prime }}\) and writing \(\bar{r}-\bar{r^\prime } = \bar{R}\) also, \(\bar{R} = \bar{r}-\bar{r^\prime }  \to  dR = dr\) 
+\[
+    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int e^{i\bar{q}.\bar{R}}\left(\int\frac{\rho_e(r^\prime )e^{i \bar{q}.\bar{r^\prime }}}{\left\vert \bar{R} \right\vert }d\tau^\prime\right)d\tau \hspace{.5cm} 
+\]
+Form Factor, \(F(\bar{q}) = \int \rho_e(r^\prime)e^{i \bar{q}.\bar{r^\prime }}d\tau^\prime\) 
+\[
+    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int \frac{e^{i\bar{q}.\bar{R}}}{\left\vert \bar{R} \right\vert}F(\bar{q})d\tau \hspace{.5cm} 
+\]
+
 
 
 \section{Homework 1.2}

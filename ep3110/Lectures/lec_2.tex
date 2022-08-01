@@ -1,2 +1,192 @@
 \lecture{2}{26 July 2022}{Second Lecture}
-\section*{Linear isotropic}
+For a \textbf{Linear isotropic homogenous dielectric} 
+\[
+    \vec{P} = \epsilon_{o} \chi_{e} \vec{E}
+\]
+\(\chi_{e} \) = electric susceptibility.
+\[
+    \vec{D} = \epsilon_{o} (1+\chi_{e})\vec{E}
+\]
+\[
+    \vec{D} = \epsilon \vec{E}
+\]
+\[
+    \epsilon_{r} = \frac{\epsilon}{\epsilon_{o}} = 1+\chi_{e} 
+\]
+\subsection*{Boundary Conditions}
+
+\subsection*{Tangential Component}
+\begin{figure}[H]
+    \centering
+    \incfig{boundaryconditions}
+    \caption{Tangential Component}
+    \label{fig:boundaryconditions}
+\end{figure}
+\[
+    \oint \vec{E}.\vec{dl} = 0 \implies E_{1t} \Delta\vec{W} - E_{2t}\Delta\vec{W} = 0
+\]
+\[
+    \vec{E_{1t}} = \vec{E_{2t}}
+\]
+\[
+    \frac{\vec{D_{1t}}}{\epsilon_1}=\frac{\vec{D_{2t}}}{\epsilon_2}
+\]
+\subsection*{Normal component}
+\begin{figure}[H]
+    \centering
+    \incfig{normalcomp}
+    \caption{Normal Component}
+    \label{fig:normalcomp}
+\end{figure}
+\[
+    \vec{E_{1n} }\Delta s - \vec{E_{2n}  }\Delta s = \frac{\Delta s \sigma_s}{\epsilon_{o} }
+\]
+\[
+\frac{\vec{D_{1n}}}{\epsilon _1}-\frac{\vec{D_{2n}}}{\epsilon _2} = \frac{\sigma_s}{\epsilon_{o} }
+\]
+\subsection*{Summary}
+\[
+    \vec{E_{1t}} = \vec{E_{2t}}
+\]
+\[
+    \vec{E_{1n} } - \vec{E_{2n}  } = \frac{\sigma_s}{\epsilon_{o} }
+\]
+\[
+    \vec{D} = \epsilon \vec{E}
+\]
+Energy stored
+\[
+    W = \frac{\epsilon_o}{2}\int E^2 d\tau
+\]
+Poisson's equation
+\[
+    \nabla^2 V = \frac{\rho}{\epsilon _o}
+\]
+Laplace equation
+\[
+    \nabla^2 V = 0 
+\]
+\section{Magnetostatics(review)}
+\begin{definition}
+    \[
+        \vec{\nabla}.\vec{B} = 0 
+    \]
+    Magnetic monopole doesn't exist
+    Integral Form:
+    \[
+        \oint_S \vec{B}.\vec{da}=0
+    \]
+\end{definition}
+\begin{definition}
+    \[
+        \vec{\nabla}X\vec{B} = \mu_o \vec{J}
+    \]
+    Integral form:
+    \[
+        \oint \vec{B}.\vec{dl} = \mu_{o} I
+    \]
+\end{definition}
+\begin{definition}[Bio-Savart's law]
+    \[
+        \vec{B}(R) = \frac{\mu_{o} }{4 \pi}\int I \frac{\vec{dl^\prime} X \hat{R}}{R^2}
+    \]
+\end{definition}
+\begin{definition}[Maganetic Vector Potential]
+    \[
+        \vec{B} = \vec{\nabla}X\vec{A}
+    \]
+\end{definition}
+\[
+    \vec{\nabla}.\vec{A} = ?
+\]
+\[
+    \vec{\nabla}X\vec{B} = \vec{\nabla}X(\vec{\nabla}X\vec{A}) = \mu_o \vec{J}
+\]
+\[
+  \vec{\nabla}(\vec{\nabla}.\vec{A})  - \nabla^2 \vec{A} = \mu_o \vec{J}
+\]
+\[
+    \vec{A} = \vec{A_{o} }+\vec{\nabla}\lambda
+\]
+\[
+    \vec{B} = \vec{\nabla}X\vec{A_o}+\vec{\nabla}X\vec{\nabla}\lambda
+\]
+\[
+    \vec{B} = \vec{\nabla}X\vec{A_{o}}
+\]
+\[
+    \vec{\nabla}.\vec{A} = \vec{\nabla}.\vec{A} + \nabla^2 \lambda
+\]
+let 
+\[
+    \nabla ^2 \lambda = -\vec{\nabla}.\vec{A_o} \implies \vec{\nabla}.\vec{A} = 0
+\]
+Solving using symmetry 
+\[
+    \nabla^{2} \lambda = -\vec{\nabla}.\vec{A_{o} } \implies \vec{\nabla}.\vec{A} = 0
+\]
+Poisson's equation
+\[
+    \nabla^2 V = -\frac{\rho}{\epsilon_{o}}
+\]
+\[
+    V = \frac{1}{4\pi\epsilon_{o} }\int \frac{\rho}{R}dV^\prime 
+\]
+\[
+    \lambda = \frac{1}{4 \pi} \int \frac{\vec{\nabla}.\vec{A_{o}}}{R}dV^\prime 
+\]
+\[
+    \therefore \vec{A} = \vec{A_{o} }+ \vec{\nabla}\lambda
+\]
+\[
+    \nabla^2 \vec{A} = - \mu_{o} \vec{J}
+\]Poisson's equation again!!!
+\[
+    \vec{A} = \frac{\mu_{o} }{4\pi} \int \frac{\vec{J}}{R}dV^\prime 
+\]
+\begin{definition}[\textbf{magnetic} \textbf{dipole} \textbf{moment}]
+\[
+    \vec{m} = I \int \vec{ds} = \vec{I} a (\because a = area)
+\]
+\[
+    \vec{A} = \frac{\mu_{o} \vec{m} X \hat{R}}{4 \pi R^2}
+\]
+\end{definition}
+\begin{definition}[\textbf{Magnetization}]
+    \[
+        \vec{M} = \frac{n \vec{m}}{V}
+    \] V = volume, n = number of dipoles.
+\end{definition}
+\[
+    \vec{J_{b}} = \vec{\nabla}X\vec{M}
+\]
+\[
+    \vec{k_{b}} = \vec{M} X \hat{n}
+\]
+similar to \(\sigma_{b}\) and \(\rho_{b}\) 
+\[
+    \vec{\nabla}X\vec{B} = \mu_{o} (\vec{J_{f}}+\vec{J_{b}})
+\]
+\[
+    \frac{1}{\mu_{o}} \vec{\nabla}X\vec{B} = \vec{J_{f} }+\vec{\nabla}X\vec{M}
+\]
+\[
+    \vec{\nabla}X(\frac{\vec{B}}{\mu_{o} }-\vec{M}) = \vec{J_{f}}
+\]
+\begin{definition}
+    \(\vec{H} = \frac{\vec{B}}{\mu_{o} }-\vec{M}\)
+    \[
+        \vec{\nabla} X \vec{H} = \vec{J_{f} }
+    \]Ampere's law in magnetic material.
+\end{definition}
+\vspace{.3cm}
+Similar to Polarization \(\vec{P} = \epsilon_{o} \chi_{e} \) we have  Magnetization \(\vec{M} = \frac{1}{\mu_{o} }\chi_{m}\vec{B}\) for a linear homogenous isotropic material, where \(\chi_{m} \) is Magnetic susceptibility. 
+\[
+    \bar{H}(\mu_{o} )(1+\chi_{m} ) = \vec{B}
+\]
+\[
+    \vec{B} = \mu \vec{H}
+\]
+\[
+    \frac{\mu}{\mu_{o} } = \mu_{r} = 1+\chi_{m} 
+\]

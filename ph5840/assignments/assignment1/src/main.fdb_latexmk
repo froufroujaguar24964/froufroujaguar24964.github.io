@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1659258022 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex" "main.pdf" "main" 1659258023
-  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex" 1659258022 2173 64b4c1b6d2ebbe2c2072690a20f7067c ""
+["pdflatex"] 1659259469 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex" "main.pdf" "main" 1659259470
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex" 1659259468 2172 944ff28b95fc3f4d18c332e4d7fb78a7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc" 1529098226 2881 8e2aef9e38084b946e7656b60672fedb ""
@@ -210,16 +210,16 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653407412 2826441 75866e91331a61c6062316dd19b23e74 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "includes/course-info.tex" 1659256070 556 4c7ee3c202ccf6835730a79adc252d0f ""
+  "includes/course-info.tex" 1659259044 557 bb0d98850724e22b77c62eff6140541b ""
   "includes/custom-commands.tex" 1659255135 8672 c51458c8f3426ab09a57cb3ffdb76872 ""
   "includes/document-header.tex" 1659257872 1327 594c3f96c5b63a6e110ed2ef3240f399 ""
   "includes/metadata.tex" 1659255803 604 e95d48dc3a3ee7b0cb236af79c9ed41f ""
   "includes/packages.tex" 1659255225 2292 fd1269a4c86cd7cfda2a36e85b4f7f0d ""
   "includes/teacher-info.tex" 1659255985 548 16422abf3caa2ab1cb0341b1743b1087 ""
-  "main.aux" 1659258023 2033 e4c7c485a49df6187de2291698ffc487 "pdflatex"
+  "main.aux" 1659259470 2033 404d178a90522178d7efd5ca9710f0e2 "pdflatex"
   "main.hst" 1659256420 98 070e030fe492816fdd2c81fac9d9ef41 ""
-  "main.tex" 1659258022 2173 64b4c1b6d2ebbe2c2072690a20f7067c ""
-  "main.toc" 1659258023 204 dbabaa4bebbd9f0504fef1275c8c5e9a "pdflatex"
+  "main.tex" 1659259468 2172 944ff28b95fc3f4d18c332e4d7fb78a7 ""
+  "main.toc" 1659259470 204 dbabaa4bebbd9f0504fef1275c8c5e9a "pdflatex"
   (generated)
   "main.aux"
   "main.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  26 JUL 2022 09:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  1 AUG 2022 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1442,7 +1442,7 @@ l.25 \end{abstract}
 Package marginnote Info: Using workaround for absolute page number on input line 25.
  (./master.toc
 
-LaTeX Warning: Reference `thm' on page 1 undefined on input line 4.
+LaTeX Warning: Reference `thm' on page 1 undefined on input line 5.
 
 )
 \tf@toc=\write6
@@ -1507,18 +1507,55 @@ Package mdframed Info: mdframed detected package amsthm
 Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 2.
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
-) [4] [5
+ (./Figures/boundaryconditions.pdf_tex
+<./Figures//boundaryconditions.pdf, id=89, page=1, 596.7951pt x 98.74054pt>
+File: ./Figures//boundaryconditions.pdf Graphic file (type pdf)
+<use ./Figures//boundaryconditions.pdf, page 1>
+Package pdftex.def Info: ./Figures//boundaryconditions.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.96826pt x 74.94563pt.
+) (./Figures/normalcomp.pdf_tex
+<./Figures//normalcomp.pdf, id=90, page=1, 597.50786pt x 197.29677pt>
+File: ./Figures//normalcomp.pdf Graphic file (type pdf)
+<use ./Figures//normalcomp.pdf, page 1>
+Package pdftex.def Info: ./Figures//normalcomp.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.96826pt x 149.57079pt.
+) [4 <./Figures//boundaryconditions.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 71.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 81.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 89.
+ [5 <./Figures//normalcomp.pdf>]
+Package mdframed Info: Not enough space on this page on input line 93.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 94.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 147.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 155.
+ [6]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 177.
+) [7] [8
 
 ] (./appendix.tex
 Appendix A.
 
-LaTeX Warning: Reference `thm' on page 6 undefined on input line 2.
+LaTeX Warning: Reference `thm' on page 9 undefined on input line 2.
 
 
-LaTeX Warning: Reference `thm' on page 6 undefined on input line 3.
+LaTeX Warning: Reference `thm' on page 9 undefined on input line 3.
 
 
-LaTeX Warning: Reference `thm' on page 6 undefined on input line 4.
+LaTeX Warning: Reference `thm' on page 9 undefined on input line 4.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1526,7 +1563,7 @@ Package mdframed Info: mdframed detected package amsthm
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [6
+)) [9
 
 ]
 
@@ -1540,24 +1577,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 4A10A5654D9FC107E35B938F8BC0B4D1;583.
+(rerunfilecheck)             Checksum: 6D51595E8A081712B2232C90AE8418D1;753.
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51183 strings out of 478268
- 1170721 string characters out of 5846347
- 1918106 words of memory out of 5000000
- 68483 multiletter control sequences out of 15000+600000
+ 51268 strings out of 478268
+ 1172727 string characters out of 5846347
+ 1920536 words of memory out of 5000000
+ 68534 multiletter control sequences out of 15000+600000
  495881 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,100p,1360b,1183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,100p,1360b,1201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on master.pdf (8 pages, 331641 bytes).
+Output written on master.pdf (11 pages, 376561 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

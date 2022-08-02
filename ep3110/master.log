@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  1 AUG 2022 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  2 AUG 2022 02:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1442,7 +1442,7 @@ l.25 \end{abstract}
 Package marginnote Info: Using workaround for absolute page number on input line 25.
  (./master.toc
 
-LaTeX Warning: Reference `thm' on page 1 undefined on input line 5.
+LaTeX Warning: Reference `thm' on page 1 undefined on input line 6.
 
 )
 \tf@toc=\write6
@@ -1544,18 +1544,46 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 177.
-) [7] [8
+) (./Lectures/lec_3.tex
+Package marginnote Info: Margin note 11.1 is on absolute page 11 on input line 2.
+Package marginnote Info: right page because not two side mode on input line 2.
+Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
+ (./Figures/normcom.pdf_tex
+<./Figures//normcom.pdf, id=196, page=1, 597.50786pt x 197.29677pt>
+File: ./Figures//normcom.pdf Graphic file (type pdf)
+<use ./Figures//normcom.pdf, page 1>
+Package pdftex.def Info: ./Figures//normcom.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.96826pt x 149.57079pt.
+) (./Figures/magtan.pdf_tex
+<./Figures//magtan.pdf, id=197, page=1, 597.50786pt x 107.45341pt>
+File: ./Figures//magtan.pdf Graphic file (type pdf)
+<use ./Figures//magtan.pdf, page 1>
+Package pdftex.def Info: ./Figures//magtan.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.96826pt x 81.46048pt.
+) [7 <./Figures//normcom.pdf>] [8 <./Figures//magtan.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 91.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 110.
+Package hyperref Info: bookmark level for unknown eg defaults to 0 on input line 110.
+) (./Lectures/lec_4.tex
+Package marginnote Info: Margin note 13.1 is on absolute page 14 on input line 2.
+Package marginnote Info: right page because not two side mode on input line 2.
+Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
+ [9]) [10] [11
 
 ] (./appendix.tex
 Appendix A.
 
-LaTeX Warning: Reference `thm' on page 9 undefined on input line 2.
+LaTeX Warning: Reference `thm' on page 12 undefined on input line 2.
 
 
-LaTeX Warning: Reference `thm' on page 9 undefined on input line 3.
+LaTeX Warning: Reference `thm' on page 12 undefined on input line 3.
 
 
-LaTeX Warning: Reference `thm' on page 9 undefined on input line 4.
+LaTeX Warning: Reference `thm' on page 12 undefined on input line 4.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1563,7 +1591,7 @@ Package mdframed Info: mdframed detected package amsthm
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [9
+)) [12
 
 ]
 
@@ -1583,18 +1611,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51268 strings out of 478268
- 1172727 string characters out of 5846347
- 1920536 words of memory out of 5000000
- 68534 multiletter control sequences out of 15000+600000
+ 51341 strings out of 478268
+ 1174130 string characters out of 5846347
+ 1920742 words of memory out of 5000000
+ 68571 multiletter control sequences out of 15000+600000
  495881 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,100p,1360b,1201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on master.pdf (11 pages, 376561 bytes).
+Output written on master.pdf (14 pages, 418503 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 464 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

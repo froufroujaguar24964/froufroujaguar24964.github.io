@@ -1,0 +1,154 @@
+\lecture{3}{27 July 2022}{Third Lecture}
+\subsection*{Boundary Conditions}
+\subsection*{Normal Component}
+\begin{figure}[H]
+    \centering
+    \incfig{normcom}
+    \caption{title}
+    \label{fig:normcom}
+\end{figure}
+\[
+    \oint \vec{B}. d\vec{s} = 0 
+\]
+\[
+    B_{1n} \Delta S - B_{2n} \Delta S = 0 \implies B_{1n} = B_{2n} 
+\]
+\[
+    \oint \vec{H}.d\vec{l} = I_{f} \vspace{0.3pt}
+\]
+\subsubsection*{Tangential Component}
+\begin{figure}[H]
+    \centering
+    \incfig{magtan}
+    \caption{title}
+    \label{fig:magtan}
+\end{figure}
+\[
+    H_{1t}\Delta W - H_{2t} \Delta W = \Delta W k_s 
+\]
+\[
+    H_{1t} - H_{2t}=k_s 
+\]Where, \(k_{s} \) = surface current density. 
+\[
+    \bar{n_2} X (\vec{H_1} -\vec{H_2}) = \vec{k_s}
+\] 
+\subsection*{Ohms law}
+\[
+    \vec{J} = \sigma \vec{E}
+\]
+\[
+    \epsilon = -\frac{dQ}{dt} = \oint \vec{E}.d\vec{l}
+\]
+Faraday's laws of induction
+\[
+    \vec{\nabla}X\vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\]
+Energy stored in a Magnetic Field
+\[
+    W = \frac{1}{2 \mu_{o}} \int B^2 d\tau 
+\]
+\subsection*{Summary of Equations}
+Gauss law
+\[
+    \vec{\nabla}. \vec{D} = \rho_{f} 
+\]
+Magnetic monopole doesn't exist
+\[
+    \vec{\nabla}.\vec{B} = 0
+\]
+Faraday's law
+\[
+    \vec{\nabla}X\vec{E} = - \frac{\partial \vec{B}}{\partial t}
+\]
+Ampere's law
+\[
+    \vec{\nabla}X\vec{H} = J_{f} 
+\]
+\subsection{Correction in Ampere's law}
+\[
+    \vec{\nabla}.\vec{\nabla}X\vec{H} = 0, 
+\]
+but 
+\[
+    \vec{\nabla}.\vec{J_{f} } \neq 0
+\]
+\[
+    \vec{\nabla}.\vec{J} = -\frac{\partial \rho}{\partial t}
+\]
+\[
+    \vec{\nabla}X\vec{H} = \vec{J_{f} }+ ?
+\]
+\[
+    \vec{\nabla}.\vec{\nabla}X\vec{H} = \vec{\nabla}.\vec{J_{f} }+ \frac{\partial \rho_{f} }{\partial t}
+\]
+\[
+    \vec{\nabla}.\vec{\nabla}X\vec{H} = \vec{\nabla}.\vec{J_{f} }+\frac{\partial \vec{\nabla}.\vec{D}}{\partial t}
+\]
+\[
+    \vec{\nabla}.\vec{\nabla}X\vec{H} = \vec{\nabla}.\left(\vec{J}+\frac{\partial \vec{D}}{\partial t}\right)
+\]
+\begin{definition}
+    Displacement current density \(\frac{\partial \vec{D}}{\partial t}\) 
+\end{definition}
+\[
+    \vec{D} = \epsilon \vec{E}
+\]
+\[
+    \vec{B} = \mu \vec{H}
+\]
+
+\subsection*{Non-linear dielectric}
+
+\[
+    \vec{P_{i}} = \Sigma_j \alpha_{ij} E_j + \Sigma_{jk} \alpha_{ijk} E_{j} E_{k}  
+\]
+\subsection*{Linear dielectric}
+\[
+    \vec{P_{i} } = \epsilon_{o} \chi_{ij}\vec{E_{jk} } 
+\]
+\begin{eg}
+    \[
+        P_{x} = \epsilon_o (\chi_{xx}{E_{x}}+\chi_{xy}E_{y} +\chi_{xz}E_{z})
+    \]
+    \[
+        P_y = \epsilon_{o} (\chi_{yx}E_{x} +\chi_{yy}E_{y}+\chi_{yz}E_{z}  )
+    \]
+    \[
+        P_{z} = \epsilon_o(\chi_{zx}E_x + \chi_{zy}E_{y} +\chi_{zz} E_{z} )
+    \]
+
+\end{eg}
+\subsection*{Linear Isotropic Dielectric}
+\(\chi \to \) independent of direction of electric field. 
+\subsection*{Linear Homogenous Isotropic Dielectric}
+\(\chi \to \) Same everywhere. 
+\subsection*{Potential formulation}
+\[
+    \vec{B} = \vec{\nabla}X\vec{A} \left(\because \vec{\nabla}.\vec{B}=0\right)
+\]
+Faraday's law
+\[
+  \vec{\nabla}X\vec{E} = \frac{\partial \vec{B}}{\partial t}  = \frac{\partial (\vec{\nabla}X\vec{A})}{\partial t}
+\]
+\[
+    \vec{\nabla} X \vec{E} = -\vec{\nabla}X\frac{\partial \vec{A}}{\partial t }
+\]
+\[
+    \vec{\nabla} X \left(\vec{E} + \frac{\partial \vec{A}}{\partial t}\right) = 0
+\]
+\[
+    \vec{E} + \frac{\partial \vec{A}}{\partial t} = - \vec{\nabla}V
+\]
+\[
+    \vec{E} = -\vec{\nabla}V - \frac{\partial \vec{A}}{\partial t}
+\]
+\[
+    \vec{B} = \vec{\nabla}X\vec{A}
+\]
+Solution for time-independent can be given by poisson's equations, but for time dependent we cannot use poisson's equations. 
+
+\textbf{Conditions} 
+\begin{enumerate}
+    \item At low frequency :- changes very slowly
+    \item Near to source :- quasi-static condition
+\end{enumerate}

@@ -1,5 +1,6 @@
 \contentsline {chapter}{\numberline {1}Electrodynamics(Review)}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Electrostatics(Review)}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Magnetostatics(review)}{5}{section.1.2}%
-\contentsline {chapter}{\numberline {A}Additional Proofs}{9}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{9}{appendix.A.1}%
+\contentsline {subsection}{\numberline {1.2.1}Correction in Ampere's law}{8}{subsection.1.2.1}%
+\contentsline {chapter}{\numberline {A}Additional Proofs}{12}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{12}{appendix.A.1}%

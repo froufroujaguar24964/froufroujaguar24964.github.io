@@ -1,0 +1,36 @@
+\lecture{4}{01/08/2022}{Fourth Lecture}
+\subsection*{Wave equation for potentials}
+\[
+    \vec{E} = -\vec{\nabla} -\frac{\partial \vec{A}}{\partial t}
+\]
+\[
+    \vec{B} = \vec{\nabla}X\vec{A}
+\]
+\[
+    \vec{\nabla}X\vec{H} = \vec{J_{f} }+ \frac{\partial \vec{D}}{\partial t}
+\]
+\[
+    \vec{\nabla}X\vec{B} = \mu \vec{J_f} + \mu \epsilon \frac{\partial \vec{E}}{\partial t}
+\]
+\[
+    \vec{\nabla}X(\vec{\nabla}X\vec{A}) = \mu \vec{J_{f} }+ \mu \epsilon \frac{\partial \left(-\vec{\nabla}V - \frac{\partial \vec{A}}{\partial t}\right)}{\partial t}
+\]
+\[
+    \vec{\nabla}(\vec{\nabla}.\vec{A}) - \nabla^2\vec{A} = \mu \vec{J_{f} }-\mu \epsilon \frac{\partial (\vec{\nabla}V)}{\partial t} - \mu \epsilon \frac{\partial ^2 \vec{A}}{\partial t^2}
+\]
+\[
+    -\nabla^2 \vec{A} +\mu \epsilon \frac{\partial^2 \vec{A}}{\partial t} = \mu \vec{J_{f} }-\vec{\nabla}(\vec{\nabla}.\vec{A})-\vec{\nabla}(\mu \epsilon \frac{\partial V}{\partial t})
+\]
+\[
+    -\nabla^2 \vec{A} +\mu \epsilon \frac{\partial^2 \vec{A}}{\partial t} = \mu \vec{J_{f} }-\vec{\nabla}(\vec{\nabla}.\vec{A}+\mu \epsilon \frac{\partial V}{\partial t})
+\]
+\[
+    \nabla^2 \vec{A} -\mu \epsilon \frac{\partial^2 \vec{A}}{\partial t} = -\mu \vec{J_{f} }+\vec{\nabla}(\vec{\nabla}.\vec{A}+\mu \epsilon \frac{\partial V}{\partial t})
+\]
+applying \textbf{Lorentz}  \textbf{gauge} 
+\[
+    \vec{\nabla}.\vec{A} = - \mu \epsilon \frac{\partial V}{\partial t}
+\]
+\[
+    \nabla^2 A - \mu \epsilon \frac{\partial ^2 \vec{A}}{\partial t^2}
+\]

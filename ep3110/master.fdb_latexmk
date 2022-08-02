@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber master"] 1659331235 "master.bcf" "master.bbl" "master" 1659331253
-  "master.bcf" 1659331252 107079 f9911133cd0597fa68874376d1af1bbf "pdflatex"
+["biber master"] 1659389290 "master.bcf" "master.bbl" "master" 1659389317
+  "master.bcf" 1659389317 107079 f9911133cd0597fa68874376d1af1bbf "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
-["pdflatex"] 1659331251 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/master.tex" "master.pdf" "master" 1659331253
+["pdflatex"] 1659389315 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/master.tex" "master.pdf" "master" 1659389317
   "/Users/siddhartha/Documents/Academic-Template/Math.tex" 1653463735 2326 8cb4edad8a217aaffaacda2c1906b076 ""
   "/Users/siddhartha/Documents/Academic-Template/Notes/header.tex" 1653464743 10230 bfead1a2b212e0229e5cff07201bd9dd ""
-  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/master.tex" 1658809307 2673 b50f1effcc75b111dfbe3efda356d640 ""
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/master.tex" 1659385504 2673 20c3e7567376d4c3a891d758c0de5008 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -359,18 +359,24 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653407412 2826441 75866e91331a61c6062316dd19b23e74 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Figures//boundaryconditions.pdf" 1659276556 13823 4c2296a5b867e5075786e6271f8ad7f3 ""
+  "Figures//magtan.pdf" 1659363526 16080 5c908d8937fa55f3f32179ffcd84d0e2 ""
   "Figures//normalcomp.pdf" 1659329855 11240 bda2db09c30c515f1d1ea8c762db0a37 ""
+  "Figures//normcom.pdf" 1659364130 11607 3c929580b47a6caea48d01a93283b8c0 ""
   "Figures/boundaryconditions.pdf_tex" 1659276556 2089 8e03a5a27b7423db2f6a1bb38bd1bf5c ""
+  "Figures/magtan.pdf_tex" 1659363526 2065 c33f0dc8de144d5941417a67c3602cbb ""
   "Figures/normalcomp.pdf_tex" 1659329855 2073 bda4f02ef76192a0e656788500a56862 ""
+  "Figures/normcom.pdf_tex" 1659364130 2067 1d0235f75f4c05f238c8f54e98dd1c11 ""
   "Lectures/lec_1.tex" 1658808802 5225 57f2633e5a752db4e82d0b73e93fee71 ""
   "Lectures/lec_2.tex" 1659331251 4515 69742152e6012ab3a62b765b14abe2d6 ""
+  "Lectures/lec_3.tex" 1659382683 3705 1f347ae1bee14b6ecc1794208e516eb7 ""
+  "Lectures/lec_4.tex" 1659389315 1487 5588ded71bea8fac682acb18ef82678c ""
   "appendix.tex" 1653463735 232 811fc357d6eb5a56e19d941299af32e2 ""
-  "master.aux" 1659331252 6025 ac76c177c90869400d7cb477dd6e987a "pdflatex"
-  "master.bbl" 1659331236 466 ee04f40f768daeed26442158e95aba61 "biber master"
-  "master.out" 1659331252 753 6d51595e8a081712b2232c90ae8418d1 "pdflatex"
-  "master.run.xml" 1659331252 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
-  "master.tex" 1658809307 2673 b50f1effcc75b111dfbe3efda356d640 ""
-  "master.toc" 1659331252 401 60e64308af5d33a8838f3f38502f1b3d "pdflatex"
+  "master.aux" 1659389317 7082 56ab81157a275f36734a4b0745e283b3 "pdflatex"
+  "master.bbl" 1659389291 466 ee04f40f768daeed26442158e95aba61 "biber master"
+  "master.out" 1659389317 753 6d51595e8a081712b2232c90ae8418d1 "pdflatex"
+  "master.run.xml" 1659389317 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
+  "master.tex" 1659385504 2673 20c3e7567376d4c3a891d758c0de5008 ""
+  "master.toc" 1659389317 499 eec97ee81277f6f6ccf89c59d8da06ab "pdflatex"
   (generated)
   "master.aux"
   "master.bcf"

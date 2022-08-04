@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1659258022 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex" "main.pdf" "main" 1659258023
-  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex" 1659258022 2173 64b4c1b6d2ebbe2c2072690a20f7067c ""
+["pdflatex"] 1659581984 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/Nuclear problem sets-20220725/PH5211_PS4/main.tex" "main.pdf" "main" 1659581985
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/Nuclear problem sets-20220725/PH5211_PS4/main.tex" 1659258022 2173 64b4c1b6d2ebbe2c2072690a20f7067c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc" 1529098226 2881 8e2aef9e38084b946e7656b60672fedb ""
@@ -216,10 +216,10 @@
   "includes/metadata.tex" 1659255803 604 e95d48dc3a3ee7b0cb236af79c9ed41f ""
   "includes/packages.tex" 1659255225 2292 fd1269a4c86cd7cfda2a36e85b4f7f0d ""
   "includes/teacher-info.tex" 1659255985 548 16422abf3caa2ab1cb0341b1743b1087 ""
-  "main.aux" 1659258023 2033 e4c7c485a49df6187de2291698ffc487 "pdflatex"
+  "main.aux" 1659581984 2033 e4c7c485a49df6187de2291698ffc487 "pdflatex"
   "main.hst" 1659256420 98 070e030fe492816fdd2c81fac9d9ef41 ""
   "main.tex" 1659258022 2173 64b4c1b6d2ebbe2c2072690a20f7067c ""
-  "main.toc" 1659258023 204 dbabaa4bebbd9f0504fef1275c8c5e9a "pdflatex"
+  "main.toc" 1659581984 204 dbabaa4bebbd9f0504fef1275c8c5e9a "pdflatex"
   (generated)
   "main.aux"
   "main.log"

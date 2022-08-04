@@ -1,8 +1,8 @@
-PWD /Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src
+PWD /Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/Nuclear problem sets-20220725/PH5211_PS4
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex
+INPUT /Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/Nuclear problem sets-20220725/PH5211_PS4/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls

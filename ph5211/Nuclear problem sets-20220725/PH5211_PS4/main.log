@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  31 JUL 2022 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  4 AUG 2022 08:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex
-(/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/assignments/assignment1/src/main.tex
+**"/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/Nuclear problem sets-20220725/PH5211_PS4/main.tex"
+(/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/Nuclear problem sets-20220725/PH5211_PS4/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -1114,12 +1114,12 @@ AED: lastpage setting LastPage
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  31456 strings out of 478268
- 598504 string characters out of 5846347
+ 598545 string characters out of 5846347
  865524 words of memory out of 5000000
  49111 multiletter control sequences out of 15000+600000
  511733 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,11n,97p,669b,388s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,11n,97p,684b,388s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
 Output written on main.pdf (2 pages, 106278 bytes).
 PDF statistics:

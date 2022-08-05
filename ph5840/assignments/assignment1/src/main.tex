@@ -50,16 +50,47 @@
 
 \clearpage
     
-\section{Homework 1.1}      
+\section{Homework 1.1}
 \label{sec:1.1} 
-
+\subsection*{Probabilities and Venn Diagrams}
+Let us consider \(E_1\) and \(E_2 \cap \neg E_1\) \\ \vspace*{0.4 cm}
+which are mutually exclusive \( \implies E_1 \cap (E_2 \cap \neg E_1) = \phi\). \\ \vspace*{0.4 cm}
+Considering,
+\[
+    E_1 \cup (E_2 \cap \neg E_1)   = (E_1 \cup E_2) \cap (E_1 \cup \neg E_1) = (E_1 \cup E_2) \cap (S) = (E_1 \cup E_2)
+\]
+where S = Sample space.\\ \vspace*{0.4 cm}
+Now, from the 3rd axiom of probability we can write:
+\[
+    p(E_1 \cup (E_2 \cap \neg E_1)) = p(E_1) + p(E_2 \cap \neg E_1)
+\]
+\[
+    p(E_1 \cup E_2) = p(E_1) + p(E_2 \cap \neg E_1)
+\]
+Let us consider \(E_2 \cap (E_1 \cup \neg E_1)\) = \(E_2 \cap S\) = \(E_2\)  
+\[
+    E_2 \cap (E_1 \cup \neg E_1) = (E_2 \cap E_1) \cup (E_2 \cap \neg E_1)
+\]
+\[
+    p(E_2) = p(E_2 \cap E_1) + p(E_2 \cap \neg E_1)  
+\]
+\[
+    p(E_2 \cap \neg E_1)  =  p(E_2) - p(E_2 \cap E_1)
+\] 
+substituting \( p(E_2 \cap \neg E_1)\)  this in above equation, gives
+\[
+    p(E_1 \cup E_2) = p(E_1) + p(E_2) - p(E_1 \cap E_2)
+\]
 \section{Homework 1.2}
 \label{sec:1.2}
+\subsection*{The Monty Hall Problem}
+(a) \(p(R) = \frac{1}{N}\) and \(p(W) = \frac{N-1}{N}\) because, there is only one correct door and N-1 wrong doors. For his initial guess to be right he should choose the 1 correct door out of N doors.
 
+(b) $p(r|R) =1$ since, the prize is behind the door he guessed so, probability is 1. $p(g|R)=0$ since the prize is not behind the guessed door, there is 0 probability for his guess to be correct.\\
+similarly, $p(r|W) = 0$ and $p(g|W) = 1$.
 
-\section{Homework 1.3}
-\label{sec:1.3}
-
-
+(c) When host opens n doors it is clear that the prize is not in one of them. Now, the probability of the doors that remained closed changes. Since, prize can be behind any door the probability of finding the prize for any closed door is equally likely except the door chosen by the contestant. This is because it is remain closed because the contestant choose it  if he choose some other door then this door might remain closed or open but it is closed now because it is chosen by him, so it is not equally probable like other doors. so, it's probability won't change. 
+The probability of the remaining doors increases by exactly same amount and the probability that prize behind the door chosen by contestant is $p(r) = \frac{1}{N}$ unchanged and probability that prize is behind the door which is not chosen by the contestant is $p(g) = \frac{1}{n}(1-\frac{1}{N})$. \\
+Clearly the probability that initial guess might contain the prize is less than the probability of any of the other closed doors contains the prize. So, for any value of $n > 0$ contestant should change his initial guess to one of the remaining rooms.
     
 \end{document} 

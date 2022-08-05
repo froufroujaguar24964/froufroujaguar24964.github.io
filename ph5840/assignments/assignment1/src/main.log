@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  31 JUL 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  4 AUG 2022 23:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,7 +924,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count345
 \c@blind@pangramcount=\count346
 \c@blind@pangrammax=\count347
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/vhistory/vhistory.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/vhistory/vhistory.sty
 Package: vhistory 
  (/usr/local/texlive/2022/texmf-dist/tex/latex/carlisle/ltxtable.sty
 Package: ltxtable 2021/06/13 v0.4 longtable/tabularx merge (DPC)
@@ -953,29 +953,83 @@ Package: sets
 Reading file main.hst...
 (./main.hst)
 \vh@verfile=\write5
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip150
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks46
+\ex@=\dimen316
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen317
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count354
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count355
+\leftroot@=\count356
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count357
+\DOTSCASE@=\count358
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box124
+\strutbox@=\box125
+\big@size=\dimen318
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count359
+\c@MaxMatrixCols=\count360
+\dotsspace@=\muskip17
+\c@parentequation=\count361
+\dspbrk@lvl=\count362
+\tag@help=\toks47
+\row@=\count363
+\column@=\count364
+\maxfields@=\count365
+\andhelp@=\toks48
+\eqnshift@=\dimen319
+\alignsep@=\dimen320
+\tagshift@=\dimen321
+\tagwidth@=\dimen322
+\totwidth@=\dimen323
+\lineht@=\dimen324
+\@envbody=\toks49
+\multlinegap=\skip151
+\multlinetaggap=\skip152
+\mathdisplay@stack=\toks50
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 ) (./includes/custom-commands.tex
-\enitdp@greenrectangles=\count354
-\c@alphalisti=\count355
-\c@alphalistii=\count356
-\c@alphalistiii=\count357
-\c@alphalistiv=\count358
-\c@alphalistv=\count359
-\c@alphalistvi=\count360
-\c@alphalistvii=\count361
-\c@alphalistviii=\count362
-\c@alphalistix=\count363
-\enitdp@alphalist=\count364
-\enitdp@itemizedlist=\count365
-\enitdp@arrows=\count366
-\enitdp@borderedsquare=\count367
-\enitdp@curveddarrow=\count368
-\enitdp@coloredPen=\count369
-\enitdp@objectives=\count370
-\enitdp@filledstarlist=\count371
-\enitdp@emptyCircleList=\count372
-\enitdp@filledRightArrowList=\count373
-\enitdp@numberedEmptyList=\count374
-\enitdp@rightHandPointingList=\count375
+\enitdp@greenrectangles=\count366
+\c@alphalisti=\count367
+\c@alphalistii=\count368
+\c@alphalistiii=\count369
+\c@alphalistiv=\count370
+\c@alphalistv=\count371
+\c@alphalistvi=\count372
+\c@alphalistvii=\count373
+\c@alphalistviii=\count374
+\c@alphalistix=\count375
+\enitdp@alphalist=\count376
+\enitdp@itemizedlist=\count377
+\enitdp@arrows=\count378
+\enitdp@borderedsquare=\count379
+\enitdp@curveddarrow=\count380
+\enitdp@coloredPen=\count381
+\enitdp@objectives=\count382
+\enitdp@filledstarlist=\count383
+\enitdp@emptyCircleList=\count384
+\enitdp@filledRightArrowList=\count385
+\enitdp@numberedEmptyList=\count386
+\enitdp@rightHandPointingList=\count387
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 180.
@@ -1057,7 +1111,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count376
+\c@section@level=\count388
 )
 LaTeX Info: Redefining \ref on input line 40.
 LaTeX Info: Redefining \pageref on input line 40.
@@ -1073,17 +1127,17 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count377
-\scratchdimen=\dimen316
-\scratchbox=\box124
-\nofMPsegments=\count378
-\nofMParguments=\count379
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count380
-\MPscratchDim=\dimen317
-\MPnumerator=\count381
-\makeMPintoPDFobject=\count382
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count389
+\scratchdimen=\dimen325
+\scratchbox=\box126
+\nofMPsegments=\count390
+\nofMParguments=\count391
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count392
+\MPscratchDim=\dimen326
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
+\everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1092,12 +1146,6 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (./includes/document-header.tex
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 11.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 41.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
@@ -1113,18 +1161,18 @@ AED: lastpage setting LastPage
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 31456 strings out of 478268
- 598504 string characters out of 5846347
- 865530 words of memory out of 5000000
- 49111 multiletter control sequences out of 15000+600000
- 511733 words of font info for 53 fonts, out of 8000000 for 9000
+ 32105 strings out of 478268
+ 607413 string characters out of 5846347
+ 882653 words of memory out of 5000000
+ 49743 multiletter control sequences out of 15000+600000
+ 512407 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,11n,97p,669b,388s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
-Output written on main.pdf (2 pages, 106743 bytes).
+ 104i,11n,97p,692b,393s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
+Output written on main.pdf (2 pages, 164806 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

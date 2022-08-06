@@ -4,14 +4,22 @@
   (generated)
   "master.bbl"
   "master.blg"
+<<<<<<< HEAD
 ["pdflatex"] 1659616204 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/master.tex" "master.pdf" "master" 1659616204
   "/Users/siddhartha/Documents/Academic-Template/Math.tex" 1653463735 2326 8cb4edad8a217aaffaacda2c1906b076 ""
   "/Users/siddhartha/Documents/Academic-Template/Notes/header.tex" 1659616161 10274 e5e84e74df0f278977bfc32125a96639 ""
   "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/master.tex" 1659581784 2479 d58575acc54e3d86b1b93aeed42892de ""
+=======
+["pdflatex"] 1659537533 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/master.tex" "master.pdf" "master" 1659537533
+  "/Users/siddhartha/Documents/Academic-Template/Math.tex" 1653463735 2326 8cb4edad8a217aaffaacda2c1906b076 ""
+  "/Users/siddhartha/Documents/Academic-Template/Notes/header.tex" 1653464743 10230 bfead1a2b212e0229e5cff07201bd9dd ""
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5211/master.tex" 1659503982 2479 0bc36a35c8925036568af842b9955f3e ""
+>>>>>>> feature_in_progress
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx2074.tfm" 1136768653 3584 7666d038713b9e38abb5c2e0f6972188 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx2488.tfm" 1136768653 3584 0181dbc4d429c3ba4e30feba37b5df96 ""
@@ -77,11 +85,15 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+<<<<<<< HEAD
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
+=======
+>>>>>>> feature_in_progress
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb" 1215737283 140194 627cc7f36c05b80e25d178974ccb3442 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb" 1215737283 135938 299ac3a69892db3b7674a8b2543b0a77 ""
@@ -358,6 +370,7 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653407412 2826441 75866e91331a61c6062316dd19b23e74 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Lectures/lec_1.tex" 1658875890 529 d59b4aefbeb01f8239d927d586a37e5f ""
+<<<<<<< HEAD
   "Lectures/lec_5.tex" 1659616184 1120 11171b54a7ea0631b93d030a1f5ce9be ""
   "Lectures/lec_6.tex" 1659615896 1464 8a003ea5e3a009de63bfed8cfb3802dd ""
   "appendix.tex" 0 -1 0 ""
@@ -366,6 +379,15 @@
   "master.out" 0 -1 0 "pdflatex"
   "master.run.xml" 0 -1 0 "pdflatex"
   "master.tex" 1659581784 2479 d58575acc54e3d86b1b93aeed42892de ""
+=======
+  "Lectures/lec_5.tex" 1659537527 362 35eb389f7e4a7477da594c1f18c7149b ""
+  "appendix.tex" 0 -1 0 ""
+  "master.aux" 1659537533 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "master.bbl" 0 -1 0 "biber master"
+  "master.out" 0 -1 0 "pdflatex"
+  "master.run.xml" 0 -1 0 "pdflatex"
+  "master.tex" 1659503982 2479 0bc36a35c8925036568af842b9955f3e ""
+>>>>>>> feature_in_progress
   (generated)
   "master.aux"
   "master.bcf"

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  4 AUG 2022 18:00
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  3 AUG 2022 20:08
+>>>>>>> feature_in_progress
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1509,6 +1513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
  []
 
 ) (./Lectures/lec_5.tex
+<<<<<<< HEAD
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 2.
 
@@ -1577,6 +1582,18 @@ Overfull \hbox (2.09389pt too wide) in paragraph at lines 2--2
  []
 
 [2
+=======
+./Lectures/lec_5.tex:11: Undefined control sequence.
+l.11 where $\mu_n$ = nuclear magneton\adfj
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [2
+>>>>>>> feature_in_progress
 
 ]) [3] [4
 
@@ -1612,6 +1629,7 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  53768 strings out of 478268
  1249391 string characters out of 5846347
  2007851 words of memory out of 5000000
@@ -1625,5 +1643,20 @@ PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams
  30 named destinations out of 1000 (max. 500000)
+=======
+ 50990 strings out of 478268
+ 1165667 string characters out of 5846347
+ 1906370 words of memory out of 5000000
+ 68312 multiletter control sequences out of 15000+600000
+ 493697 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 108i,6n,100p,1360b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb>
+Output written on master.pdf (5 pages, 190518 bytes).
+PDF statistics:
+ 132 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+>>>>>>> feature_in_progress
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

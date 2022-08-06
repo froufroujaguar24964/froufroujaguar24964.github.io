@@ -1,0 +1,136 @@
+% !TeX spellcheck = en_US
+\documentclass[11pt, a4paper]{article}
+
+% Set the title of the current document to be produced.
+\newcommand{\doctitle}{Assignment I}
+% Command for the due date of the homework.
+\newcommand{\duedate}{\color{rltblue}{\faCalendarCheckO { }Due date: August 11th, before midnight \faCalendarCheckO	}}
+\newcommand{\myname}{\color{rltred} {}\textbf{Chaganti}  \textbf{Kamaraja}  \textbf{Siddhartha} }
+\newcommand{\rollnumber}{\color{rltred}{}\textbf{EP20B012} }
+%------------------------------------------------------------
+% Import commands for both teacher and course information.  | 
+% NOTE: Change your teacher and course info in these files. |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/teacher-info}                              %|
+\input{includes/course-info}                               %|   
+%
+%------------------------------------------------------------
+%-- Import packages and custom command definitons.          |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/packages}                                  %|  
+\input{includes/custom-commands}   
+%
+%---> Genereate & inject metadata describing                |
+%     the produced document                                 |
+\input{includes/metadata}                                  %|
+%------------------------------------------------------------
+
+\topmargin      -60pt
+
+%-----------------------------------------------------------
+% Uncomment the following if you want to insert a watermark! 
+%
+%--> Watermark package settings: 
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{0.5}
+%\SetWatermarkColor[gray]{0.8}
+%-------------------------------------------------
+
+\begin{document} 
+    
+%-------------------------------------------------------------
+%-- Make the header of the document                          |
+%------>------>------>------>------>------>------>------>--> |
+\input{includes/document-header}
+
+
+%
+\tableofcontents
+
+\clearpage
+
+\section{Potential, Field and Charge distribution}
+Given 
+\begin{equation} 
+    V(r) = A \frac{e^{-\lambda r}}{r} \label{eq:1} 
+\end{equation} 
+Electric field, \(\vec{E}\):
+\begin{gather}
+    \vec{E} = -\vec{\nabla}V \\
+    \vec{E} = -\left(\pdv{}{r}\hat{r}+\frac{1}{r \sin \phi}\pdv{}{\phi}\hat{\phi}+\frac{1}{r}\pdv{}{\phi}\hat{\phi}\right)V(r) \\
+    \vec{E} = -\odv{V(r)}{r}\hat{r} 
+\end{gather}
+\begin{equation}
+    \boxed{\vec{E} = A \frac{e^{-\lambda r}}{r^2} (1 + \lambda r)\hat{r}}
+\end{equation}
+Charge distribution, \(\rho\) :
+\begin{gather}
+    \vec{\nabla}.\vec{E} = \frac{\rho}{\epsilon_o} \\
+    \vec{\nabla}.\left(A e^{-\lambda r} (1 + \lambda r)\frac{\hat{r}}{r^2}\right) = \frac{\rho}{\epsilon_o} \\
+    A e^{-\lambda r} (1 + \lambda r)\vec{\nabla}.\left(\frac{\hat{r}}{r^2}\right)+ \frac{\hat{r}}{r^2}.\vec{\nabla}(A e^{-\lambda r} (1 + \lambda r))= \frac{\rho}{\epsilon _o} \\
+    A e^{-\lambda r} (1 + \lambda r) (4 \pi \delta^3(r)) + \frac{\hat{r}}{r^2}.(A e^{-\lambda r}(-\lambda^2 r)\hat{r} )= \frac{\rho}{\epsilon_o} 
+\end{gather}
+\[
+    \left(\because \vec{\nabla}.\left(\frac{\hat{r}}{r^2}\right) = 4 \pi \delta^3(r)\right)
+\]
+\begin{equation}
+    \boxed{\rho = A\epsilon_o \left( 4 \pi \delta^3(r) -  \lambda^2\frac{e^{-\lambda r}}{r}\right)} \left(\because f(x)\delta(x)= f(0)\delta(x)\right)
+\end{equation}
+Total Charge, Q:
+\begin{gather}
+    Q = \int_{-\infty}^{+\infty} \rho d\tau\\
+    Q = \int_{-\infty}^{+\infty} A\epsilon_o \left( 4 \pi \delta^3(r) -  \lambda^2\frac{e^{-\lambda r}}{r}\right) d\tau \\
+    Q = A\epsilon_o \int_{-\infty}^{+\infty}4 \pi \delta^3(r) d\tau - A \epsilon_{o} \int_{-\infty}^{+\infty} \lambda^2\frac{e^{-\lambda r} }{r} d\tau \\
+    Q = A \epsilon_{o} (4 \pi) - A \epsilon_{o} \lambda^2 4 \pi(\frac{1}{\lambda^2})\\
+    \boxed{Q = 0}
+\end{gather}
+Answers:- \(\vec{E} = A \frac{e^{-\lambda r}}{r^2} (1 + \lambda r)\hat{r}\) , \(\rho = A\epsilon_o \left( 4 \pi \delta^3(r) -  \lambda^2\frac{e^{-\lambda r}}{r}\right)\) , \(Q = 0\).
+\newpage
+\section{Dipole}
+Considering Proton above Z=0 and electron below Z=0, \(10^{-11}m \ll 13m  \), so we can consider this charge distribution as dipole with dipole moment \(\vec{p} = ed \hat{k} \) 
+\begin{gather}
+    V(R) = \frac{q}{4 \pi \epsilon_{o} }\left(\frac{1}{R_+}-\frac{1}{R_-}\right)
+\end{gather}
+Law of cosines, 
+\begin{gather}
+    R_\pm^2 = R^2 + (\frac{d}{2})^2 \mp Rd\cos \phi = R^2(1\mp \frac{d}{R}\cos\phi + \frac{d^2}{4 R^2})\\
+    \frac{1}{R_\pm} \approx \frac{1}{R}\left(1\mp \frac{d}{R}\cos\phi\right)^{-\frac{1}{2}} \approx \frac{1}{R}\left(1\pm \frac{d}{2R}\cos\phi\right)\\
+    \implies \frac{1}{R_+} - \frac{1}{R_-} \approx \frac{d}{
+        R^2}\cos\phi
+\end{gather}
+
+\begin{equation}
+    V(R) \cong \frac{1}{4\pi \epsilon_{o} } \frac{qd\cos\phi}{R^2}
+\end{equation}
+\begin{equation}
+    \boxed{V(R) = \frac{1}{4\pi \epsilon_{o} } \frac{\vec{p}.\hat{R}}{R^2}}
+\end{equation}
+Electric Field, \(\vec{E}(R)\) is
+\begin{gather}
+    \vec{E}(R) = -\vec{\nabla}V(R)\\
+    \vec{E}(R) = -\left(\pdv{}{R}\hat{R} +\frac{1}{R \sin \phi}\pdv{}{\theta}+\frac{1}{R}\pdv{}{\phi}\right)\left(\frac{1}{4\pi \epsilon_{o} }\frac{qd\cos\phi}{R^2}\right)\\
+    \vec{E}(R) = \frac{qd}{4\pi \epsilon_{o} R^3} \left(2 \cos\phi \hat{R} + \sin \phi \hat{\phi}  \right)
+\end{gather}
+\begin{equation}
+    \boxed{\vec{E}(R) = \frac{1}{4 \pi \epsilon_{o} R^3}\left(3(\vec{p}.\hat{r})\hat{r} -\vec{p} \right)}
+\end{equation}
+Here, \(\vec{p} = 10^{-11} e \hat{k} \)Cm  and \(\vec{R} = (3 \hat{i} + 4 \hat{i}+12 \hat{k})m \)  
+\begin{gather}
+    V(R) = \frac{1}{4\pi \epsilon_{o} } \frac{12 X 10^{-11} e }{13^2}V = 6.05 X 10^{-24} V  \\
+    \vec{E} (R)= \frac{1}{4 \pi \epsilon_{o} 13^3}(3(\frac{12}{13}X10^{-11}e)\frac{3 \hat{i} + 4 \hat{j} +12 \hat{k} }{13} - 10^{-11}e \hat{k}   )\\
+    \vec{E}(R) = (4.188X10^{-24}\hat{i}+ 5.585X10^{-24} \hat{j}+1.019 X 10^{-23} \hat{k} )NC^{-1}  
+\end{gather}
+Answers:- \(\boxed{V(R) =6.05 X 10^{-24} V,\vec{E}(R)=  (4.188X10^{-24}\hat{i}+ 5.585X10^{-24} \hat{j}+1.019 X 10^{-23} \hat{k} )NC^{-1} }\)
+\newpage
+\section{Lorentz Condition and Equation of Continuity}
+A \textbf{corollary}  of \textbf{Helmholtz} \textbf{Decomposition} \textbf{theorem} says that all physically realistic scalar fields obey a continuity equation. The theorem states that for any reasonable scalar field S and Vector field \textbf{C}  there exists a vector field \textbf{F} such that \(\vec{\nabla}\).\textbf{F} = S and\(\vec{\nabla}\)X\textbf{F} = \textbf{C}. \href{http://dfcd.net/articles/potentialfields.pdf}{ref}\newline
+\textbf{Lorentz Gauge}: 
+\begin{gather}
+    \vec{\nabla}.\vec{A} = -\frac{1}{c^2}\pdv{\phi}{t}
+\end{gather}
+from definition  of Magnetic Vector potential, \(\vec{A}\)
+\begin{equation}
+    \vec{\nabla}X\vec{A} = \vec{B}
+\end{equation} 
+\end{document} 

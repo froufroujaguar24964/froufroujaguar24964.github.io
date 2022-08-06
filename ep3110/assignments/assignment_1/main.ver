@@ -1,0 +1,18 @@
+\begin {longtable}{@{}ll>{\hsize =\vhAuthorColWidth }X>{\hsize =\vhChangeColWidth }X@{}}
+\textbf {\vhversionname }
+ & \textbf {\vhdatename }
+ & \textbf {\vhauthorname }
+ & \textbf {\vhchangename }\\[1ex]
+1.0
+ & Feb 09, 2022
+ & \listset {S.R.}
+ & Initial handout.\\
+1.1
+ & Feb 16, 2022
+ & \listset {S.R.}
+ & Added the main character section.\\
+2.0
+ & Feb 19, 2022
+ & \listset {S.R.}
+ & Modified and added new requirements in all sections.\\
+\end {longtable}

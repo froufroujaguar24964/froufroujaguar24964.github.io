@@ -132,5 +132,30 @@ A \textbf{corollary}  of \textbf{Helmholtz} \textbf{Decomposition} \textbf{theor
 from definition  of Magnetic Vector potential, \(\vec{A}\)
 \begin{equation}
     \vec{\nabla}X\vec{A} = \vec{B}
-\end{equation} 
+\end{equation}
+Considering \textbf{F} = $\vec{A}$, S = $-\frac{1}{c^2}\pdv{\phi}{t}$, \textbf{C} = \(\vec{B}\) \\
+Lorentz condition satisfy the condition for equation of continuity. 
+\section{Homogenous wave equation}
+\begin{gather}
+    U = f(t \pm R\sqrt{\mu \epsilon } )
+\end{gather}
+Let \(x = t \pm R\sqrt{\mu \epsilon }\)
+\begin{gather}
+    \pdv{U}{R} = \odv{f}{x} \pdv{x}{R}\\
+    \pdv{U}{R} = \pm\sqrt{\mu \epsilon} \odv{f}{x}
+\end{gather}
+\begin{equation}
+    \boxed{\frac{\partial ^2 U}{\partial R^2} = \mu \epsilon \frac{d^{2}f }{dx^2}}
+\end{equation}
+\begin{gather}
+    \pdv{U}{t} = \odv{f}{x} \pdv{x}{t}\\
+    \pdv{U}{t} = \odv{f}{x}
+\end{gather}
+\begin{equation}
+    \boxed{\frac{\partial ^2 U}{\partial t^2} = \frac{d^{2}f }{dx^2}}
+\end{equation}
+\begin{equation}
+    \boxed{\frac{\partial ^2 U}{\partial R^2} -\frac{\partial ^2 U}{\partial t^2} = \mu \epsilon \frac{d^{2}f }{dx^2} - \mu \epsilon \frac{d^2 f}{dx^2} = 0}
+\end{equation}
+Therefore, any function of $t\pm R \sqrt{\mu \epsilon}$ satisfies the Homogenous wave equation.  
 \end{document} 

@@ -1,4 +1,0 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Overview}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Nomenclature}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Magnetic moments}{2}{subsection.1.2.1}%

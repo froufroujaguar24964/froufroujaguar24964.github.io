@@ -50,47 +50,154 @@
 
 \clearpage
     
-\section{Problem 1}      
+\section{Fermi's golden rule, Form factor, Mean square radius}      
 \label{sec:1} 
 Fermi's golden rule:- The rate at which the scattering occurs will be proportional to the matrix element squared \(\left\vert V_{if}^\prime  \right\vert^2 \) 
-\[
+\begin{equation}
     V_{if} ^\prime  = \int \psi^*_{f} V(r) \psi_{i} d\tau
-\]
+\end{equation}
+    
+
 Given,
 \[
-    \psi_{f} = e^ {(i \bar{k_f}.\bar{r})}
-\]
-\[
-    \psi_{i} = e^ {(i \bar{k_i}.\bar{r}) }
-\]
+    \psi_{f} = e^ {(i \bar{k_f}.\bar{r})}\]
+    \[\psi_{i} = e^ {(i \bar{k_i}.\bar{r}) }\]
+
 Potential V(r) is,
-\[
-    V(r) = -\frac{Ze^2}{4 \pi \epsilon_{o}}\int \frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime  
-\]
-\[
-    V_{if} ^\prime = \int   (e^ {(-i \bar{k_f}.\bar{r})})(e^ {(i \bar{k_i}.\bar{r}) })\left(-\frac{Ze^2}{4 \pi \epsilon_{o}}\int \frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime\right) d\tau
-\]
-\[
+\begin{gather}
+    V(r) = -\frac{Ze^2}{4 \pi \epsilon_{o}}\int \frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime\\
+    V_{if} ^\prime = \int   (e^ {(-i \bar{k_f}.\bar{r})})(e^ {(i \bar{k_i}.\bar{r}) })\left(-\frac{Ze^2}{4 \pi \epsilon_{o}}\int \frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime\right) d\tau\\
     V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int e^{i\bar{q}.\bar{r}}\left(\int\frac{\rho_e(r^\prime )}{\left\vert \bar{r}-\bar{r^\prime } \right\vert }d\tau^\prime\right)d\tau \hspace{.5cm} (\because \bar{q} = \bar{k_i}-\bar{k_{f}})
-\]
-multiplying with \(e^{+i\bar{q}.\bar{r^\prime }}\) and \(e^{-i\bar{q}.\bar{r^\prime }}\) and writing \(\bar{r}-\bar{r^\prime } = \bar{R}\) also, \(\bar{R} = \bar{r}-\bar{r^\prime }  \to  dR = dr\) 
-\[
-    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int e^{i\bar{q}.\bar{R}}\left(\int\frac{\rho_e(r^\prime )e^{i \bar{q}.\bar{r^\prime }}}{\left\vert \bar{R} \right\vert }d\tau^\prime\right)d\tau \hspace{.5cm} 
-\]
-Form Factor, \(F(\bar{q}) = \int \rho_e(r^\prime)e^{i \bar{q}.\bar{r^\prime }}d\tau^\prime\) 
-\[
-    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int \frac{e^{i\bar{q}.\bar{R}}}{\left\vert \bar{R} \right\vert}F(\bar{q})d\tau \hspace{.5cm} 
-\]
-
-
-
-\section{Homework 1.2}
-\label{sec:1.2}
-
-
-\section{Homework 1.3}
-\label{sec:1.3}
-
-
+\end{gather}
     
+
+
+multiplying with \(e^{+i\bar{q}.\bar{r^\prime }}\) and \(e^{-i\bar{q}.\bar{r^\prime }}\) and writing \(\bar{r}-\bar{r^\prime } = \bar{R}\) also, \(\bar{R} = \bar{r}-\bar{r^\prime }  \to  dR = dr\) 
+\begin{gather}
+    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int e^{i\bar{q}.\bar{R}}\left(\int\frac{\rho_e(r^\prime )e^{i \bar{q}.\bar{r^\prime }}}{\left\vert \bar{R} \right\vert }d\tau^\prime\right)d\tau \hspace{.5cm} 
+\end{gather}
+   
+Form Factor, \(F(\bar{q}) = \int \rho_e(r^\prime)e^{i \bar{q}.\bar{r^\prime }}d\tau^\prime\) 
+\begin{gather}
+    V_{if}^\prime = -\frac{Ze^2}{4 \pi \epsilon_{o}} \int \frac{e^{i\bar{q}.\bar{R}}}{\left\vert \bar{R} \right\vert}F(\bar{q})d\tau \hspace{.5cm}\\
+    V_{if}^\prime =  -\frac{Ze^2 F(\vec{q})}{4 \pi \epsilon_{o}} \int_{0} ^ {\infty}  \int_{0}^{\pi} \int_{0}^{2 \pi} \frac{e^{i q R \cos \theta}}{\left\vert \bar{R} \right\vert }R^2 \sin \theta d\phi d\theta dR 
+\end{gather}
+\begin{equation}
+    \boxed{V_{if}^\prime =  -\frac{Ze^2 F(\vec{q})}{2 i \epsilon_{o}q} \int_0^{\infty} e^{i q R} - e^{-i q R} dR}
+\end{equation}
+\begin{gather}
+    V_{if}^{\prime}  = \lim\limits_{\mu \to 0} \left( -\frac{Ze^2 F(\vec{q})}{2 i \epsilon_{o}q} \int_0^{\infty} e^{-\mu R +i q R} - e^{-\mu R -i q R} dR \right)\\
+    V_{if}^\prime  = -\frac{Ze^2 F(\vec{q})}{2 i \epsilon_{o}q}  \lim\limits_{\mu \to 0} \left(\frac{e^{(-\mu+iq)R}}{-\mu + iq}-\frac{e^{(-\mu-iq)R}}{-\mu - iq} \right)_0^{\infty} \\
+    V_{if}^\prime  = -\frac{Ze^2 F(\vec{q})}{2 i \epsilon_{o}q} \lim\limits_{\mu \to 0}  \left( \frac{1}{\mu-iq}-\frac{1}{\mu+iq}\right)\\
+    V_{if}^\prime =  -\frac{Ze^2 F(\vec{q})}{2 i \epsilon_{o}q} \frac{2i}{q}\\
+\end{gather}
+\begin{equation}
+    \boxed{V_{if}^\prime = -\frac{Ze^2 F(\vec{q})}{\epsilon_{o}q^2} }
+\end{equation}
+\begin{equation}
+    \boxed {V_{if}^\prime \propto -\frac{F(\vec{q})}{q^2}}
+\end{equation}
+\begin{gather}
+    F(\vec{q}) = \int e^{i \vec{q}.\vec{r^\prime }}\rho(\vec{r^\prime })d^3\vec{r}^\prime \\
+    d^3 \vec{r}^\prime  = r^{\prime 2} d(\cos \theta)d\phi dr^\prime \\
+    F(\vec{q}) = \int _0 ^{2\pi} d\phi \int_0^{\infty} \int_{-1}^{1} e^{iqr\cos \theta}\rho(r^\prime)r^{\prime 2} d \cos (\theta) dr^\prime \\
+    F(\vec{q}) = 2\pi \int_0^{\infty} \left[\frac{1}{iqr^\prime }e^{iqr\cos \theta}\right]_{-1}^{1} \rho(r^\prime )r^{\prime 2} dr^\prime\\
+    F(\vec{q}) = 4 \pi  \int_0^{\infty} \frac{\sin (qr^\prime )}{q r^\prime } r^{\prime 2}\rho(r^\prime )dr^\prime 
+\end{gather}
+For small q, \( \sin \left(qr^\prime\right) = \left(qr^\prime\right)-\frac{1}{3!}\left(qr^\prime\right)^3\) $\implies$ \( \frac{\sin \left(qr^\prime\right)}{qr^\prime} = 1 - \frac{\left(qr^\prime\right)^2}{6}  \)\\
+We know, mean square radius, a :
+\begin{gather} 
+    a^2 = \int_0^{\infty} 4 \pi r^{\prime 4} \rho(r^\prime )dr^\prime 
+\end{gather}
+\begin{gather}
+    F(\vec{q}) = 4 \pi  \int_0^{\infty} \left(1 - \frac{\left(qr^\prime\right)^2}{6}\right) r^{\prime 2}\rho(r^\prime )dr^\prime \\
+    F(\vec{q}) = 1 - \frac{(qa)^2}{6} 
+\end{gather}
+\[
+    \left(\because 4\pi \int_0^{\infty} r^{\prime 2} \rho(r^\prime ) = 1\right)
+\]
+Given, $F(\vec{q}) = \left(1+\frac{q^2}{0.71}\right)^{-1} $, for small values of q,  \((1+x)^{-n} = 1-nx\) 
+\begin{equation}
+    \implies F(\vec{q}) = 1-\frac{q^2}{0.71}
+\end{equation}
+Comparing equation (23) and (24) we get, 
+\begin{gather}
+    a = \sqrt{\frac{6}{0.71}}\\
+    a = 2.9070 \frac{c}{GeV} \\
+    a = 2.9070X0.197 fm 
+\end{gather}
+\begin{equation}
+    \boxed{a = 0.57268fm }
+\end{equation}
+\newpage
+\section{Size of nucleus, Semi-empirical mass formula}
+\label{sec:1.2}
+\subsection*{Size of the nucleus}
+It can be characterized by with 2 parameters: the mean radius, where the density is half its central value, and the “skin thickness,” over which the density drops from near its maximum to near its minimum.\\
+R is the mean radius which is proportional to $A^{1/3}$ where $R_o$ is the proportionality constant. 
+\begin{equation}
+    R = R_o A^{\frac{1}{3}}
+\end{equation}
+The charge density is roughly constant out to a certain point and then drops relatively slowly to zero.
+\subsection*{Semi-empirical Mass formula}
+\begin{equation}
+    \boxed{M = N M_n + Z M_p - a_v A + a_s A^{\frac{2}{3}}+a_{sym}\frac{(N-Z)^2}{A} +a_c \frac{Z(Z-1)}{A^{\frac{1}{3}}}+\delta(A,Z)}
+\end{equation}
+\subsection*{Volume term}
+The binding energy is a measure of the interaction among nucleons. Since nucleons are closely packed in the nucleus and the nuclear force has a very short range, each nucleon ends up interacting only with a few neighbors. This means that independently of the total number of nucleons, each one of them contribute in the same way. Thus the force is not proportional to A(A - 1)/2 ~ $A^2$ (the total \# of nucleons one nucleon can interact with) but it's simply proportional to A. The constant of proportionality is a fitting parameter that is found experimentally to be $a_v$ = 15.5MeV.
+\subsection*{Surface term}
+The surface term, $-a_s A^{\frac{2}{3}}$ also based on the strong force, is a correction to the volume term.The volume term as arising from the fact that each nucleon interacts with a constant number of nucleons, independent of A. While this is valid for nucleons deep within the nucleus, those nucleons on the surface of the nucleus have fewer nearest neighbors. This term is similar to surface forces that arise for example in droplets of liquids, a mechanism that creates surface tension in liquids.\\
+Since the volume force is proportional to $B_V$ $\propto$ A, we expect a surface force to be ~ ($B_V$)2/3 (since the surface S~V 2/3). Also the term must be subtracted from the volume term and we expect the coefficient $a_s$ to have a similar order of magnitude as $a_v$. In fact $a_s$ = 13 - 18MeV.
+\subsection*{Coulomb term}
+The third term $-a_c Z(Z-1)A^{-\frac{1}{3}}$ derives from the Coulomb interaction among protons, and of course is proportional to Z. This term is subtracted from the volume term since the Coulomb repulsion makes a nucleus containing many protons less favorable (more energetic).
+The nucleus is modeled as a uniformly charged sphere. The potential energy of such a charge distribution is
+\begin{equation}
+    \frac{1}{4\pi \epsilon_{o} }\frac{3}{5}\frac{Q^2}{R}
+\end{equation}
+From the uniform distribution inside the sphere we have the charge \(q(r)=\frac{4}{3}\pi r^3 \rho = Q (\frac{r}{R})^3\) and the potential energy is then:
+\begin{gather}
+    Energy = \frac{1}{4 \pi \epsilon_{o} } \int dq(\vec{r}) \frac{q(\vec{r})}{\left\vert \vec{r} \right\vert } \\\implies  \frac{1}{4 \pi \epsilon_{o} }\int d^{3}\vec{r} \rho \frac{q(\vec{r})}{\left\vert \vec{r} \right\vert } \\ \implies  \frac{1}{4 \pi \epsilon_{o}} \int_0 ^R dr 4 \pi r^2 \rho \frac{q(r)}{r} \\
+   \implies  \frac{1}{4 \pi \epsilon_{o} } \int _0 ^R dr \frac{3 Q^2 r^4}{R^6}
+\end{gather} 
+Using the empirical radius formula R = $R_o A^{\frac{1}{3}}$ and the total charge \(Q^2 = e^2 Z(Z-1)\) (reflecting the fact this term will appear only if Z>1, i.e. if there are at least two protons) we have:
+\begin{equation}
+    \frac{Q^2}{R} = \frac{e^2 Z(Z-1)}{R_o A^{\frac{1}{3}}}
+\end{equation}
+which gives the shape of Coulomb term. Then the constant $a_c$ can be estimated from $a_c \approx \frac{3}{5}\frac{e^2}{4 \pi \epsilon_{o} R_o}$, with $R_o = 1.25fm$, to be $a_c \approx 0.691 MeV$, not far from the experimental value. 
+\subsection*{Symmetry term}
+The coulomb term seems to indicated that it would be favorable to have less protons in a nucleus and more neutrons. However, this is not the case and we have to invoke something beyond the liquid-drop model in order to explain the fact that we have roughly the same number of neutrons and protons in stable nuclei. There is thus a correction term in the SEMI which tries to take into account the symmetry in protons and neutrons. This correction (and the following one) can only be explained by a more complex model of the nucleus, the shell model, together with the quantum-mechanical exclusion principle, that we will study later in the class. If we were to add more neutrons, they will have to be more energetic, thus increasing the total energy of the nucleus. This increase more than off-set the Coulomb repulsion, so that it is more favorable to have an approximately equal number of protons and neutrons. The shape of the symmetry term is \(\frac{(A-2Z)^2}{A}\). It can be more easily understood by considering the fact that this term goes to zero for A = 2Z and its effect is smaller for larger A(while for smaller nuclei the symmetry effect is more important). The coefficient is $a_{sym}=23MeV$
+\subsection*{Pairing term}
+The final term is linked to the physical evidence that like-nucleons tend to pair off. Then it means that the binding energy is greater ($\delta$ > 0) if we have an even-even nucleus, where all the neutrons and all the protons are paired-off. If we have a nucleus with both an odd number of neutrons and of protons, it is thus favorable to convert one of the protons into a neutrons or vice-versa (of course, taking into account the other constraints above). Thus, with all other factor constant, we have to subtract ($\delta$ < 0) a term from the binding energy for odd-odd configurations. Finally, for even-odd configurations we do not expect any influence from this pairing energy ($\delta$ = 0). The pairing term is then
+\begin{equation}
+    +\delta a_p A^{-\frac{3}{4}}= 
+    \begin{cases}
+      +a_p A^{-\frac{3}{4}},& \text{even-even}\\
+        0,              & \text{even-odd}\\
+        -a_p A^{-\frac{3}{4}}, & \text{odd-odd }
+    \end{cases} 
+\end{equation}
+with $a_p \approx 34MeV$. 
+\newpage      
+\section{Binding Energy vs Atomic Mass}
+\label{sec:1.3}
+\subsection*{(a)}
+The binding energy of a nucleus is defined as the difference in mass energy between the nucleus and its constituents. 
+For a nucleus \ce{_Z^A X_N} the binding energy B is given by:
+\begin{equation}
+    B = [Z m_p  + N m_n - m_N(\ce{^A X})]c^2
+\end{equation}
+Mass of Nucleus of element Z=20, N=20, with B \(\approx\) 8.6 is:
+\begin{gather}
+    8.6 = 20(938.280)+20(939.573) -  m_N(\ce{^A X})c^2\\
+    m_N(\ce{^A X}) c^2= (37557.06 - 8.6) MeV\\
+\end{gather}
+\begin{equation}
+    \boxed{m_N(\ce{^A X}) = 125.161533 \frac{eV}{c^2}}
+\end{equation}
+\subsection*{(b)}
+For small or light nuclei, a nucleon has only few compatriots to bind with, so average binding is weak.
+\subsection*{(c)}
+For medium sized nuclei is each nucleon fully within range of all its fellow nucleons' strong force, and there are a lot of them. So average binding is strong for these nuclei and almost same and varies no more than \(\pm 10 \) \%.
+\subsection*{(e)}
+The binding energy of iron is high and therefore, all the heavy nuclei undergoes fission to attain more stability by increasing their binding energy. So, heavier nuclei are relatively rare.
 \end{document} 

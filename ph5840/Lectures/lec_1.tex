@@ -29,3 +29,34 @@ Entropy is tied to memory resources.
 	\item I(p) is smooth
 	\item I(pq) = I(p)+I(q)
 \end{enumerate}
+\subsection*{Properties of Entropy}
+\[
+	H_{bin}(p) = -p\log p -(1-p)\log (1-p) 
+\]
+get a quadratic curve
+\begin{figure}[H]
+	\centering
+	\incfig{quad}
+	\caption{title}
+	\label{fig:quad}
+\end{figure}
+\[
+	H(q p_I +(1-q)p_N) \geq qH(p_I)+(1-q)H(p_N)
+\]
+\[
+	f(px + (1-p)y)\geq pf(x)+(1-p)f(y)
+\]
+\subsection*{Relative Entropy}
+\begin{definition}
+	\[
+		H(p(x)\mid \mid q(x)) = - \sum\limits_{x=1}^{n} p(x) \log \frac{q(x)}{p(x)} 
+	\]
+\end{definition}
+\begin{theorem}
+	\[
+		H(p(x)\mid \mid q(x)) = \sum p(x) \log \frac{p(x)}{q(x)} \text{is non-negative }
+	\]
+	\[
+		= 0 \text{ iff p(x) = q(x) for all x}
+	\]
+\end{theorem}

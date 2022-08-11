@@ -1935,6 +1935,15 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsx1000.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecss1000.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
+INPUT ./Figures/quad.pdf_tex
+INPUT ./Figures/quad.pdf_tex
+INPUT ./Figures/quad.pdf_tex
+INPUT ./Figures/quad.pdf_tex
+INPUT ./Figures//quad.pdf
+INPUT ./Figures//quad.pdf
+INPUT ./Figures//quad.pdf
+INPUT ./Figures//quad.pdf
+INPUT ./Figures//quad.pdf
 INPUT ./appendix.tex
 INPUT appendix.tex
 INPUT ./appendix.tex

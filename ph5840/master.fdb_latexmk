@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber master"] 1660110735 "master.bcf" "master.bbl" "master" 1660110816
-  "master.bcf" 1660110816 107079 f9911133cd0597fa68874376d1af1bbf "pdflatex"
+["biber master"] 1660112103 "master.bcf" "master.bbl" "master" 1660112121
+  "master.bcf" 1660112121 107079 f9911133cd0597fa68874376d1af1bbf "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
-["pdflatex"] 1660110815 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/master.tex" "master.pdf" "master" 1660110816
+["pdflatex"] 1660112119 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/master.tex" "master.pdf" "master" 1660112121
   "/Users/siddhartha/Documents/Academic-Template/Math.tex" 1653463735 2326 8cb4edad8a217aaffaacda2c1906b076 ""
   "/Users/siddhartha/Documents/Academic-Template/Notes/header.tex" 1659616161 10274 e5e84e74df0f278977bfc32125a96639 ""
   "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ph5840/master.tex" 1653464912 1453 c739560323c8d36752f0b0caf22a5a3b ""
@@ -356,14 +356,16 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653407412 2826441 75866e91331a61c6062316dd19b23e74 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Lectures/lec_1.tex" 1660110813 1023 fa20c36166ed3943c389a74619e876e6 ""
+  "Figures//quad.pdf" 1660111465 19770 7458eec75c812496a245af0d7028b9b1 ""
+  "Figures/quad.pdf_tex" 1660111465 2061 8a155880dc39ea85ab1bf04be5858add ""
+  "Lectures/lec_1.tex" 1660112119 1637 eb1fe0d245da10e70f715093fc684f6b ""
   "appendix.tex" 1653463735 232 811fc357d6eb5a56e19d941299af32e2 ""
-  "master.aux" 1660110816 2412 149bda06f7cc07a31adfc096d05b7958 "pdflatex"
-  "master.bbl" 1660110737 466 ee04f40f768daeed26442158e95aba61 "biber master"
-  "master.out" 1660110816 327 510fa056f946077fc9fb83a677e69aed "pdflatex"
-  "master.run.xml" 1660110816 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
+  "master.aux" 1660112121 3107 c7d9ac85c71857f37427a33c8366fc27 "pdflatex"
+  "master.bbl" 1660112105 466 ee04f40f768daeed26442158e95aba61 "biber master"
+  "master.out" 1660112121 327 510fa056f946077fc9fb83a677e69aed "pdflatex"
+  "master.run.xml" 1660112121 2318 54cfa3ba94777505e137b706f4dd1953 "pdflatex"
   "master.tex" 1653464912 1453 c739560323c8d36752f0b0caf22a5a3b ""
-  "master.toc" 1660110816 221 0293fc15eb8a595f89fcad4d7eb116a2 "pdflatex"
+  "master.toc" 1660112121 221 e1d8f3b9fa3ef6633bf89bfabfbdad93 "pdflatex"
   (generated)
   "master.aux"
   "master.bcf"

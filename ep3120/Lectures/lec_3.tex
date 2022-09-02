@@ -91,3 +91,67 @@ Internal energy is purely a function of T.
     \caption{carnot cycle}
     \label{fig:carnot}
 \end{figure}
+Efficiency of the carnot engine 
+\begin{gather}
+    \eta = \frac{W}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1-\frac{Q_C}{Q_H}
+\end{gather}
+We should do work to dump heat from cooler reservoir to hotter reservoir.\\ \textbf{Reverse Carnot cycle \(\implies \) Refrigerator.} 
+\subsection*{Entropy}
+\begin{proposition}[Claussius Theorem]
+    \begin{gather}
+        \oint \limits_{\text{cylclic process}} \frac{dQ}{T} \leq 0 \; \; \text{with equality holding iff the process is reversible.}
+    \end{gather}
+    \begin{figure}[H]
+        \centering
+        \incfig{Claussius}
+        \caption{cyclic process}
+        \label{fig:Claussius}
+    \end{figure}
+\end{proposition}
+\begin{definition}[Entropy]
+    \textbf{Reversible Process}
+    \begin{figure}[H]
+        \centering
+        \incfig{revpro}
+        \caption{reversible process}
+        \label{fig:revpro}
+    \end{figure}
+    \begin{gather}
+    \oint \frac{dQ}{T} = 0 \\
+    \oint_I \frac{dQ}{T} - \oint_{II} \frac{dQ}{T} = 0 \\
+    \oint_I \frac{dQ}{T} = \oint_{II} \frac{dQ}{T} \implies S(B) - S(A)\; \text{where, S = entropy}. 
+    \end{gather}
+\end{definition}
+\subsubsection*{Absolute notion of entropy}
+\begin{gather}
+    \int \limits_{0}^{A}  \frac{dQ}{T} = S(A) - S(0) \implies  dQ = T dS (\because S(0) = 0)
+\end{gather}
+\subsection{Third Law of Thermodynamics}
+\begin{definition}
+    Impossible to attain 0K. S("Absolute zero") = 0
+\end{definition}
+\chapter{Statistical mechanics}
+\section{Microstates}
+In a \textbf{Macrostate} Pressure(P), Volume(V), Temperature(T), Number of particles(N) are thermodynamic variables and Internal energy (U), Enthalpy (H), Entropy (S) are functions of thermodynamic variables.\vspace{4pt}
+In a \textbf{Microstate}, Number of particles are O(\(10^{23} \) ), Volume \(\approx 10^{23} \) molar volume. \(\frac{N}{V} =n\), number density in "thermodynamic limit" \(N\to \infty , V\to \infty , n = Constant\). 
+\begin{figure}[H]
+    \centering
+    \incfig{newbox}
+    \caption{}
+    \label{fig:newbox}
+\end{figure}
+Hamiltonian, H \(\in [E,E+dE]\)  is a constraint for Thermal Equilibrium. 
+\subsubsection*{Phase space}
+\begin{figure}[H]
+    \centering
+    \incfig{phasespace}
+    \caption{phase space}
+    \label{fig:phasespace}
+\end{figure}
+different \(\{q_i,p_i\}\) may give same E each \(\{q_i,p_i\}\) is a microstate. 
+Microstate \(\equiv (q_1,q_2,\ldots  , q_N, p_1,p_2,\ldots p_{N}  )\)\\
+Several microstates, ("Ensemble")("collection") \(\implies \) E(total energy). \\
+What are the Probabilities??\\
+\textbf{Microcanonical Ensemble}: All microstates are equally likely, so long as they give total energy \(\in[E,E+dE]\). \\
+\textbf{Canonical Ensemble}: Probabilities are not equal. 
+\textbf{Gibbs Canonical Ensemble}: Number of particles change. 

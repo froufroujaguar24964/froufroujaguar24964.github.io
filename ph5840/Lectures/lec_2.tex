@@ -1,0 +1,96 @@
+\chapter{Tensor products}
+There is a ball which can be red or blue the quantum state associated with it look like 
+\[
+     \ket{\psi_1} = \alpha\ket{r} + \beta\ket{b}
+\]
+what if I have 2 balls?
+\[
+    \ket{\psi_2} = \alpha\ket{r,r} + \beta\ket{r,b} + \gamma\ket{b,r} + \delta\ket{b,b}
+\]
+Each vectors have their own vector spaces. Let the 2 vector spaces be V, W. 
+where, 
+\[
+    V = {v_1,v_2, \ldots  v_n}
+\]
+\[
+    V \otimes W = Tensor product space
+\]
+\[
+    Dimension(V\otimes W) = nm
+\]
+Representation 
+\[
+    a = (a_1, a_2, \ldots  a_n) \in V
+\]
+\[
+    b = (b_1, b_2, \ldots  b_n) \in W
+\]
+
+\begin{align}
+    a\otimes b &= \begin{bmatrix}
+           a_{1}b_1 \\
+           a_{1}b_2 \\
+           \vdots \\
+           a_{n}b_n 
+         \end{bmatrix}
+\end{align}
+\[
+    \bra{a\otimes b}\ket{c \otimes d} = \bra{a}\ket{c}\bra{b}\ket{d}
+\]
+\[
+    A \in L(v) \ldots  B\in L(W) \implies L(V\otimes W)
+\]
+\[
+    (A \otimes B)(a \otimes b) = A \ket{a} \otimes B \ket{b}
+\]
+\[
+    \sum\limits_{i,j}c_{ij}(A\otimes B) 
+\]
+\[
+    \boxed{ C = UDV} \; \; \text{where U and V are Unitary matrices and D is a diagonal matrix.}
+\]
+\[
+    [c_{jk}] = \sum\limits_{i,j,k} U_{ji} D_{ii}V_{ik} 
+\]
+\newpage
+\[
+    \ket{\psi_{AB} } = \ket{\psi^\prime _A}\otimes \ket{\psi^\prime _B} \to \;\;\text{Separable State}
+\]
+\[
+    \frac{\ket{00}+\ket{01}+\ket{10}+\ket{11}}{2} = \frac{\ket{0}+\ket{1}}{\sqrt{2} }\otimes  \frac{\ket{0}+\ket{1}}{\sqrt{2} }\; \; \text{Is a Separable state}
+\]
+
+$\ket{\psi}$ is a state of the composite system AB. \\
+\(\ket{i_A}\) for A \(\ket{i_B}\) for B
+\[
+    \ket{\psi_{AB} } = \sum\limits_{i} \lambda_i \ket{i_A}\ket{i_B} \to \text{Schmidt decomposition / basis} 
+\]
+
+if \(\lambda \) is only one value then it is separable. or else it is entangled. 
+\[
+    \sum\limits_{i}\lambda_i (U\ket{i_A})\ket{i_B} \; \text{it is also a Schmidt decomposition.}
+\]
+\[
+    \psi_{AB} = \sum c_{jk} \ket{j} \ket{k}  = \sum\limits_{i,j,k} U_{ji}d_{ii}V_{ik} \ket{j}\ket{k}
+\]
+\[
+    \sum U_{ji}\ket{j}  = \ket{i_A}
+\]
+\[
+    \sum V_{ik} \ket{k} = \ket{i_B}
+\]
+\begin{eg}
+    Consider 2 states, which is more entangled?
+    \[
+        \ket{\psi_1} = \sqrt{0.99999} \ket{0}\ket{0}+\sqrt{0.00001} \ket{1}\ket{1}
+    \]
+    \[
+        \ket{\psi_{2}} = \frac{\ket{00}+\ket{11}}{\sqrt{2} }
+    \]
+    \(\ket{\psi_2}\) is more entangled state. 
+     
+\end{eg}
+\vspace{4pt}
+\[
+    Entropy(\ket{\psi}) = -\sum\limits_{i} \lambda^2_i \log \lambda^2_i
+\]

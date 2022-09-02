@@ -1,0 +1,132 @@
+\documentclass[a4paper]{article}
+\usepackage{student}
+
+% Metadata
+\date{\today}
+\setmodule{ID5841: Quantum Computing Lab}
+\setterm{Jul-Nov, 2022}
+
+%-------------------------------%
+% Other details
+% TODO: Fill these
+%-------------------------------%
+\title{Assignment 1}
+\setmembername{Chaganti Kamaraja Siddhartha}  % Fill group member names
+\setmemberuid{EP20B012}  % Fill group member uids (same order)
+
+%-------------------------------%
+% Add / Delete commands and packages
+% TODO: Add / Delete here as you need
+%-------------------------------%
+\usepackage{amsmath,amssymb,bm}
+
+\newcommand{\KL}{\mathrm{KL}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\T}{\top}
+
+\newcommand{\expdist}[2]{%
+        \normalfont{\textsc{Exp}}(#1, #2)%
+    }
+\newcommand{\expparam}{\bm \lambda}
+\newcommand{\Expparam}{\bm \Lambda}
+\newcommand{\natparam}{\bm \eta}
+\newcommand{\Natparam}{\bm H}
+\newcommand{\sufstat}{\bm u}
+
+% Main document
+\begin{document}
+    % Add header
+    \header{}
+
+    % Use `answer` environment to add solutions
+    % \begin{answer}[Question 1.1] for example starts an environment formatted
+    % for Question 1.1
+    \begin{answer}[Question 3 (a)]
+        \begin{center}
+            \begin{quantikz}[slice all]
+                \lstick{qubit 0 \(\ket{0}\) }&\gate{H}&\ctrl{1}&\qw&\gate{X}&\qw\\
+                \lstick{qubit 1 \(\ket{0}\) }&\qw   &\targ{}    &\ctrl{1} &\qw&\qw\\
+                \lstick{qubit 2 \(\ket{0}\) }&\qw   &\qw        &\targ{}&\qw&\qw
+            \end{quantikz}
+        \end{center}
+        Initial State,
+        \begin{gather}
+            \ket{\psi_0} = \ket{000}
+        \end{gather}
+        Applying Hadamard gate to qubit 0,
+        \begin{gather}
+            \ket{\psi_1} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{001})
+        \end{gather}
+        CNOT gate with qubit 0 as control and qubit 1 as target,
+        \begin{gather}
+            \ket{\psi_2} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{011})
+        \end{gather}
+        CNOT gate with qubit 1 as control and qubit 2 as target,
+        \begin{gather}
+            \ket{\psi_3} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{111})
+        \end{gather}
+        Applying X gate on qubit 0,
+        \begin{gather}
+            \ket{\psi_4} = \frac{1}{\sqrt{2} }(\ket{001}+\ket{110})
+        \end{gather}
+    \end{answer}
+    \begin{answer}[Question 3 (b)]
+        \begin{center}
+            \begin{quantikz}[slice all]
+                \lstick{qubit 0 \(\ket{0}\) }&\gate{H}&\ctrl{1}&\qw&\qw&\qw\\
+                \lstick{qubit 1 \(\ket{0}\) }&\qw   &\targ{}    &\ctrl{1} &\gate{X}&\qw\\
+                \lstick{qubit 2 \(\ket{0}\) }&\qw   &\qw        &\targ{}&\qw&\qw
+            \end{quantikz}
+        \end{center}
+        Initial State,
+        \begin{gather}
+            \ket{\psi_0} = \ket{000}
+        \end{gather}
+        Applying Hadamard gate to qubit 0,
+        \begin{gather}
+            \ket{\psi_1} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{001})
+        \end{gather}
+        CNOT gate with qubit 0 as control and qubit 1 as target,
+        \begin{gather}
+            \ket{\psi_2} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{011})
+        \end{gather}
+        CNOT gate with qubit 1 as control and qubit 2 as target,
+        \begin{gather}
+            \ket{\psi_3} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{111})
+        \end{gather}
+        Applying X gate on qubit 1,
+        \begin{gather}
+            \ket{\psi_4} = \frac{1}{\sqrt{2} }(\ket{010}+\ket{101})
+        \end{gather}
+    \end{answer}
+    \begin{answer}[Question 3 (c)]
+        \begin{center}
+            \begin{quantikz}[slice all]
+                \lstick{qubit 0 \(\ket{0}\) }&\gate{H}&\ctrl{1}&\qw&\qw&\qw\\
+                \lstick{qubit 1 \(\ket{0}\) }&\qw   &\targ{}    &\ctrl{1} &\qw&\qw\\
+                \lstick{qubit 2 \(\ket{0}\) }&\qw   &\qw        &\targ{}&\gate{X}&\qw
+            \end{quantikz}
+        \end{center}
+        Initial State,
+        \begin{gather}
+            \ket{\psi_0} = \ket{000}
+        \end{gather}
+        Applying Hadamard gate to qubit 0,
+        \begin{gather}
+            \ket{\psi_1} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{001})
+        \end{gather}
+        CNOT gate with qubit 0 as control and qubit 1 as target,
+        \begin{gather}
+            \ket{\psi_2} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{011})
+        \end{gather}
+        CNOT gate with qubit 1 as control and qubit 2 as target,
+        \begin{gather}
+            \ket{\psi_3} = \frac{1}{\sqrt{2} }(\ket{000}+\ket{111})
+        \end{gather}
+        Applying X gate on qubit 2,
+        \begin{gather}
+            \ket{\psi_4} = \frac{1}{\sqrt{2} }(\ket{100}+\ket{011})
+        \end{gather}
+    \end{answer}
+\end{document}

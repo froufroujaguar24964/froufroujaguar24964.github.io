@@ -4,3 +4,7 @@
 \contentsline {subsection}{\numberline {1.2.1}Zeroth Law }{4}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}First Law}{4}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Second Law}{8}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Third Law of Thermodynamics}{9}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Statistical mechanics}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Microstates}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Review of probability theory}{12}{section.2.2}%

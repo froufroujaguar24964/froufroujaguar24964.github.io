@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: IM Fell Double Pica
-- Font Author: © 2007 Igino Marini (www.iginomarini.com) with reserved name IM FELL Double Pica Italic
-- Font Source: http://fonts.gstatic.com/s/imfelldoublepica/v14/3XF2EqMq_94s9PeKF7Fg4gOKINyMtZ8rT0S1UL5Ayp0.ttf
-- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

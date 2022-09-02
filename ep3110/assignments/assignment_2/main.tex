@@ -1,0 +1,220 @@
+\documentclass[a4paper]{article}
+\usepackage{student}
+
+% Metadata
+\date{\today}
+\setmodule{EP3110:- Electro-magnetics and Applications}
+\setterm{Jul-Nov, 2022}
+
+%-------------------------------%
+% Other details
+% TODO: Fill these
+%-------------------------------%
+\title{Assignment 2}
+\setmembername{Chaganti Kamaraja Siddhartha}  % Fill group member names
+\setmemberuid{EP20B012}  % Fill group member uids (same order)
+
+%-------------------------------%
+% Add / Delete commands and packages
+% TODO: Add / Delete here as you need
+%-------------------------------%
+\usepackage{amsmath,amssymb,bm,derivative}
+
+\newcommand{\KL}{\mathrm{KL}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\T}{\top}
+
+\newcommand{\expdist}[2]{%
+        \normalfont{\textsc{Exp}}(#1, #2)%
+    }
+\newcommand{\expparam}{\bm \lambda}
+\newcommand{\Expparam}{\bm \Lambda}
+\newcommand{\natparam}{\bm \eta}
+\newcommand{\Natparam}{\bm H}
+\newcommand{\sufstat}{\bm u}
+
+% Main document
+\begin{document}
+    % Add header
+    \header{}
+
+    % Use `answer` environment to add solutions
+    % \begin{answer}[Question 1] for example starts an environment formatted
+    % for Question 1
+    \begin{answer}[Question 1]
+        Given,
+        \[
+            \vec{E}(x,y,z,t) = 0.2 \sin (10 \pi y) \cos (6 \pi 10^9 t - \beta z) \hat{x} 
+        \]
+        Phasor form, 
+        \[
+            \vec{E}(x,y,z) = \hat{x}  0.2 \sin (10 \pi y) e^{-j \beta z}
+        \]
+        We know,
+        \begin{equation}
+            \boxed{\vec{H} = -\frac{1}{j \omega \mu_o}\vec{\nabla}X\vec{E} } 
+        \end{equation}
+        \begin{gather*}
+            \vec{H}(x,y,z) = -\frac{1}{j \omega \mu_o}\left(\pdv{}{x}\hat{x} + \pdv{}{y}\hat{y} + \pdv{}{z}\hat{z} \right) X (\hat{x}  0.2 \sin (10 \pi y) e^{-j \beta z})\\
+            \vec{H}(x,y,z) = -\frac{1}{j \omega \mu_o} 0.2 e^{-j \beta z}\left(10\pi \cos (10 \pi y)(-\hat{z})-j\beta\sin(10 \pi y)(\hat{y})\right) 
+        \end{gather*}
+        \begin{equation}
+            \boxed{\vec{H}(x,y,z) = \frac{1}{j \omega \mu_o}0.2 e^{-j \beta z}\left(j\beta \sin(10 \pi y) \hat{y} + 10 \pi \cos(10 \pi y)\hat{z} \right)} 
+        \end{equation}
+    \end{answer}
+    \begin{answer}[Question 2]
+        Given,
+        \[
+            \vec{E} = 30 \pi e^{j(\omega t - \frac{4}{3}y)}\hat{z} (\frac{V}{m})
+        \]
+        \[
+            \vec{H} = 1.0 e^{j(\omega t - \frac{4}{3}y)}\hat{x} (\frac{A}{m}) 
+        \]
+        We know,
+        \begin{equation}
+            \boxed{\frac{\left\vert \vec{E} \right\vert }{\left\vert \vec{H} \right\vert } = \eta = \sqrt{ \frac{\mu_r \mu_o}{\epsilon_r \epsilon_o}}}
+        \end{equation}
+        \begin{gather*}
+            \eta = \frac{30 \pi}{1} = \sqrt{\frac{\mu_o (1)}{\epsilon_r \epsilon_o}} \\
+            \epsilon_r = \frac{\mu_o}{900 \pi^2 \epsilon_o } = 15.978 \approx 16
+        \end{gather*}
+        We know,
+        \begin{equation}
+            \boxed{\frac{\omega}{\beta} = \frac{1}{\sqrt{\mu_r \mu_o \epsilon_r \epsilon_o} }}
+        \end{equation}
+        \begin{gather*}
+            \frac{3 \omega}{4} = \sqrt{ \frac{1}{(1)\mu_o \left(\frac{\mu_o}{900 \pi^2 \epsilon_o } \right)\epsilon_o}} \\
+            \omega  = 1.0 X 10^8 
+        \end{gather*}
+        \textbf{Answers}:
+        \[
+            \boxed{\epsilon_r \approx 16}
+        \]
+        \[
+            \boxed{\omega = 1.0 X 10^8 \text{  radians} }
+        \] 
+    \end{answer}
+    \begin{answer}[Question 3]
+        Given,
+        \[
+            {E}(x,y,z) = E_{o} e^{-j (k_{x} x+k_{y} y+k_{z} z)}
+        \]
+        Homogenous Helmholtz equation 
+        \begin{equation}
+            \boxed{\nabla^2 {E} + \omega^2 \mu \epsilon {E} = 0}
+        \end{equation}
+        \begin{gather*}
+            \left(\pdv{}{x^2}+\pdv{}{y^2}+\pdv{}{z^2}\right)(E_o e^{-j (k_{x} x+k_{y} y+k_{z} z)}) + \omega^2 \mu \epsilon {E_o}e^{-j (k_{x} x+k_{y} y+k_{z} z)} = 0\\
+            E_o(-k_{x}^2 -k_{y} ^2 -k_{z} ^2 )e^{-j (k_{x} x+k_{y} y+k_{z} z)} + \omega^2 \mu \epsilon {E_o}e^{-j (k_{x} x+k_{y} y+k_{z} z)} = 0\\ 
+        \end{gather*}
+        \begin{equation}
+            \boxed{k_{x} ^2 + k_{y} ^2 + k_{z} ^2 = \omega ^2 \mu \epsilon }
+        \end{equation}
+        Therefore, Electric field Intensity \({E}(x,y,z) = E_{o} e^{-j (k_{x} x+k_{y} y+k_{z} z)}\)  satisfies the homogeneous Helmholtz equation provided that the condition \(k_{x} ^2 + k_{y} ^2 + k_{z} ^2 = \omega ^2 \mu \epsilon\) is satisfied. 
+    \end{answer}
+    \begin{answer}[Question 4]
+        Given,
+        \[
+            \vec{E}(R) = \vec{E_{o}} e^{-j \vec{k}.\vec{R}}
+        \]
+        Magnetic field \(\vec{H}(R)\) can be written as
+        \[
+            \vec{H}(R) = \vec{H_{o}} e^{-j \vec{k}.\vec{R}} = \vec{k}X\vec{E_{o} }e^{-j \vec{k}.\vec{R}}
+        \]
+    \begin{equation}
+            \boxed{\vec{\nabla}X\vec{E} = \vec{\nabla}(e^{-j \vec{k}.\vec{R}})X\vec{E_{o}} = -j \mu \omega \vec{H}}
+    \end{equation}
+        \[
+            \vec{\nabla}(e^{-j \vec{k}.\vec{R}}) = e^{-j \vec{k}.\vec{R}} \vec{\nabla}(-j \vec{k}.\vec{R}) = e^{-j (k_{x} \hat{x}  + k_{y} \hat{y}  + k_{z} \hat{z} ).(x \hat{x} + y \hat{y} + z \hat{z} )}[-j \vec{\nabla}(k_{x} x + k_{y} y + k_{z} z)]
+        \]
+        \[
+            =  e^{-j \vec{k}.\vec{R}}[-j \left(\pdv{}{x}\hat{x} + \pdv{}{y} \hat{y} + \pdv{}{z} \hat{z} \right)(k_{x} x + k_{y} y + k_{z} z)] 
+        \]
+        \begin{equation}
+            \vec{\nabla}(e^{-j \vec{k}.\vec{R}}) = e^{-j \vec{k}.\vec{R}}[-j \vec{k}] 
+        \end{equation}
+        \[
+            \vec{\nabla}(e^{-j \vec{k}.\vec{R}})X\vec{E_o}  = e^{-j \vec{k}.\vec{R}}[-j \vec{k}]X\vec{E_o} = -j \mu \vec{H} 
+        \]
+        \[
+            \vec{\nabla}X\vec{H} = \vec{\nabla}(e^{-j \vec{k}.\vec{R}})X\vec{H_o} = j \omega \epsilon \vec{E}
+        \]
+        \[
+            \vec{\nabla}.\vec{E} = \vec{\nabla}(e^{-j \vec{k}.\vec{R}}).\vec{E_o} = 0
+        \]
+        \[
+            \vec{\nabla}.\vec{H} = 0
+        \]
+    \end{answer}
+    \begin{answer}[Question 5]
+        Given,
+        \[
+            \vec{E}  = 2 \cos (10^8 t - \frac{z}{\sqrt{3} })\hat{x} - \sin (10^8 t - \frac{z}{\sqrt{3} }) \hat{y} 
+        \]
+        \textbf{(a)} 
+        we know,
+        \begin{equation}
+            \boxed{\omega = 2 \pi f}
+        \end{equation}
+        \[
+            f = \frac{\omega}{2 \pi} = \frac{10^8}{2 \pi} = 15.9 MHz 
+        \]
+        \begin{equation}
+            \boxed{\lambda = \frac{2\pi}{k}}
+        \end{equation}
+        \[
+            \lambda = \frac{2\pi}{\frac{1}{\sqrt{3} }} = 10.88 m
+        \]
+        \textbf{(b)} we know,
+        \begin{equation}
+            \boxed{v = \frac{\omega}{k} = \frac{1}{\sqrt{\mu_r \mu_o \epsilon_r \epsilon_o} } }
+        \end{equation}
+        \[
+            \sqrt{3}\times10^8 =  \frac{1}{\sqrt{\mu_o \epsilon_r \epsilon_o} }
+        \]
+        \[
+            \epsilon_r = 3
+        \]
+        \textbf{(c)} 
+        \[
+            E_x = 2 \cos (10^8 - \frac{z}{\sqrt{3} }) \implies \cos (10^8 - \frac{z}{\sqrt{3} }) = \frac{E_{x} }{2}
+        \] 
+        \[
+            E_y = - \sin (10^8 - \frac{z}{\sqrt{3} }) \implies \sin (10^8 - \frac{z}{\sqrt{3} }) = - E_y
+        \]
+        \[
+            \cos^2(10^8 - \frac{z}{\sqrt{3} }) + \sin ^2 (10^8 - \frac{z}{\sqrt{3} }) = 1 
+        \]
+        \[
+            \frac{E_{x}^2 }{4} + \frac{E_{y} ^2}{1} = 1
+        \]
+        Therefore, Elliptically polarized. \\
+        \textbf{(d)} 
+        we know,
+        \begin{equation}
+            \boxed{\vec{H} = \frac{\vec{k}X\vec{E}}{\eta}}
+        \end{equation}
+        Here, 
+        \[
+            \vec{k} = \hat{z} 
+        \]
+        \[
+            \vec{H} = \hat{z} X  (2 \cos (10^8 t - \frac{z}{\sqrt{3} })\hat{x} - \sin (10^8 t - \frac{z}{\sqrt{3} }) \hat{y}) 
+        \]
+        \[
+            \vec{H} = \sqrt{\frac{\epsilon _r \epsilon_{o} }{\mu_r\mu_{o} }}(\sin (10^8 t - \frac{z}{\sqrt{3} }) \hat{x}+2 \cos (10^8 t - \frac{z}{\sqrt{3} })\hat{y}) 
+        \]
+        \[
+            \vec{H} = 4.59\times 10^{-3 } (\sin (10^8 t - \frac{z}{\sqrt{3} }) \hat{x}+2 \cos (10^8 t - \frac{z}{\sqrt{3} })\hat{y}) \left(\frac{A}{m}\right) 
+        \]
+    \textbf{Answers}
+
+        \begin{enumerate}
+		\item \({f = 15.9 MHz \text{ and } \lambda = 10.88m}\).
+        \item \({\epsilon _r = 3}\) 
+        \item Elliptically polarized. 
+        \item $\vec{H} = 4.59\times 10^{-3 } (\sin (10^8 t - \frac{z}{\sqrt{3} }) \hat{x}+2 \cos (10^8 t - \frac{z}{\sqrt{3} })\hat{y}) \left(\frac{A}{m}\right)$
+        \end{enumerate}
+    \end{answer}
+\end{document}

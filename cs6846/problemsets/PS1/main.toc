@@ -1,0 +1,39 @@
+\contentsline {section}{\numberline {1}Building Gates}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Building CNOT gate}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Building SWAP-gate from CNOT}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Constructed SWAP gate}{4}{subsubsection.1.2.1}%
+\contentsline {section}{\numberline {2}Understanding Unitary}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Norm-Preserving}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Inner Product Preserving}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Norm-preserving and Unitary}{6}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Quantum Circuits}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}States of three Qubits}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Probability of getting a state after the measurement}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Leveraging Parity}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Bernstein-Vazirani Algorithm}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Initial state}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}After application of Hadamard gates}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}After passing through Oracle}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Hadamard gate on n-qubit register }{7}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Classical Comparison}{8}{section.5}%
+\contentsline {section}{\numberline {6}Fun with Deutsch-Josza}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Initial state}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}After application of Hadamard gates}{10}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}After passing through Oracle}{10}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}After application of Hadamard gates}{10}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Measuring the First register}{10}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Case 1: f(x) = 0 first N/2 bits and f(x) = 1 for Next N/2 bits.}{10}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Case 2: Sum of 1's in the first N/2 bits and 0's in the next N/2 bits is equal to N/2.}{11}{subsubsection.6.5.2}%
+\contentsline {section}{\numberline {7}Simon's Algorithm}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Starting State}{12}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}State after First Hadamard Transforms}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}State after applying the oracle}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}State after measuring the second register}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}State after final Hadamard}{12}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Measurement of first 3 qubits of final state}{12}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Determining s}{13}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Superdense Coding}{13}{section.8}%
+\contentsline {section}{\numberline {9}Deffered Measurements}{14}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Randomized Circuit C(x)}{14}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Quantum Circuit C'(x)}{14}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Amplifying Success}{14}{section.10}%

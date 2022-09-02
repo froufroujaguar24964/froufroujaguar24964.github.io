@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  30 JUL 2022 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  26 AUG 2022 19:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -916,58 +916,99 @@ Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 \SYSeqnum=\count464
 )
 Package: systeme 2020/05/03 v0.34 Mise en forme de systemes d'equations (CT)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+\l__chemgreek_tmpa_int=\count465
+\g__chemgreek_tmpa_int=\count466
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count467
+\__mhchem_arrow_extPgfLength_skip=\skip85
+\mhchem@minispace@tmp=\skip86
+\mhchem@minibackspace@tmp=\skip87
+\mhchem@bondwidth=\skip88
+\mhchem@bondheight=\skip89
+\mhchem@smallbondwidth@tmpA=\skip90
+\mhchem@smallbondwidth@tmpB=\skip91
+\mhchem@smallbondwidth=\skip92
+\mhchem@bondtmp@minussidebearingleft=\skip93
+\mhchem@bondtmp@minussidebearingright=\skip94
+\l__mhchem_option_version_int=\count468
+\mhchem@option@minusmathsidebearingleft=\dimen325
+\mhchem@option@minusmathsidebearingright=\dimen326
+\mhchem@option@minustextsidebearingleft=\dimen327
+\mhchem@option@minustextsidebearingright=\dimen328
+
+
+Package mhchem Warning: You did not specify a 'version' option for the mhchem
+(mhchem)                package. Please write \usepackage[version=4]{mhchem}
+(mhchem)                in your preamble (or any lower number for
+(mhchem)                compatibility mode), because you might get slightly
+(mhchem)                different output with the same input in future versions.
+
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/derivative/derivative.sty
+Package: derivative 2021/06/03 v1.1 Nice and easy derivatives and differentials for LaTeX
+\l__deriv_vmo_int=\count469
+\l__deriv_tmpa_int=\count470
+\l__deriv_tmpb_int=\count471
+\l__deriv_numerical_int=\count472
+\l__deriv_sort_counter_int=\count473
+\l__deriv_sort_max_int=\count474
+\l__deriv_position_int=\count475
+\l__deriv_rebuild_int=\count476
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/bigdelim.sty
 Package: bigdelim 2021/03/15 v2.8 Create big delimiters in tabular or array
  (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip85
-\multirow@cntb=\count465
-\multirow@dima=\skip86
-\bigstrutjot=\dimen325
+\multirow@colwidth=\skip95
+\multirow@cntb=\count477
+\multirow@dima=\skip96
+\bigstrutjot=\dimen329
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen326
+\l__siunitx_angle_tmp_dim=\dimen330
 \l__siunitx_angle_marker_box=\box116
 \l__siunitx_angle_unit_box=\box117
-\l__siunitx_compound_count_int=\count466
+\l__siunitx_compound_count_int=\count478
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_number_exponent_fixed_int=\count467
-\l__siunitx_number_min_decimal_int=\count468
-\l__siunitx_number_min_integer_int=\count469
-\l__siunitx_number_round_precision_int=\count470
-\l__siunitx_number_group_minimum_int=\count471
+\l__siunitx_number_exponent_fixed_int=\count479
+\l__siunitx_number_min_decimal_int=\count480
+\l__siunitx_number_min_integer_int=\count481
+\l__siunitx_number_round_precision_int=\count482
+\l__siunitx_number_group_minimum_int=\count483
 \l__siunitx_table_tmp_box=\box118
-\l__siunitx_table_tmp_dim=\dimen327
-\l__siunitx_table_column_width_dim=\dimen328
+\l__siunitx_table_tmp_dim=\dimen331
+\l__siunitx_table_column_width_dim=\dimen332
 \l__siunitx_table_integer_box=\box119
 \l__siunitx_table_decimal_box=\box120
 \l__siunitx_table_before_box=\box121
 \l__siunitx_table_after_box=\box122
-\l__siunitx_table_before_dim=\dimen329
-\l__siunitx_table_carry_dim=\dimen330
-\l__siunitx_unit_tmp_int=\count472
-\l__siunitx_unit_position_int=\count473
-\l__siunitx_unit_total_int=\count474
- (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-)
+\l__siunitx_table_before_dim=\dimen333
+\l__siunitx_table_carry_dim=\dimen334
+\l__siunitx_unit_tmp_int=\count484
+\l__siunitx_unit_position_int=\count485
+\l__siunitx_unit_total_int=\count486
+
 
 Package siunitx Warning: Detected the "physics" package:
 (siunitx)                Omitting definition of \qty.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen331
+\col@sep=\dimen335
 \ar@mcellbox=\box123
-\extrarowheight=\dimen332
+\extrarowheight=\dimen336
 \NC@list=\toks50
-\extratabsurround=\skip87
-\backup@length=\skip88
+\extratabsurround=\skip97
+\backup@length=\skip98
 \ar@cellbox=\box124
 )) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count475
+\pgf@intersect@solutions=\count487
 )) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
 File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
@@ -978,24 +1019,24 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@toka=\toks51
 \t@pgfplots@tokb=\toks52
 \t@pgfplots@tokc=\toks53
-\pgfplots@tmpa=\dimen333
-\c@pgfplots@coordindex=\count476
-\c@pgfplots@scanlineindex=\count477
+\pgfplots@tmpa=\dimen337
+\c@pgfplots@coordindex=\count488
+\c@pgfplots@scanlineindex=\count489
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count478
+\c@pgfplotsarray@tmp=\count490
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count479
+\c@pgfplotstable@counta=\count491
 \t@pgfplotstable@a=\toks54
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count480
+\c@pgfplotslibrarysurf@no=\count492
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count481
-\pgfplots@xmin@reg=\dimen334
-\pgfplots@xmax@reg=\dimen335
-\pgfplots@ymin@reg=\dimen336
-\pgfplots@ymax@reg=\dimen337
-\pgfplots@zmin@reg=\dimen338
-\pgfplots@zmax@reg=\dimen339
+\pgfplots@numplots=\count493
+\pgfplots@xmin@reg=\dimen338
+\pgfplots@xmax@reg=\dimen339
+\pgfplots@ymin@reg=\dimen340
+\pgfplots@ymax@reg=\dimen341
+\pgfplots@zmin@reg=\dimen342
+\pgfplots@zmax@reg=\dimen343
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
@@ -1003,7 +1044,7 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/local/texlive/2022/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2020/08/01 v0.72
 \thmt@toks=\toks55
-\c@thmt@dummyctr=\count482
+\c@thmt@dummyctr=\count494
  (/usr/local/texlive/2022/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2020/08/01 v0.72
  (/usr/local/texlive/2022/texmf-dist/tex/latex/thmtools/parseargs.sty
@@ -1034,52 +1075,52 @@ Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
 )
-\c@abspage=\count483
+\c@abspage=\count495
 Package zref Info: New property: abspage on input line 66.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip89
-\c@mdf@globalstyle@cnt=\count484
-\mdf@skipabove@length=\skip90
-\mdf@skipbelow@length=\skip91
-\mdf@leftmargin@length=\skip92
-\mdf@rightmargin@length=\skip93
-\mdf@innerleftmargin@length=\skip94
-\mdf@innerrightmargin@length=\skip95
-\mdf@innertopmargin@length=\skip96
-\mdf@innerbottommargin@length=\skip97
-\mdf@splittopskip@length=\skip98
-\mdf@splitbottomskip@length=\skip99
-\mdf@outermargin@length=\skip100
-\mdf@innermargin@length=\skip101
-\mdf@linewidth@length=\skip102
-\mdf@innerlinewidth@length=\skip103
-\mdf@middlelinewidth@length=\skip104
-\mdf@outerlinewidth@length=\skip105
-\mdf@roundcorner@length=\skip106
-\mdf@footenotedistance@length=\skip107
-\mdf@userdefinedwidth@length=\skip108
-\mdf@needspace@length=\skip109
-\mdf@frametitleaboveskip@length=\skip110
-\mdf@frametitlebelowskip@length=\skip111
-\mdf@frametitlerulewidth@length=\skip112
-\mdf@frametitleleftmargin@length=\skip113
-\mdf@frametitlerightmargin@length=\skip114
-\mdf@shadowsize@length=\skip115
-\mdf@extratopheight@length=\skip116
-\mdf@subtitleabovelinewidth@length=\skip117
-\mdf@subtitlebelowlinewidth@length=\skip118
-\mdf@subtitleaboveskip@length=\skip119
-\mdf@subtitlebelowskip@length=\skip120
-\mdf@subtitleinneraboveskip@length=\skip121
-\mdf@subtitleinnerbelowskip@length=\skip122
-\mdf@subsubtitleabovelinewidth@length=\skip123
-\mdf@subsubtitlebelowlinewidth@length=\skip124
-\mdf@subsubtitleaboveskip@length=\skip125
-\mdf@subsubtitlebelowskip@length=\skip126
-\mdf@subsubtitleinneraboveskip@length=\skip127
-\mdf@subsubtitleinnerbelowskip@length=\skip128
+\mdf@templength=\skip99
+\c@mdf@globalstyle@cnt=\count496
+\mdf@skipabove@length=\skip100
+\mdf@skipbelow@length=\skip101
+\mdf@leftmargin@length=\skip102
+\mdf@rightmargin@length=\skip103
+\mdf@innerleftmargin@length=\skip104
+\mdf@innerrightmargin@length=\skip105
+\mdf@innertopmargin@length=\skip106
+\mdf@innerbottommargin@length=\skip107
+\mdf@splittopskip@length=\skip108
+\mdf@splitbottomskip@length=\skip109
+\mdf@outermargin@length=\skip110
+\mdf@innermargin@length=\skip111
+\mdf@linewidth@length=\skip112
+\mdf@innerlinewidth@length=\skip113
+\mdf@middlelinewidth@length=\skip114
+\mdf@outerlinewidth@length=\skip115
+\mdf@roundcorner@length=\skip116
+\mdf@footenotedistance@length=\skip117
+\mdf@userdefinedwidth@length=\skip118
+\mdf@needspace@length=\skip119
+\mdf@frametitleaboveskip@length=\skip120
+\mdf@frametitlebelowskip@length=\skip121
+\mdf@frametitlerulewidth@length=\skip122
+\mdf@frametitleleftmargin@length=\skip123
+\mdf@frametitlerightmargin@length=\skip124
+\mdf@shadowsize@length=\skip125
+\mdf@extratopheight@length=\skip126
+\mdf@subtitleabovelinewidth@length=\skip127
+\mdf@subtitlebelowlinewidth@length=\skip128
+\mdf@subtitleaboveskip@length=\skip129
+\mdf@subtitlebelowskip@length=\skip130
+\mdf@subtitleinneraboveskip@length=\skip131
+\mdf@subtitleinnerbelowskip@length=\skip132
+\mdf@subsubtitleabovelinewidth@length=\skip133
+\mdf@subsubtitlebelowlinewidth@length=\skip134
+\mdf@subsubtitleaboveskip@length=\skip135
+\mdf@subsubtitlebelowskip@length=\skip136
+\mdf@subsubtitleinneraboveskip@length=\skip137
+\mdf@subsubtitleinnerbelowskip@length=\skip138
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
@@ -1088,144 +1129,144 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@splitbox@one=\box127
 \mdf@splitbox@two=\box128
 \mdf@splitbox@save=\box129
-\mdfsplitboxwidth=\skip129
-\mdfsplitboxtotalwidth=\skip130
-\mdfsplitboxheight=\skip131
-\mdfsplitboxdepth=\skip132
-\mdfsplitboxtotalheight=\skip133
-\mdfframetitleboxwidth=\skip134
-\mdfframetitleboxtotalwidth=\skip135
-\mdfframetitleboxheight=\skip136
-\mdfframetitleboxdepth=\skip137
-\mdfframetitleboxtotalheight=\skip138
-\mdffootnoteboxwidth=\skip139
-\mdffootnoteboxtotalwidth=\skip140
-\mdffootnoteboxheight=\skip141
-\mdffootnoteboxdepth=\skip142
-\mdffootnoteboxtotalheight=\skip143
-\mdftotallinewidth=\skip144
-\mdfboundingboxwidth=\skip145
-\mdfboundingboxtotalwidth=\skip146
-\mdfboundingboxheight=\skip147
-\mdfboundingboxdepth=\skip148
-\mdfboundingboxtotalheight=\skip149
-\mdf@freevspace@length=\skip150
-\mdf@horizontalwidthofbox@length=\skip151
-\mdf@verticalmarginwhole@length=\skip152
-\mdf@horizontalspaceofbox=\skip153
-\mdfsubtitleheight=\skip154
-\mdfsubsubtitleheight=\skip155
-\c@mdfcountframes=\count485
+\mdfsplitboxwidth=\skip139
+\mdfsplitboxtotalwidth=\skip140
+\mdfsplitboxheight=\skip141
+\mdfsplitboxdepth=\skip142
+\mdfsplitboxtotalheight=\skip143
+\mdfframetitleboxwidth=\skip144
+\mdfframetitleboxtotalwidth=\skip145
+\mdfframetitleboxheight=\skip146
+\mdfframetitleboxdepth=\skip147
+\mdfframetitleboxtotalheight=\skip148
+\mdffootnoteboxwidth=\skip149
+\mdffootnoteboxtotalwidth=\skip150
+\mdffootnoteboxheight=\skip151
+\mdffootnoteboxdepth=\skip152
+\mdffootnoteboxtotalheight=\skip153
+\mdftotallinewidth=\skip154
+\mdfboundingboxwidth=\skip155
+\mdfboundingboxtotalwidth=\skip156
+\mdfboundingboxheight=\skip157
+\mdfboundingboxdepth=\skip158
+\mdfboundingboxtotalheight=\skip159
+\mdf@freevspace@length=\skip160
+\mdf@horizontalwidthofbox@length=\skip161
+\mdf@verticalmarginwhole@length=\skip162
+\mdf@horizontalspaceofbox=\skip163
+\mdfsubtitleheight=\skip164
+\mdfsubsubtitleheight=\skip165
+\c@mdfcountframes=\count497
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count486
-\c@mdf@env@i=\count487
-\c@mdf@env@ii=\count488
-\c@mdf@zref@counter=\count489
+\mdf@envdepth=\count498
+\c@mdf@env@i=\count499
+\c@mdf@env@ii=\count500
+\c@mdf@zref@counter=\count501
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=ForestGreen, backgroundcolor=ForestGreen!5, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgreenbox' on input line 89.
+(thmtools)             that uses `style=thmgreenbox' on input line 91.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=ForestGreen, backgroundcolor=ForestGreen!8, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgreen2box' on input line 99.
+(thmtools)             that uses `style=thmgreen2box' on input line 101.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=NavyBlue, backgroundcolor=NavyBlue!5, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmbluebox' on input line 109.
+(thmtools)             that uses `style=thmbluebox' on input line 111.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=TealBlue, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmblueline' on input line 119.
+(thmtools)             that uses `style=thmblueline' on input line 121.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=RawSienna, backgroundcolor=RawSienna!5, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmredbox' on input line 129.
+(thmtools)             that uses `style=thmredbox' on input line 131.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=RawSienna, backgroundcolor=RawSienna!2, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmred2box' on input line 139.
+(thmtools)             that uses `style=thmred2box' on input line 141.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=SeaGreen, backgroundcolor=SeaGreen!2, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgreen3box' on input line 149.
+(thmtools)             that uses `style=thmgreen3box' on input line 151.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmpinkbox' on input line 160.
+(thmtools)             that uses `style=thmpinkbox' on input line 162.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=WildStrawberry, backgroundcolor=WildStrawberry!5, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmpinkbox' on input line 160.
+(thmtools)             that uses `style=thmpinkbox' on input line 162.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=MidnightBlue, backgroundcolor=MidnightBlue!5, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmblue2box' on input line 170.
+(thmtools)             that uses `style=thmblue2box' on input line 172.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=Gray, backgroundcolor=Gray!5, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=notgraybox' on input line 180.
+(thmtools)             that uses `style=notgraybox' on input line 182.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=Gray, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=notgrayline' on input line 190.
+(thmtools)             that uses `style=notgrayline' on input line 192.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmexplanationbox' on input line 212.
+(thmtools)             that uses `style=thmexplanationbox' on input line 214.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=NavyBlue, backgroundcolor=NavyBlue!1, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmexplanationbox' on input line 212.
+(thmtools)             that uses `style=thmexplanationbox' on input line 214.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmanswerbox' on input line 223.
+(thmtools)             that uses `style=thmanswerbox' on input line 225.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=WildStrawberry, backgroundcolor=WildStrawberry!1, nobreak=false ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmanswerbox' on input line 223.
-Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 226.
+(thmtools)             that uses `style=thmanswerbox' on input line 225.
+Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 228.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2020/08/01 v0.72
 )
-\c@definition=\count490
-\c@theorem=\count491
-\c@lemma=\count492
-\c@proposition=\count493
-\c@corollary=\count494
+\c@definition=\count502
+\c@theorem=\count503
+\c@lemma=\count504
+\c@proposition=\count505
+\c@corollary=\count506
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip156
-\f@nch@O@elh=\skip157
-\f@nch@O@erh=\skip158
-\f@nch@O@olh=\skip159
-\f@nch@O@orh=\skip160
-\f@nch@O@elf=\skip161
-\f@nch@O@erf=\skip162
-\f@nch@O@olf=\skip163
-\f@nch@O@orf=\skip164
+\f@nch@headwidth=\skip166
+\f@nch@O@elh=\skip167
+\f@nch@O@erh=\skip168
+\f@nch@O@olh=\skip169
+\f@nch@O@orh=\skip170
+\f@nch@O@elf=\skip171
+\f@nch@O@erf=\skip172
+\f@nch@O@olf=\skip173
+\f@nch@O@orf=\skip174
 )
-
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 301.
-
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 303.
 
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 304.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 305.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 305.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 306.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 306.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 307.
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 308.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
@@ -1236,18 +1277,18 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks58
 \XKV@tempa@toks=\toks59
 )
-\XKV@depth=\count495
+\XKV@depth=\count507
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@@todonotes@numberoftodonotes=\count496
+\c@@todonotes@numberoftodonotes=\count508
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count497
+\c@mn@abspage=\count509
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count498
-\c@@ppsavesec=\count499
-\c@@ppsaveapp=\count500
+\c@@pps=\count510
+\c@@ppsavesec=\count511
+\c@@ppsaveapp=\count512
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -1258,34 +1299,34 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box130
 )
-\tc@llx=\dimen340
-\tc@lly=\dimen341
-\tc@urx=\dimen342
-\tc@ury=\dimen343
+\tc@llx=\dimen344
+\tc@lly=\dimen345
+\tc@urx=\dimen346
+\tc@ury=\dimen347
 Package trimclip Info: Using driver 'tc-pdftex.def'.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen344
-\adjbox@Height=\dimen345
-\adjbox@Depth=\dimen346
-\adjbox@Totalheight=\dimen347
-\adjbox@pwidth=\dimen348
-\adjbox@pheight=\dimen349
-\adjbox@pdepth=\dimen350
-\adjbox@ptotalheight=\dimen351
+\adjbox@Width=\dimen348
+\adjbox@Height=\dimen349
+\adjbox@Depth=\dimen350
+\adjbox@Totalheight=\dimen351
+\adjbox@pwidth=\dimen352
+\adjbox@pheight=\dimen353
+\adjbox@pdepth=\dimen354
+\adjbox@ptotalheight=\dimen355
  (/usr/local/texlive/2022/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count501
+\c@checkoddpage=\count513
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box131
-\sift@deathcycles=\count502
-\@vwid@loff=\dimen352
-\@vwid@roff=\dimen353
+\sift@deathcycles=\count514
+\@vwid@loff=\dimen356
+\@vwid@roff=\dimen357
 ))
-\@quotelevel=\count503
-\@quotereset=\count504
+\@quotelevel=\count515
+\@quotereset=\count516
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 10.
  (./master.aux)
 \openout1 = `master.aux'.
@@ -1331,7 +1372,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count505
+\c@section@level=\count517
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -1342,16 +1383,16 @@ LaTeX Info: Redefining \nameref on input line 10.
 
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count506
-\scratchdimen=\dimen354
+\scratchcounter=\count518
+\scratchdimen=\dimen358
 \scratchbox=\box132
-\nofMPsegments=\count507
-\nofMParguments=\count508
+\nofMPsegments=\count519
+\nofMParguments=\count520
 \everyMPshowfont=\toks60
-\MPscratchCnt=\count509
-\MPscratchDim=\dimen355
-\MPnumerator=\count510
-\makeMPintoPDFobject=\count511
+\MPscratchCnt=\count521
+\MPscratchDim=\dimen359
+\MPnumerator=\count522
+\makeMPintoPDFobject=\count523
 \everyMPtoPDFconversion=\toks61
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1401,6 +1442,9 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package chemgreek Info: Activating mapping `default' on line 10.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
@@ -1523,7 +1567,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
  (./Figures/zeroth_law.pdf_tex
-<./Figures//zeroth_law.pdf, id=83, page=1, 682.86612pt x 341.43306pt>
+<./Figures//zeroth_law.pdf, id=98, page=1, 682.86612pt x 341.43306pt>
 File: ./Figures//zeroth_law.pdf Graphic file (type pdf)
 <use ./Figures//zeroth_law.pdf, page 1>
 Package pdftex.def Info: ./Figures//zeroth_law.pdf , page1 used on input line 56.
@@ -1558,7 +1602,7 @@ Package mdframed Info: mdframed detected package amsthm
 [5]
 Package mdframed Info: Not enough space on this page on input line 105.
  (./Figures/cyclic.pdf_tex
-<./Figures//cyclic.pdf, id=114, page=1, 259.66296pt x 244.52788pt>
+<./Figures//cyclic.pdf, id=129, page=1, 259.66296pt x 244.52788pt>
 File: ./Figures//cyclic.pdf Graphic file (type pdf)
 <use ./Figures//cyclic.pdf, page 1>
 Package pdftex.def Info: ./Figures//cyclic.pdf , page1 used on input line 56.
@@ -1572,7 +1616,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 124.
 (./Figures/expansion.pdf_tex
-<./Figures//expansion.pdf, id=115, page=1, 682.86612pt x 341.43306pt>
+<./Figures//expansion.pdf, id=130, page=1, 682.86612pt x 341.43306pt>
 File: ./Figures//expansion.pdf Graphic file (type pdf)
 <use ./Figures//expansion.pdf, page 1>
 Package pdftex.def Info: ./Figures//expansion.pdf , page1 used on input line 56.
@@ -1608,12 +1652,64 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 81.
 (./Figures/carnot.pdf_tex
-<./Figures//carnot.pdf, id=134, page=1, 597.50786pt x 195.58212pt>
+<./Figures//carnot.pdf, id=150, page=1, 597.50786pt x 195.58212pt>
 File: ./Figures//carnot.pdf Graphic file (type pdf)
 <use ./Figures//carnot.pdf, page 1>
 Package pdftex.def Info: ./Figures//carnot.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 452.96826pt x 148.2709pt.
-)) [8 <./Figures//carnot.pdf>] [9
+) [8 <./Figures//carnot.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 100.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 100.
+ (./Figures/Claussius.pdf_tex
+<./Figures//claussius.pdf, id=193, page=1, 597.50786pt x 136.73105pt>
+File: ./Figures//claussius.pdf Graphic file (type pdf)
+<use ./Figures//claussius.pdf, page 1>
+Package pdftex.def Info: ./Figures//claussius.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 430.96826pt x 98.62152pt.
+)
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 111.
+ (./Figures/revpro.pdf_tex
+<./Figures//revpro.pdf, id=194, page=1, 598.62782pt x 85.11615pt>
+File: ./Figures//revpro.pdf Graphic file (type pdf)
+<use ./Figures//revpro.pdf, page 1>
+Package pdftex.def Info: ./Figures//revpro.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 430.96826pt x 61.27707pt.
+)
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 131.
+ [9 <./Figures//claussius.pdf> <./Figures//revpro.pdf>]
+Package mdframed Info: Not enough space on this page on input line 132.
+ [10]
+Chapter 2.
+(./Figures/newbox.pdf_tex
+<./Figures//newbox.pdf, id=236, page=1, 596.06699pt x 163.51839pt>
+File: ./Figures//newbox.pdf Graphic file (type pdf)
+<use ./Figures//newbox.pdf, page 1>
+Package pdftex.def Info: ./Figures//newbox.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.96826pt x 124.26277pt.
+) (./Figures/phasespace.pdf_tex
+<./Figures//phasespace.pdf, id=237, page=1, 591.85141pt x 134.59123pt>
+File: ./Figures//phasespace.pdf Graphic file (type pdf)
+<use ./Figures//phasespace.pdf, page 1>
+Package pdftex.def Info: ./Figures//phasespace.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 452.96826pt x 103.00919pt.
+)) (./Lectures/lec_4.tex [11
+
+ <./Figures//newbox.pdf> <./Figures//phasespace.pdf>]
+Package marginnote Info: Margin note 16.1 is on absolute page 16 on input line 2.
+Package marginnote Info: right page because not two side mode on input line 2.
+Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
+
+Overfull \hbox (4.14894pt too wide) in paragraph at lines 2--2
+[]  
+ []
+
+) [12] [13
 
 ] (./appendix.tex)
 
@@ -1624,24 +1720,24 @@ LaTeX Warning: Empty bibliography on input line 40.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 820C7625382877F06E8E29A110ECBF86;425.
+(rerunfilecheck)             Checksum: C7D0B845A76D1A2B90D7D9B86058CCBC;888.
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51316 strings out of 478268
- 1173510 string characters out of 5846347
- 1925969 words of memory out of 5000000
- 68564 multiletter control sequences out of 15000+600000
- 495568 words of font info for 100 fonts, out of 8000000 for 9000
+ 54058 strings out of 478268
+ 1255729 string characters out of 5846347
+ 2020789 words of memory out of 5000000
+ 71248 multiletter control sequences out of 15000+600000
+ 497437 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,15n,100p,1360b,1711s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on master.pdf (11 pages, 334700 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on master.pdf (15 pages, 486969 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

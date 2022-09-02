@@ -1,3 +1,10 @@
 \contentsline {chapter}{\numberline {1}Entropy}{2}{chapter.1}%
-\contentsline {chapter}{\numberline {A}Additional Proofs}{5}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{5}{appendix.A.1}%
+\contentsline {chapter}{\numberline {2}Tensor products}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Density Matrix}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The reduced density operator}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Purification}{7}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}EPR and Bell's Inequality}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}EPR paper}{7}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Bell's Inequalities}{8}{section.3.3}%
+\contentsline {chapter}{\numberline {A}Additional Proofs}{10}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{10}{appendix.A.1}%

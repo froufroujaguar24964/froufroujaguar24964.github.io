@@ -1,0 +1,677 @@
+% !TeX spellcheck = en_US
+\documentclass[11pt, a4paper]{article}
+
+% Set the title of the current document to be produced.
+\newcommand{\doctitle}{Homework I}
+% Command for the due date of the homework.
+\newcommand{\duedate}{\color{rltblue}{\faCalendarCheckO { }Due date: August 24th, 5pm \faCalendarCheckO	}}
+\newcommand{\myname}{\color{rltred} {}\textbf{Chaganti}  \textbf{Kamaraja}  \textbf{Siddhartha} }
+\newcommand{\rollnumber}{\color{rltred}{}\textbf{EP20B012} }
+%------------------------------------------------------------
+% Import commands for both teacher and course information.  | 
+% NOTE: Change your teacher and course info in these files. |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/teacher-info}                              %|
+\input{includes/course-info}                               %|   
+%
+%------------------------------------------------------------
+%-- Import packages and custom command definitions.          |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/packages}                                  %|  
+\input{includes/custom-commands}   
+%
+%---> Generate & inject metadata describing                |
+%     the produced document                                 |
+\input{includes/metadata}                                  %|
+%------------------------------------------------------------
+
+\topmargin      -60pt
+
+%-----------------------------------------------------------
+% Uncomment the following if you want to insert a watermark! 
+%
+%--> Watermark package settings: 
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{0.5}
+%\SetWatermarkColor[gray]{0.8}
+%-------------------------------------------------
+
+\begin{document} 
+    
+%-------------------------------------------------------------
+%-- Make the header of the document                          |
+%------>------>------>------>------>------>------>------>--> |
+\input{includes/document-header}
+
+\clearpage
+
+%
+\tableofcontents
+
+\clearpage
+
+\section{Building Gates}
+\subsection{Building CNOT gate}
+\textbf{CNOT} gate changes the target qubit from state \(\ket{0}\) to state \(\ket{1}\) and vice-versa if control qubit is in state \(\ket{1}\), no change in state otherwise.
+\begin{center}
+    \begin{quantikz}
+         \lstick{\(\ket{\alpha}\)} & \ctrl{1} &\qw \\
+         \lstick{\(\ket{\beta}\)} & \targ{}&\qw 
+    \end{quantikz}
+\end{center}
+Initial State,
+\[
+  \text{Let,}  \ket{\alpha}\ket{\beta} = a_0 \ket{00} + a_1 \ket{01} + a_2 \ket{10} + a_3 \ket{11}
+\]
+Final state after \textbf{CNOT}  is applied,
+\[
+    \ket{\phi} = a_0 \ket{00}+a_1\ket{01}+a_2\ket{11}+a_3\ket{10} 
+\]
+\begin{center}
+
+    \begin{quantikz}[slice all, remove end slices = 1, slice style = blue]
+        \lstick{\(\ket{\alpha}\)}& \qw & \ctrl{1} & \qw & \qw&\qw\\
+        \lstick{\(\ket{\beta}\)} & \gate{H} &\control{} &\gate{H}&\qw&\qw
+    \end{quantikz}
+\end{center}
+Initial State,
+\[
+     \ket{\alpha}\ket{\beta} = a_0 \ket{00} + a_1 \ket{01} + a_2 \ket{10} + a_3 \ket{11}
+\]
+Hadamard gate applied on second qubit rotates state \(\ket{0}\) to state \(\ket{+}\) and state \(\ket{1}\)  to state \(\ket{-}\)
+\[
+    \ket{\psi_1} = \frac{a_0}{\sqrt{2} }(\ket{00}+\ket{01}) + \frac{a_1}{\sqrt{2} }(\ket{00}-\ket{01})+ \frac{a_2}{\sqrt{2} }(\ket{10}+\ket{11})+\frac{a_3}{\sqrt{2} }(\ket{10}-\ket{11})
+\]
+Control-Z gate is applied between first and second qubit, it rotates the state \(\ket{11}\)  to state \(-\ket{11}\) and vice-versa, others remain unaltered.
+\[
+    \ket{\psi_2} = \frac{a_0}{\sqrt{2} }(\ket{00}+\ket{01}) + \frac{a_1}{\sqrt{2} }(\ket{00}-\ket{01})+ \frac{a_2}{\sqrt{2} }(\ket{10}-\ket{11})+\frac{a_3}{\sqrt{2} }(\ket{10}+\ket{11})
+\]
+re-writing state \(\ket{\psi_2}\) by changing basis vector of second qubit,
+\[
+    \ket{\psi_2} = a_0\ket{0} \ket{+} + a_1 \ket{0} \ket{-} + a_2 \ket{1} \ket{-} + a_3 \ket{1} \ket{+}
+\]
+Hadamard gate is applied on second qubit which rotates state \(\ket{+}\) to state \(\ket{0}\) and state \(\ket{-}\) to \(\ket{1}\) 
+\[
+    \ket{\psi_3} = a_0 \ket{00}+a_1\ket{01}+a_2\ket{11}+a_3\ket{10}
+\]
+The final state \(\ket{\psi_3}\) is equal to the final state \(\ket{\phi}\)  when \textbf{CNOT}  gate is applied to initial state. \\ \\ Therefore, we can build \textbf{CNOT} gate from  \textbf{two Hadamard gates and one Control-Z gate} by first applying \textbf{Hadamard gate}  on \textbf{target qubit} then applying \textbf{Control-Z gate} between \textbf{control and target qubits} and applying \textbf{Hadamard gate} on \textbf{target qubit}.
+\newpage
+\subsection{Building SWAP-gate from CNOT}
+\textbf{SWAP} gate swaps the two qubits.
+\begin{center}
+    \begin{quantikz}
+        \lstick{\(\ket{\alpha}\)}& \swap{1}&\qw&\rstick{\(\ket{\beta}\) }\\
+        \lstick{\(\ket{\beta}\) }&\swap{-1}&\qw&\rstick{\(\ket{\alpha}\) }
+    \end{quantikz}
+\end{center}
+Initial State,
+\[
+    Let, \ket{\alpha}\ket{\beta} = a_0\ket{00}+a_1\ket{01}+a_2\ket{10}+a_3\ket{11}
+\]
+Final state after \textbf{SWAP} is applied,
+\[
+    \ket{\phi} = a_0\ket{00}+a_{2} \ket{01}+a_1\ket{10}+a_3\ket{11} 
+\]
+\subsubsection{Constructed SWAP gate}
+\begin{center}
+    \begin{quantikz}
+        \lstick{\(\ket{\alpha}\)}   & \ctrl{1}   & \targ{}   & \ctrl{1}     & \qw   &\rstick{\(\ket{\beta}\) }\\
+        \lstick{\(\ket{\beta}\) }   & \targ{}    & \ctrl{-1}  & \targ{}     & \qw   &\rstick{\(\ket{\alpha}\) }
+    \end{quantikz} 
+\end{center}
+Initial State,
+\[
+    \ket{\phi_0}=\ket{\alpha}\ket{\beta} = a_0\ket{00}+a_1\ket{01}+a_2\ket{10}+a_3\ket{11}
+\]
+CNOT gate changes the target qubit from state \(\ket{0}\) to state \(\ket{1}\) and vice-versa if control qubit is in state \(\ket{1}\), no change in state otherwise.
+\[
+    \ket{\phi_1} = a_0 \ket{00} + a_1 \ket{01} + a_2 \ket{11} + a_3 \ket{10}
+\]
+Second CNOT gate applied, where second qubit is control and first qubit is target. 
+\[
+    \ket{\phi_2} = a_0 \ket{00} + a_1 \ket{11} + a_2 \ket{01} + a_3 \ket{10}
+\]
+Third CNOT gate applied, where first qubit is control and second qubit is target. 
+\[
+    \ket{\phi_3} = a_0 \ket{00} + a_1 \ket{10} + a_2 \ket{01} + a_3 \ket{11} 
+\]
+The final state \(\ket{\phi_3}\) is equal to final state \(\ket{\phi}\) when SWAP gate is applied to initial state.\\
+Therefore, we can build \textbf{SWAP gate from three CNOT gates} by first applying \textbf{CNOT gate with first qubit as control and second qubit as target}, then \textbf{CNOT gate again with second qubit as control and first qubit as target} finally, \textbf{CNOT gate with first qubit as control qubit and second qubit as target qubit}. Then we can build SWAP gate from 3 CNOT gates. 
+\newpage
+\section{Understanding Unitary}
+\subsection{Norm-Preserving}
+Since, A is norm-preserving:
+\[
+    \left\vert \left\vert A(v+w) \right\vert  \right\vert = \left\vert \left\vert v+w \right\vert  \right\vert 
+\]
+\[
+    \left\vert \left\vert A(v+w) \right\vert  \right\vert^2 = \left\vert \left\vert v+w \right\vert  \right\vert^2
+\]
+\[
+    \left\vert \left\vert v+w \right\vert  \right\vert^2 = \bkt{v+w}{v+w} = \bkt{v}{v}+ \bkt{v}{w}+\bkt{w}{v}+ \bkt{w}{w} = \left\vert \left\vert v \right\vert  \right\vert ^2 + \bkt{v}{w} + \bkt{w}{v}+ \left\vert \left\vert w \right\vert  \right\vert ^2
+\]
+\[
+    \left\vert \left\vert A(v+w) \right\vert  \right\vert ^2 = \bkt{A(v+w)}{A(v+2)} = \bkt{Av}{Av} + \bkt{Av}{Aw} + \bkt{Aw}{Av}+ \bkt{Aw}{Aw} 
+\]
+\[
+    \implies  \left\vert \left\vert Av \right\vert  \right\vert ^2 + \bkt{Av}{Aw} + \bkt{Aw}{Av}+ \left\vert \left\vert Aw \right\vert  \right\vert ^2
+\]
+Since, A is norm preserving, \(\left\vert \left\vert Av \right\vert  \right\vert = \left\vert \left\vert v \right\vert  \right\vert \) .\\
+Therefore,
+\[
+    \bkt{Av}{Aw} + \bkt{Aw}{Av} = \bkt{v}{w}+\bkt{w}{v}
+\]
+\[
+    Re(\bkt{Av}{Aw}) = Re(\bkt{Aw}{Av}) \; (\because (\bkt{Av}{Aw})^\dagger = \bkt{Aw}{Av})
+\]
+similarly,
+\[
+    Re(\bkt{v}{w}) = Re(\bkt{w}{v}) \; (\because (\bkt{v}{w})^\dagger = \bkt{w}{v})
+\]
+Therefore, 
+\[
+    2Re(\bkt{Av}{Aw}) = 2 Re(\bkt{v}{w})
+\]
+Substituting \(w=iw\) 
+\[
+    i(\bkt{Av}{Aw} - \bkt{Aw}{Av}) = i(\bkt{v}{w}-\bkt{w}{v})
+\]
+hence, \(-2i(\bkt{Av}{Aw} = -2i \bkt{v}{w})\). Thus, the imaginary parts of \(\bkt{Av}{Aw}\) and \(\bkt{v}{w}\) are equal. 
+Therfore,
+\[
+    \bkt{Av}{Aw} = \bkt{v}{w}
+\]
+\textbf{A is Norm-Preserving if and only if A is inner product Preserving. }
+\subsection{Inner Product Preserving}
+Consider the operator,
+\[
+    I - A^\dagger A
+\]
+\[
+    \braketmatrix{v}{I - A^\dagger A}{w} = \braketmatrix{v}{I}{w} - \braketmatrix{v}{A^\dagger A}{w}
+\]
+\[
+    \braketmatrix{v}{I - A^\dagger A}{w} = \bkt{v}{w} - \bkt{A v}{A w} 
+\]
+since, A is inner product preserving,
+\[
+    \bkt{Av}{Aw} = \bkt{v}{w}
+\]
+Therefore,
+\[
+    \braketmatrix{v}{I - A^\dagger A}{w} = \bkt{v}{w}-\bkt{v}{w} = 0
+\]
+For this to be true for all matrices in Vector space, \(I-A^\dagger A = 0\). \\
+Therefore,
+\[
+    A^\dagger A = I \implies A A^\dagger A = A \implies A A^\dagger = A A^{-1} = I 
+\]
+\[
+    A^\dagger A = A A^\dagger = I
+\]
+\textbf{A is Inner product Preserving if and only if A is unitary}. 
+\subsection{Norm-preserving and Unitary}
+A is Norm-preserving iff A is Inner product preserving. A is Inner product preserving iff A is Unitary.\\
+Therefore, \textbf{A is Norm-Preserving iff A is Unitary}
+\section{Quantum Circuits}  %ref:- http://mirrors.ibiblio.org/CTAN/graphics/pgf/contrib/quantikz/quantikz.pdf%
+\begin{center}
+\begin{quantikz}[slice all,remove end slices=1 ,slice style=blue]
+    \lstick{\(\alpha_0\ket{0}+\alpha_1 \ket{1}\)}&\qw&\qw & \ctrl{1} & \gate{H}&\qw&\qw\\
+    \lstick{\(\ket{0}\)} & \gate{H} & \ctrl{1} & \targ{} & \qw& \qw &\qw\\
+    \lstick{\(\ket{0}\)} &\qw & \targ{} &\qw &\qw &\qw& \qw
+\end{quantikz}
+\end{center}
+\subsection{States of three Qubits}
+Initial state
+\[
+    \ket{\psi_0} = \alpha_0\ket{000}+\alpha_1 \ket{100} 
+\]
+Hadamard gate is applied to second qubit, so the second state goes to \( \ket{+}\) state.
+\[
+    \ket{\psi_1} = \frac{\alpha_0}{\sqrt{2} }(\ket{000}+\ket{010})+\frac{\alpha_1}{\sqrt{2} }(\ket{100}+\ket{110})
+\]
+CNOT gate is applied to gates 2 and 3 with 2 as control and 3 as target. So, 3 rd qubit flips if 2nd qubit is 1 else no change.
+\[
+    \ket{\psi_2} = \frac{\alpha_0}{\sqrt{2} }(\ket{000}+\ket{011})+\frac{\alpha_1}{\sqrt{2} }(\ket{100}+\ket{111})
+\]
+CNOT gate is applied to gates 1 and 2 with 1 as control and 2 as target. So, 2 nd qubit flips if 1st qubit is 1 else no change.
+\[
+    \ket{\psi_3} = \frac{\alpha_0}{\sqrt{2} }(\ket{000}+\ket{011})+\frac{\alpha_1}{\sqrt{2} }(\ket{110}+\ket{101})
+\]
+Hadamard gate is applied to second qubit, so the \(\ket{0}\)  state goes to \( \ket{+}\) state and \(\ket{1}\) state goes to \(\ket{-}\) state. 
+\[
+    \ket{\psi_4} = \frac{\alpha_0}{2}(\ket{000}+\ket{100}+\ket{011}+\ket{111})+\frac{\alpha_1}{2}(\ket{010}-\ket{110}+\ket{001}-\ket{101})
+\]
+State of the three qubits at the end of the circuit's operation are
+\[
+    \boxed{\frac{\alpha_0}{2}(\ket{000}+\ket{100}+\ket{011}+\ket{111})+\frac{\alpha_1}{2}(\ket{010}-\ket{110}+\ket{001}-\ket{101})}
+\]
+\subsection{Probability of getting a state after the measurement}
+Probability of getting state \(\ket{\phi}\) upon measuring state \(\ket{\psi}\) is equal to \(\left\lVert\bra{\phi}\ket{\psi} \right\rVert ^2\) 
+\begin{center}
+\begin{tabular}{!{\VRule[1pt]}c !{\VRule[1pt]}c !{\VRule[1pt]}}\specialrule{1pt}{0pt}{0pt}
+    \textbf{State}  & \textbf{Probability}\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{000}\)  & \(\frac{\alpha_0^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{001}\)  & \(\frac{\alpha_1^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{010}\)  & \(\frac{\alpha_1^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{011}\)  & \(\frac{\alpha_0^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{100}\)  & \(\frac{\alpha_0^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{101}\)  & \(\frac{\alpha_1^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{110}\)  & \(\frac{\alpha_1^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    \(\ket{111}\)  & \(\frac{\alpha_0^2}{4}\)\\\specialrule{1pt}{0pt}{0pt}
+    
+\end{tabular}
+\end{center}
+\section{Leveraging Parity}
+\subsection{Bernstein-Vazirani Algorithm}
+\begin{center}
+\begin{quantikz}[slice all]
+    \lstick{\(\ket{0}^{\otimes n}\)}&[2mm]\gate{H^{\otimes n}}\qwbundle{n}&\gate[wires=2][3cm]{\textsc{\(Q_x\) } }\gateinput{\(y\)}\gateoutput{\(y\)}&\gate{H^{\otimes n}}&\qw\\
+    \lstick{\(\ket{1}\)}&[2mm]\gate{H}&\qw\gateinput{\(b\)} \gateoutput{\(b\oplus x .  y \text{ mod 2}\)}&\qw&\qw
+\end{quantikz}
+\end{center}
+\subsection{Initial state}
+\[
+    \ket{\psi_0} = \ket{0}^{\otimes n}\ket{1}
+\]
+\subsection{After application of Hadamard gates}
+\[
+    \ket{\psi_1} = \frac{1}{\sqrt{2^{n}} }\sum\limits_{y=\{0,1\}^n} \ket{y}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right)
+\]
+\subsection{After passing through Oracle}
+\[
+    \ket{\psi_2} = \frac{1}{\sqrt{2^n}} \sum\limits_{y=\{0,1\}^n} (-1)^{x.y \text{ mod }2}\ket{y}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right)
+\]
+\[
+    \ket{\psi_2} = \frac{1}{\sqrt{2^n}} \sum\limits_{y=\{0,1\}^n} (-1)^{x . y}\ket{y}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right) \; \left(\because (-1)^{x . y\text{ mod }2 }= (-1)^{x.y}\right)
+\]
+\subsection{Hadamard gate on n-qubit register }
+we know, 
+\[
+    \boxed{H^{\otimes n}\ket{i} = \sum\limits_{j=\{0,1\}^n} (-1)^{i.j} \ket{j} }
+\]
+If we apply Hadamard gates again on the register, since H is its own inverse,
+\[
+    H^{\otimes n}H^{\otimes n}\ket{i} = H^{\otimes n}\sum\limits_{j=\{0,1\}^n} (-1)^{i.j} \ket{j} 
+\]
+\[
+    \boxed{\ket{i} = H^{\otimes n}\sum\limits_{j=\{0,1\}^n} (-1)^{i.j} \ket{j}}
+\]
+Therefore, 
+\[
+    \boxed{H^{\otimes n} \ket{\psi_2} = \ket{x}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right) }
+\]
+Now, 
+\[  
+\ket{\psi_3} = \ket{x}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right)
+\]
+Since, we got \(\ket{x}\), it is used to compute a fixed function f(x) which can be simulated using elementary gates. 
+
+\section{Classical Comparison}
+
+\( P(A|B) \) = Probability of occurrence of event A given event B occurred.
+
+\noindent For a balanced function there are \(\frac{N}{2}\) 0's and \(\frac{N}{2}\) 1's. \\ \indent Let \textbf{"B"} denote the event that given function is a balanced function.\\ 
+For a Constant function with constant value = 0 there are \(N\) 0's and zero 1's. 
+\\\indent Let "\({\mathbf{C_0} } \)" denote the event that given function is a constant function with constant value 0.\\
+For a Constant function with constant value = 1 there are zero 0's and \(N\)  1's. 
+\\\indent Let "\({\mathbf{C_{1} } } \)" denote the event that given function is a constant function with constant value 1. 
+
+Probability of the output to be 00 and the function is a Balanced function
+\[
+    \boxed{P(00|B) = \frac{\frac{N}{2}\left(\frac{N}{2}-1\right)}{N(N-1)}} \; \because\text{there are \(\frac{N}{2}\) zeroes in Balanced Function.}
+\]
+
+Probability of the output to be 01 and the function is a Balanced function
+\[
+    \boxed{P(01|B) = \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}} \; \because\text{there are \(\frac{N}{2}\) zeroes and  \(\frac{N}{2}\) ones in Balanced Function.}
+\]
+
+Probability of the output to be 10 and the function is a Balanced function
+\[
+    \boxed{P(10|B) = \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}} \; \because\text{there are \(\frac{N}{2}\) zeroes and  \(\frac{N}{2}\) ones in Balanced Function.}
+\]
+
+Probability of the output to be 11 and the function is a Balanced function
+\[
+    \boxed{P(11|B) = \frac{\frac{N}{2}\left(\frac{N}{2}-1\right)}{N(N-1)}} \; \because\text{there are \(\frac{N}{2}\) ones in Balanced Function.}
+\]
+
+
+Probability of the output to be 00 and the function is a Constant function with constant value = 0
+\[
+    \boxed{P(00|C_0) = \frac{N(N-1)}{N(N-1)}=1} \; \because\text{there are N zeroes in Constant Function.}
+\]
+
+Probability of the output to be 01 and the function is a Constant function with constant value = 0
+\[
+    \boxed{P(01|C_0) = 0} \; \because\text{there are N zeroes and 0 ones in Constant Function.}
+\]
+
+Probability of the output to be 10 and the function is a Constant function with constant value = 0
+\[
+    \boxed{P(10|C_0) = 0} \; \because\text{there are N zeroes and 0 ones in Constant Function.}
+\]
+
+Probability of the output to be 11 and the function is a Constant function with constant value = 0
+\[
+    \boxed{P(11|C_0) = 0} \; \because\text{there are N zeroes and 0 ones in Constant Function.}
+\]
+
+
+Probability of the output to be 00 and the function is a Constant function with constant value = 1
+\[
+    \boxed{P(00|C_1) = 0} \; \because\text{there are 0 zeroes and N ones in Constant Function.}
+\]
+
+Probability of the output to be 01 and the function is a Constant function with constant value = 1
+\[
+    \boxed{P(01|C_1) = 0} \; \because\text{there are 0 zeroes and N ones in Constant Function.}
+\]
+
+Probability of the output to be 10 and the function is a Constant function with constant value = 1
+\[
+    \boxed{P(10|C_1) = 0} \; \because\text{there are 0 zeroes and N ones in Constant Function.}
+\]
+
+Probability of the output to be 11 and the function is a Constant function with constant value = 1
+\[
+    \boxed{P(11|C_1) = \frac{N(N-1)}{N(N-1)}=1} \; \because\text{there are 0 zeroes N ones in Constant Function.}
+\]
+
+Let us define our algorithm as following. 
+\begin{center}
+    \begin{tabular}{!{\VRule[2pt]}c!{\VRule[2pt]} c!{\VRule[2pt]}}
+        \specialrule{3pt}{0pt}{0pt}
+        \textbf{} & \textbf{Function} \\ \specialrule{3pt}{0pt}{0pt}
+         00 & Constant \\ \specialrule{3pt}{0pt}{0pt}
+         01 & Balanced \\ \specialrule{3pt}{0pt}{0pt} 
+         10 & Balanced \\ \specialrule{3pt}{0pt}{0pt} 
+         11 & Constant \\ \specialrule{3pt}{0pt}{0pt} 
+    \end{tabular}
+\end{center}
+\fbox{
+    \parbox{\textwidth}{Note: The actual function for 00 and 11 can actually be constant or balanced but the algorithm will output it as constant.}
+}\\
+
+\subsubsection*{Summary of Outputs and Probabilities}
+    \begin{tabular}{!{\VRule[2pt]}c!{\VRule[2pt]} c!{\VRule[2pt]}c!{\VRule[2pt]}c!{\VRule[2pt]} c!{\VRule[2pt]}}
+       \specialrule{1pt}{0pt}{0pt}
+        \textbf{Output bits} & \textbf{\scriptsize{Function by algorithm}}&\small{\textbf{Actual Function }}  &\textbf{Probability} & \textbf{Remarks} \\ \specialrule{1pt}{0pt}{0pt}
+         00                  & Constant       & Balanced                 &\(P(00|B) = \frac{\frac{N}{2}\left(\frac{N}{2}-1\right)}{N(N-1)}\)                     & Incorrect output \\ \specialrule{1pt}{0pt}{0pt}
+         01                  & Balanced       & Balanced                 & \(P(01|B) = \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}\)                   & correct output \\ \specialrule{1pt}{0pt}{0pt}
+         10                  & Balanced       & Balanced                 & \(P(10|B) = \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}\)                       & correct output \\ \specialrule{1pt}{0pt}{0pt}
+        11                  & Constant       &  Balanced                 &   \(P(11|B) = \frac{\frac{N}{2}\left(\frac{N}{2}-1\right)}{N(N-1)}\)                   & Incorrect output \\ \specialrule{1pt}{0pt}{0pt}
+         00                  & Constant       &   Constant 0               &  \(P(00|C_0)=1\)                   & correct output \\ \specialrule{1pt}{0pt}{0pt}
+        11                   & Constant        & Constant 1                 & \(P(11|C_1)=1\)                   & correct output \\ \specialrule{1pt}{0pt}{0pt} 
+    \end{tabular}\\
+
+We ignored the zero Probability cases. \\
+
+Probability of our algorithm being correct is Probability of correct output divided by Probability of all outputs. 
+\[
+    P(correct) = \frac{P(01|B)+P(10|B)+P(00|C_0)+P(11|C_1)}{P(01|B)+P(10|B)+P(00|C_0)+P(11|C_1)+P(00|B)+P(11|B)}
+\]
+\[
+    P(correct) = \frac{\frac{\left(\frac{N}{2}\right)^2}{N(N-1)}+ \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}+1 + 1}{ \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}+ \frac{\left(\frac{N}{2}\right)^2}{N(N-1)}+1+1+\frac{\frac{N}{2}\left(\frac{N}{2}-1\right)}{N(N-1)}+\frac{\frac{N}{2}\left(\frac{N}{2}-1\right)}{N(N-1)}} 
+\]
+\[
+    \boxed{P(correct) = \frac{2}{3} + \frac{1}{6(1-\frac{1}{N})} \geq \frac{2}{3}}
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Fun with Deutsch-Josza}
+\begin{quantikz}[slice all]
+    \lstick{\(\ket{0}^{\otimes n}\)}&[2mm]\gate{H^{\otimes n}}\qwbundle{n}&\gate[wires=2][1.7cm]{\textsc{\(U_f\) } }\gateinput{\(x\)}\gateoutput{\(x\)}&\gate{H^{\otimes n}}&\meter{}&\qw\\
+    \lstick{\(\ket{1}\)}&[2mm]\gate{H}&\qw\gateinput{\(y\)} \gateoutput{\(y\oplus f(x)\)}&\qw&\qw&\qw
+\end{quantikz}
+\subsection{Initial state}
+\[
+    \ket{\psi_0} = \ket{0}^{\otimes n}\ket{1}
+\]
+\subsection{After application of Hadamard gates}
+\[
+    \ket{\psi_1} = \frac{1}{\sqrt{2^{n}} }\sum\limits_{x=\{0,1\}^n} \ket{x}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right)
+\]
+\subsection{After passing through Oracle}
+\[
+    \ket{\psi_2} = \frac{1}{\sqrt{2^n}} \sum\limits_{x=\{0,1\}^n} (-1)^{f(x)}\ket{x}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right)
+\]
+\subsection{After application of Hadamard gates}
+\[
+    \ket{\psi_3} = \frac{1}{2^n} \sum\limits_{x=\{0,1\}^n} \sum\limits_{z=\{0,1\}^n} (-1)^{x . z + f(x)}\ket{z}\left(\frac{\ket{0}-\ket{1}}{\sqrt{2} }\right)
+\]
+\subsection{Measuring the First register}
+\textbf{Let us consider the co-efficient of \(\ket{100\ldots 0}\) for two different cases.} 
+
+\[
+    x . z = x_1.z_1 + x_2.z_2 + \ldots + x_N.z_N 
+\]
+\[
+    x . z = x_1.(1) + x_2.(0) + \ldots + x_N.0 = x_1
+\]
+\[
+    \frac{1}{2^n} \sum\limits_{x=\{0,1\}^n}  (-1)^{x _1 + f(x)}\ket{100\ldots 0 }   
+\]
+\subsubsection{Case 1: f(x) = 0 first N/2 bits and f(x) = 1 for Next N/2 bits.}
+ 
+since, \(x_1 = 0\) for first \(\frac{N}{2}\) bits \(x_{1}+f({x}) = 0+0 = 0 \implies (-1)^{x_{1}+ f(x)} = (-1)^0 = 1\) and \(x_1 = 1\)  for next \(\frac{N}{2}\) bits \(x_{1}+f(x) = 1+1 = 2 \implies (-1)^{x_{1}+ f(x)} = (-1)^2 = 1\) 
+\[
+    \text{Coefficient of }\ket{100\ldots 0 } = \frac{1}{2^n}\sum\limits_{x=\{0,1\}^n} (1) =\frac{2^n}{2^n} = 1
+\]
+\[
+    \boxed{\text{Coefficient of }\ket{100\ldots 0 } = 1}
+\]
+\subsubsection{Case 2: Sum of 1's in the first N/2 bits and 0's in the next N/2 bits is equal to N/2.}
+
+Number of 1's in first half + Number of 0's in second half = N/2. \\
+$\implies $Number of 0's in second half = \(\frac{N}{2}\) -   Number of 1's in first half.\\
+Also, Number of 0's in first half = \(\frac{N}{2}\) - Number of 1's in first half. \\
+Therefore, \( \boxed{\text{Number of 0's in first half = Number of 0's in second half.}}\) \\
+And by similar arguments, $\boxed{\text{Number of 1's in first half = Number of 1's in second half.}}$\\
+Let there be k number of zeroes in first half that implies there are k zeroes in second half and N/2 - k ones each in first and second halves. \\
+For all terms in first half \(x_1 = 0\) and for k terms in first half \(f(x) = 0\) \(\implies \) \((-1)^{x_1 + f(x)} = (-1)^0 = 1\)  \\
+For all terms in first half \(x_1 = 0\) and for N/2 - k terms in first half \(f(x)=1\) \(\implies  (-1)^{x_1 + f(x)}=(-1)^1 = -1\) .\\
+For all terms in second half \(x_1 = 1\) and for k terms in second half \(f(x) = 0\) \(\implies \) \((-1)^{x_1 + f(x)} = (-1)^1 = -1\).\\
+For all terms in second half \(x_1 = 1\) and for N/2 - k terms in second half \(f(x)=1\) \(\implies  (-1)^{x_1 + f(x)}=(-1)^2 = 1\). \\
+\textbf{Summary} \\
+\begin{center}
+\begin{tabular}{!{\VRule[2pt]}c!{\VRule[2pt]} c!{\VRule[2pt]}c!{\VRule[2pt]}} \specialrule{3pt}{0pt}{0pt}
+    \textbf{First or Second} & \textbf{No. of Terms} & \textbf{Value of } \(\mathbf{(-1)^{x_1 + f(x)}} \) \\\specialrule{3pt}{0pt}{0pt}
+    First Half  & k & 1 \\\specialrule{3pt}{0pt}{0pt}
+    First Half  & N/2 - k & -1 \\\specialrule{3pt}{0pt}{0pt}
+    Second Half & k & -1 \\\specialrule{3pt}{0pt}{0pt}
+    Second Half & N/2 - k & 1\\\specialrule{3pt}{0pt}{0pt}
+\end{tabular}
+\end{center}
+Therefore, 
+\[
+    \text{Coefficient of} \ket{100\ldots 0 } = \frac{1}{2^n} \sum\limits_{x=\{0,1\}^n} (-1)^{x_{1}+f(x) } 
+\]
+\[
+    \text{Coefficient of} \ket{100\ldots 0 } =  \frac{1}{2^n} \left((k)(1)+ \left(\frac{N}{2}-k\right)(-1)+(k)(-1)+ \left(\frac{N}{2}-k\right)(1)\right) = 0
+\]
+\[
+    \boxed{\text{Coefficient of} \ket{100\ldots 0 } = 0}
+\]
+
+\begin{center}
+    \begin{tabular}{!{\VRule[2pt]}c!{\VRule[2pt]} c!{\VRule[2pt]}}
+        \specialrule{3pt}{0pt}{0pt}
+        \textbf{Case} & \textbf{Coefficient of} \(\mathbf{\ket{100\ldots0}}\)\\ \specialrule{3pt}{0pt}{0pt}
+         Case 1 & 1 \\ \specialrule{3pt}{0pt}{0pt}
+         Case 2 & 0 \\ \specialrule{3pt}{0pt}{0pt}
+    \end{tabular}
+\end{center}
+\noindent\fbox{
+\parbox{\textwidth}{ If the measurement of the first register given state \(\ket{100\ldots 0}\) then the function \(f(x)\) is case 1 and if it gives any state other than \(\ket{100\ldots 0}\) then \(f(x)\)  belongs to case 2.}
+}
+%────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────%
+
+\section{Simon's Algorithm}
+\begin{center}
+    \begin{quantikz}[slice all]
+        \lstick{\(\ket{0}^{\otimes 3}\)}    & [2mm] \gate{H^{\otimes 3}} \qwbundle{3}   & \gate[wires=2][1.7cm]{\textsc{\(Q_f\) } }\gateinput{\(x\)}\gateoutput{\(x\)}  & \qw       &\gate{H^{\otimes 3}}   & \meter{}\\
+        \lstick{\(\ket{0}^{\otimes 3}\)}    & [2mm] \qwbundle{3}                        & \gateinput{\(y\)} \gateoutput{\(y\oplus f(x)\)}                               & \meter{}  
+    \end{quantikz}
+\end{center}
+\subsection{Starting State}
+\[
+   \ket{\psi_0} = \ket{0}^{\otimes 3}\ket{0}^{\otimes 3}
+\]
+\subsection{State after First Hadamard Transforms}
+\[
+    \ket{\psi_1} = \frac{1}{\sqrt{2^3} }\sum\limits_{x \in \{0,1\}^3} \ket{x}\ket{0}^{\otimes 3}
+\]
+\subsection{State after applying the oracle}
+\[
+    \ket{\psi_2} = \frac{1}{\sqrt{2^{3} }}\sum\limits_{x \in\{0,1\}^3} \ket{x}\ket{f(x)}
+\]
+\subsection{State after measuring the second register}
+The measurement gave \(\ket{001}\) 
+\[
+    \ket{\psi_3} = \frac{1}{\sqrt{2}}(\ket{x}+\ket{x \oplus s})
+\]
+where, 
+\[
+    f(x) = f(x\oplus s) = 001
+\]
+\subsection{State after final Hadamard}
+\[
+    \ket{\psi_4} = \frac{1}{\sqrt{2^{7}}} \sum\limits_{z\in\{0,1\}^3}[(-1)^{x . z}+(-1)^{(x\oplus s) . z}]\ket{z}
+\]
+\subsection{Measurement of first 3 qubits of final state}
+Measurement of first 3 qubits of final state give information about s because,\\
+It will give output only if 
+\[
+    (-1)^{x . z}=(-1)^{(x\oplus s) . z} 
+\]
+which means:
+\begin{gather*}
+    x . z \text { mod }2 =  (x \oplus s).z \text{ mod } 2\\
+    x . z \text{ mod } 2 = x.z \oplus s.z \text{ mod } 2\\
+    \implies s.z = 0 \text{ mod } 2 
+\end{gather*}
+A string z will be measured, whose inner product with s = 0. Thus, repeating the algorithm $\approx$ n times, we will be able to obtain n different values of z and the following system of equation can be written:
+\[
+    \begin{cases}
+        s.z_1 = 0 \text{ mod } 2\\
+        s.z_2 = 0 \text{ mod } 2\\
+        \vdots\\
+        s.z_n = 0 \text{ mod } 2
+    \end{cases}
+\]
+From which s can be determined, for example by Gaussian elimination.
+\subsection{Determining s}
+Let s = abc\\
+\(z_1 = 011\)
+\[
+    s.z_1 = 0 \text{ mod } 2
+\]
+\[
+    b+c = 0 \text{ mod } 2
+\]
+either, bc = 00 or bc = 11. \\
+\(z_2 = 101\) 
+\[
+    s.z_2 = 0 \text{ mod } 2
+\]
+\[
+    a+c = 0 \text{ mod } 2
+\]
+either ac=00 or ac =11. \\
+If c = 0 \(\implies \) a = 0 and b = 0 then s = 000 but we know s \(\neq\) 000  therefore, c = 1 \(\implies \) a = 1, b = 1 \(\implies \)  s = 111. 
+\section{Superdense Coding}
+Initial State,
+\[
+    \ket{\phi} = \frac{1}{\sqrt{2} }(\ket{00}+\ket{11})
+\]
+If NOT gate is applied on Alice's qubit \(\ket{\phi}\).
+\[
+    \ket{\alpha} = \frac{1}{\sqrt{2} }(\ket{10}+\ket{01})
+\]
+If Z gate is applied on Alice's qubit \(\ket{\phi}\). 
+\[
+    \ket{\beta} = \frac{1}{\sqrt{2} }(\ket{00}-\ket{11})
+\]
+If both NOT gate and Z gate are applied on Alice's qubit \(\ket{\phi}\)
+\[
+    \ket{\gamma} = \frac{1}{\sqrt{2} }(\ket{10}-\ket{01})
+\]
+\begin{center}
+    \begin{tabular}{!{\VRule[2pt]}c!{\VRule[2pt]} c!{\VRule[2pt]}c!{\VRule[2pt]}} \specialrule{1pt}{0pt}{0pt}
+        \textbf{Message bits} & \textbf{Gates Applied} & \textbf{Final state of qubits} \\\specialrule{1pt}{0pt}{0pt}
+        00  & No gates & $\frac{1}{\sqrt{2} }(\ket{00}+\ket{11})$ \\\specialrule{1pt}{0pt}{0pt}
+        01  & X-gate & $\frac{1}{\sqrt{2} }(\ket{10}+\ket{01})$ \\\specialrule{1pt}{0pt}{0pt}
+        10 & Z-gate & \(\frac{1}{\sqrt{2} }(\ket{00}-\ket{11})\)  \\\specialrule{1pt}{0pt}{0pt}
+        11 & X-gate and Z-gate & $\frac{1}{\sqrt{2} }(\ket{10}-\ket{01})$\\\specialrule{1pt}{0pt}{0pt}
+    \end{tabular}
+    \end{center}
+    The qubits \(\ket{\phi}\), \(\ket{\alpha}\), \(\ket{\beta}\), \(\ket{\gamma}\) are bell states which are a set of basis states. Therefore, if we measure the states in bell basis Bob can exactly determine Alice's message. 
+    \newpage
+\section{Deffered Measurements}
+\subsection{Randomized Circuit C(x)}
+\begin{enumerate}
+    \item Random circuit takes input with n bits and a random number \(\alpha \) with r bits. 
+    \item r \(COIN_\frac{1}{2}\) gates are applied to r bits to generate a random number.
+    \item The Randomized circuit is now fed wit the inputs and the circuit contains s CCNOT gates which apply on the input. 
+    \item The circuit outputs m output bits.
+\end{enumerate}
+\subsection{Quantum Circuit C'(x)}
+    \begin{enumerate}
+        \item Creating the corresponding reversible circuit with inputs n, \(\alpha\)  and a ancilla bits. 
+        \item To randomize \(\alpha\), we initialize  \(\ket{0}\) to r bits and apply r Hadamard gates to them. Their state now becomes \(\frac{1}{\sqrt{2} }(\ket{0}+\ket{1})\). 
+        \item Apply r CNOT gates where above r qubits are control and other r qubits as target which make them entangled. \(\frac{1}{\sqrt{2} }(\ket{00}+\ket{11})\). 
+        \item Since, they are entangled measuring the bits into which we copied each computational basis state of \(\alpha\) is equivalent to measuring the bits of \(\alpha\) itself. 
+        \item Now, send the n bits and r bits into the circuit with s CCNOT gates arranged similar to the random circuit. This now gives the output m +r bits. The m bits are similar to m bits in the above randomized circuit output m bits because we used the same circuit. 
+        \item In fact, though, it doesn't matter whether wer are measure the fresh qubits before or after running the quantum circuit. In fact, we can delay their measurement arbitrarily long, or just avoid it altogether. This is known as the "principle of deferred measurement". Measurement is equivalent to entanglement of the system with its environment. 
+    \end{enumerate}
+
+
+
+
+\section{Amplifying Success}
+P(C(x)=f(x)) = \(\frac{2}{3}\), \(P(C(x)\neq f(x)) = \frac{1}{3}\) 
+Let us repeat the experiment m times. 
+Probability of getting success l times = \(^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l}\) 
+let us define our C'(x) to give the maximum of 0 and 1. 
+Therefore, we need \(l\geq \frac{m}{2}\).
+\[
+    P(C^\prime (x) = f(x)) = \sum\limits_{l=\frac{m}{2}}^{\infty} ^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l}
+\]
+\[
+    P(C^\prime (x) = f(x)) = 1 - \sum\limits_{l=0}^{\frac{m}{2}} ^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l}
+\]
+Since, 
+\[ P(C^\prime (x)= f(x))=1-P(C^\prime(x) \neq f(x)) = 1- \sum\limits_{l=0}^{\frac{m}{2}} ^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l} \] 
+\[
+    ^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l} \leq ^mC_l \left(\frac{2}{3}\right)^{\frac{m}{2}}\left(\frac{1}{3}\right)^{\frac{m}{2}}
+\]
+we know, \(\sum_{i=0}^{\frac{k}{2}} ^mC_l (\frac{2}{3}) = 2^{m-1}\) 
+Hence, 
+\[
+    ^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l} \leq \frac{1}{2}\left(\frac{8}{9}\right)^\frac{m}{2} 
+\]
+\[
+    P(C^\prime (x)=f(x)) = 1 -  ^mC_l \left(\frac{2}{3}\right)^l\left(\frac{1}{3}\right)^{m-l} \geq 1-\frac{1}{2}\left(\frac{8}{9}\right)^\frac{m}{2}
+\]
+If \(n = \frac{m}{2}(\log _\frac{9}{8} 2 -1) \implies P(C^\prime (x)=f(x))\geq 1-2^{-n} \)
+\[
+    \boxed{P(C^\prime (x)=f(x))\geq 1-2^{-n}}
+\] 
+\end{document} 

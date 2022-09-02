@@ -1,0 +1,92 @@
+\chapter{Density Matrix}
+
+\[
+    \rho = \frac{I + \vec{r}.\vec{\sigma}}{2}
+\]
+\[
+    \vec{r} = \text{ 3d vector}
+\]
+\[
+    \left\vert \left\vert \vec{r} \right\vert  \right\vert \leq 1
+\]
+\section{The reduced density operator}
+\begin{enumerate}
+    \item deepest
+    \item elegant 
+\end{enumerate}
+\[
+    \rho_{AB} 
+\]
+\[
+    \rho^A = tr_B(\rho_{AB} )
+\]
+partial trace is a map from vector space of the composite system to the vector space of one of the subsystems. 
+\begin{definition}
+    \[
+        tr_B(\ket{a_1}\bra{a_2}\otimes \ket{b_1}\bra{b_2})= \ket{a_1}\bra{a_2}\bra{b_2}\ket{b_1}
+    \]
+    Linear operation. 
+\end{definition}
+\[
+    p(x) \to \hat{\rho} 
+\]
+\[
+    \int p(x)dx = 1 \to Tr(\hat{\rho} ) =1
+\]
+\[
+    \int_y p(x,y) dx = p(x) \to Tr_B(\hat{\rho}_{AB} ) = \hat{\rho}_A 
+\]
+
+\[
+    \hat{\rho} = \hat{\rho} _A \otimes \hat{\rho} _B
+\]
+\[
+    Tr_B(\hat{\rho} _A \otimes \hat{\rho} _B) = \hat{\rho} _A
+\]
+Bell state
+\[
+    \frac{\ket{00}+\ket{11}}{\sqrt{2} }
+\]
+\[
+    \hat{\rho} _{Bell}  = \frac{\ket{00}\bra{00}+\ket{00}\bra{11}+\ket{11}\bra{00}+\ket{11}\bra{11}}{2}
+\]
+\[
+    \rho^\prime = Tr_2(\hat{\rho}_{Bell} )  = \frac{\ket{0}\bra{0}+\ket{1}\bra{1}}{2} \text{ Complete Ignorance}
+\]
+Schmidt decomposition 
+\[
+    \ket{\psi} = \sum\limits_{i} \lambda_i \ket{i_A}\ket{i_B}
+\]
+\[
+    \hat{\rho} = \ket{\psi}\bra{\psi} = \sum\limits_{i,j}\lambda_i \lambda_j^* \ket{i_A}\bra{j_A}\otimes \ket{i_B}\bra{j_B}
+\]
+\[
+    \hat{\rho} _A = \sum\limits_{i}\left\vert \lambda_i \right\vert ^2 \ket{i_A}\bra{i_A}
+\]
+\[
+    \hat{\rho} _B = \sum\limits_{i}\left\vert \lambda_i \right\vert ^2 \ket{i_B}\bra{i_B}
+\]
+\[
+    Tr(\hat{\rho} _{A}^{2}) = \sum_i \left\vert \lambda_i \right\vert ^4 < 1
+\]
+\(Tr(\hat{\rho} _{A}^{2})\) is called purity. \\
+Measure of metric for entanglement \(1 - Tr(\hat{\rho} _{A}^{2})\).\\ 
+\(1 - Tr(\hat{\rho} _{A}^{2})\) is \(\frac{1}{2}\) for Mixed states and 0 for separable states. 
+\subsection{Purification}
+Suppose we are given a state \(\hat{\rho} _A\) of the quantum system A.
+It is always possible to introduce another system R and define a pure state \(\ket{AR}\) such that the reduced state \(Tr_R(\ket{AR}\bra{AR}) = \hat{\rho} _A\)\\ \(AR\to \)  church of the larger hilbert space. 
+\[
+    \rho_A = \sum p_i \ket{i_A}\bra{i_A}
+\]
+\[
+    \rho_{AR} = \sum \sqrt{p_i}\ket{i_A}\ket{i_R} 
+\]
+\[
+    (\text{ Purification })\ket{AR}\bra{AR} = \sum \sqrt{p_{i} p_j} \ket{i_A}\bra{j_A}\otimes \ket{i_R}\bra{j_R}
+\]
+\[
+    \ket{AR}\bra{AR} = \sum \sqrt{p_{i} p_j} \ket{i_A}\bra{j_A}\delta_{ij}  
+\]
+\begin{eg}
+    There is a room and ball is in the room where you don't know. You assign a equal probability distribution to the ball. When you measure the ball position the probability distribution collapses to one point. Where is the ball before your measurement?
+\end{eg}

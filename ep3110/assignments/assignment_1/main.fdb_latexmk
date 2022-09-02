@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1660199429 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/assignments/assignment_1/main.tex" "main.pdf" "main" 1660199430
-  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/assignments/assignment_1/main.tex" 1660199428 16439 fc3d6e7de26088a8d0813379fd578844 ""
+["pdflatex"] 1660234525 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/assignments/assignment_1/main.tex" "main.pdf" "main" 1660234526
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3110/assignments/assignment_1/main.tex" 1660234462 12848 48a2cbfad4b96b29c51156f6388909b4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc" 1529098226 2881 8e2aef9e38084b946e7656b60672fedb ""
@@ -257,20 +257,16 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653407412 2826441 75866e91331a61c6062316dd19b23e74 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "figures//magtan.pdf" 1659363526 16080 5c908d8937fa55f3f32179ffcd84d0e2 ""
-  "figures//normcom.pdf" 1659364130 11607 3c929580b47a6caea48d01a93283b8c0 ""
-  "figures/magtan.pdf_tex" 1659363526 2065 c33f0dc8de144d5941417a67c3602cbb ""
-  "figures/normcom.pdf_tex" 1659364130 2067 1d0235f75f4c05f238c8f54e98dd1c11 ""
   "includes/course-info.tex" 1659766566 493 8b425d26f36b54935f78cdedd9ca56a9 ""
   "includes/custom-commands.tex" 1660197880 8761 43dff12c234b331d53eac1e39c446bd4 ""
   "includes/document-header.tex" 1659766823 1327 594c3f96c5b63a6e110ed2ef3240f399 ""
   "includes/metadata.tex" 1659746252 644 2319af5199f9ddcecaa6b7ccb834aae0 ""
   "includes/packages.tex" 1660197888 2465 43c0d195c4558476c401ac8e79976f3e ""
   "includes/teacher-info.tex" 1659766694 533 64d4dc9167324663aa3549a665dcaa4f ""
-  "main.aux" 1660199430 4543 7809280e8e6bacfe87c87808fc178402 "pdflatex"
+  "main.aux" 1660234526 4084 5f78265de094bd2e9d0dee195933c3c8 "pdflatex"
   "main.hst" 1659766240 102 ca8b04d015969ec71a22fb9ed96a9e01 ""
-  "main.tex" 1660199428 16439 fc3d6e7de26088a8d0813379fd578844 ""
-  "main.toc" 1660199430 501 678f09d8edd216e9f083d047950c4535 "pdflatex"
+  "main.tex" 1660234462 12848 48a2cbfad4b96b29c51156f6388909b4 ""
+  "main.toc" 1660234526 501 7a873265a951e8f20aed30f8d36201b3 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  10 AUG 2022 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  2 SEP 2022 08:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1481,7 +1481,7 @@ l.17 \end{abstract}
 Package marginnote Info: Using workaround for absolute page number on input line 17.
  (./master.toc
 
-LaTeX Warning: Reference `thm' on page 1 undefined on input line 3.
+LaTeX Warning: Reference `thm' on page 1 undefined on input line 10.
 
 )
 \tf@toc=\write6
@@ -1517,7 +1517,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 24.
  (./Figures/quad.pdf_tex
-<./Figures//quad.pdf, id=40, page=1, 574.89182pt x 166.56462pt>
+<./Figures//quad.pdf, id=65, page=1, 574.89182pt x 166.56462pt>
 File: ./Figures//quad.pdf Graphic file (type pdf)
 <use ./Figures//quad.pdf, page 1>
 Package pdftex.def Info: ./Figures//quad.pdf , page1 used on input line 56.
@@ -1532,18 +1532,42 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 56.
-) [3 <./Figures//quad.pdf>] [4
+) (./Lectures/lec_2.tex [3 <./Figures//quad.pdf>]
+Chapter 2.
+[4
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 83.
+) (./Lectures/lec_3.tex [5]
+Chapter 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 25.
+[6
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 91.
+) (./Lectures/lec_4.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 18.
+Package hyperref Info: bookmark level for unknown tmpanswer defaults to 0 on input line 18.
+) [7] [8] [9
 
 ] (./appendix.tex
 Appendix A.
 
-LaTeX Warning: Reference `thm' on page 5 undefined on input line 2.
+LaTeX Warning: Reference `thm' on page 10 undefined on input line 2.
 
 
-LaTeX Warning: Reference `thm' on page 5 undefined on input line 3.
+LaTeX Warning: Reference `thm' on page 10 undefined on input line 3.
 
 
-LaTeX Warning: Reference `thm' on page 5 undefined on input line 4.
+LaTeX Warning: Reference `thm' on page 10 undefined on input line 4.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1551,7 +1575,7 @@ Package mdframed Info: mdframed detected package amsthm
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [5
+)) [10
 
 ]
 
@@ -1565,24 +1589,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 510FA056F946077FC9FB83A677E69AED;327.
+(rerunfilecheck)             Checksum: A5821ED4B3486E37547DCCBAD53A8CD1;1107.
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53827 strings out of 478268
- 1250874 string characters out of 5846347
- 2009471 words of memory out of 5000000
- 71119 multiletter control sequences out of 15000+600000
+ 53882 strings out of 478268
+ 1251782 string characters out of 5846347
+ 2012662 words of memory out of 5000000
+ 71145 multiletter control sequences out of 15000+600000
  495195 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,100p,1360b,1171s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,15n,100p,1360b,1191s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on master.pdf (7 pages, 275827 bytes).
+Output written on master.pdf (12 pages, 314547 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

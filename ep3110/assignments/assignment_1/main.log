@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  11 AUG 2022 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  11 AUG 2022 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1238,37 +1238,22 @@ File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./figures/normcom.pdf_tex
-<./figures//normcom.pdf, id=84, page=1, 597.50786pt x 197.29677pt>
-File: ./figures//normcom.pdf Graphic file (type pdf)
-<use ./figures//normcom.pdf, page 1>
-Package pdftex.def Info: ./figures//normcom.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 452.9679pt x 149.57079pt.
-) [3] (./figures/magtan.pdf_tex
-<./figures//magtan.pdf, id=104, page=1, 597.50786pt x 107.45341pt>
-File: ./figures//magtan.pdf Graphic file (type pdf)
-<use ./figures//magtan.pdf, page 1>
-Package pdftex.def Info: ./figures//magtan.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 452.9679pt x 81.46048pt.
-) [4 <./figures//normcom.pdf> <./figures//magtan.pdf
-
-pdfTeX warning: pdflatex (file ./figures//magtan.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [5] [6] [7] [8] 
+] [3] [4] [5] [6] 
 AED: lastpage setting LastPage
-[9] (./main.aux) ) 
+[7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 35608 strings out of 478268
- 694926 string characters out of 5846347
- 979997 words of memory out of 5000000
- 53057 multiletter control sequences out of 15000+600000
+ 35546 strings out of 478268
+ 693751 string characters out of 5846347
+ 971923 words of memory out of 5000000
+ 53027 multiletter control sequences out of 15000+600000
  519570 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,18n,97p,704b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,13n,97p,704b,400s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
-Output written on main.pdf (9 pages, 294186 bytes).
+Output written on main.pdf (7 pages, 262388 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 115 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

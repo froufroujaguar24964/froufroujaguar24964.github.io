@@ -1,0 +1,257 @@
+% !TeX spellcheck = en_US
+\documentclass[11pt, a4paper]{article}
+
+% Set the title of the current document to be produced.
+\newcommand{\doctitle}{Assignment II}
+% Command for the due date of the homework.
+\newcommand{\duedate}{\color{rltblue}{\faCalendarCheckO { }Due date: August 16th, in class \faCalendarCheckO	}}
+\newcommand{\myname}{\color{rltred} {}\textbf{Chaganti}  \textbf{Kamaraja}  \textbf{Siddhartha} }
+\newcommand{\rollnumber}{\color{rltred}{}\textbf{EP20B012} }
+%------------------------------------------------------------
+% Import commands for both teacher and course information.  | 
+% NOTE: Change your teacher and course info in these files. |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/teacher-info}                              %|
+\input{includes/course-info}                               %|   
+%
+%------------------------------------------------------------
+%-- Import packages and custom command definitions.          |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/packages}                                  %|  
+\input{includes/custom-commands}   
+%
+%---> Generate & inject metadata describing                |
+%     the produced document                                 |
+\input{includes/metadata}                                  %|
+%------------------------------------------------------------
+
+\topmargin      -60pt
+
+%-----------------------------------------------------------
+% Uncomment the following if you want to insert a watermark! 
+%
+%--> Watermark package settings: 
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{0.5}
+%\SetWatermarkColor[gray]{0.8}
+%-------------------------------------------------
+
+\begin{document} 
+    
+%-------------------------------------------------------------
+%-- Make the header of the document                          |
+%------>------>------>------>------>------>------>------>--> |
+\input{includes/document-header}
+
+
+%
+\tableofcontents
+
+\clearpage
+\section{Hyperfine Splitting}
+\subsubsection*{Splitting of Na ground and excited states}
+we know,
+\begin{gather}
+    \vec{\mathbf{F} } = \vec{\mathbf{I} }+\vec{\mathbf{J}}\\
+    \Delta E = A \vec{\mathbf{I} }.\vec{\mathbf{J}}\\
+    \implies \frac{A}{2}\left(\left\vert \vec{F} \right\vert^2 -\left\vert \vec{I} \right\vert^2 -\left\vert \vec{J}\right\vert^2\right)\\
+     \implies \frac{A}{2}[F(F+1)-I(I+1)-J(J+1)]
+\end{gather}
+For each \(\vec{F}\) there is different levels in the range
+\begin{gather}
+    \left\vert I-J \right\vert \leq F\leq I+J
+\end{gather}
+If \(I\geq J\) there are 2J+1 levels and if \(J\geq I\) there are 2I+1 levels. \\
+Ground state of Na(\(S _ \frac{1}{2}\) ) has \(I\geq J\)  and J = 1/2. Therefore, 2J+1 = 2 states. \\
+Second excited state of Na (\(P_ \frac{3}{2}\) ) has \(I \geq J\)  and J = 3/2. Therefore, 2J+1 = 4 states.
+\subsubsection*{Constant of proportionality A}
+Ground state splitting,  
+\begin{gather}
+    h\Delta v = \frac{6.626X10^{-34}JsX 1772X10^{6}Xs^{-1}}{1.6X10^{-19}\frac{J}{eV}} = 7.33 \mu eV\\
+    \Delta E(F=2) - \Delta E(F=1) = h\Delta v \\
+    \implies \frac{A}{2}[2(3)-1(2)] = 7.33 \mu eV \\
+    \implies 2A = 7.33 \mu eV\\
+    \implies A = 3.67 \mu eV
+\end{gather}
+First excited state splitting,
+\begin{gather}
+    h\Delta v = \frac{6.626X10^{-34}JsX 192X10^{6}Xs^{-1}}{1.6X10^{-19}\frac{J}{eV}} = 0.795 \mu eV\\
+    \Delta E(F=2) - \Delta E(F=1) = h\Delta v \\
+    \implies \frac{A}{2}[2(3)-1(2)] = 0.795 \mu eV \\
+    \implies 2A = 0.795 \mu eV\\
+    \implies A = 0.397 \mu eV
+\end{gather}
+Second excited state splitting, between F=0 and F=1, 
+\begin{gather}
+    h\Delta v = \frac{6.626X10^{-34}JsX 17.1X10^{6}Xs^{-1}}{1.6X10^{-19}\frac{J}{eV}} = 0.07 \mu eV\\
+    \Delta E(F=1) - \Delta E(F=0) = h\Delta v \\
+    \implies \frac{A}{2}[1(2)-0(1)] = 0.07 \mu eV \\
+    \implies A = 0.07 \mu eV
+\end{gather}
+Second excited state splitting, between F=1 and F=2,
+\begin{gather}
+    h\Delta v = \frac{6.626X10^{-34}JsX 36.6X10^{6}Xs^{-1}}{1.6X10^{-19}\frac{J}{eV}} = 0.152 \mu eV\\
+    \Delta E(F=2) - \Delta E(F=1) = h\Delta v \\
+    \implies \frac{A}{2}[2(3)-1(2)] = 0.152 \mu eV \\
+    \implies 2A = 0.0152 \mu eV\\
+    \implies A = 0.0757 \mu eV
+\end{gather}
+Second excited state splitting, between F=2 and F=3,
+\begin{gather}
+    h\Delta v = \frac{6.626X10^{-34}JsX 60.9X10^{6}Xs^{-1}}{1.6X10^{-19}\frac{J}{eV}} = 0.252 \mu eV\\
+    \Delta E(F=3) - \Delta E(F=2) = h\Delta v \\
+    \implies \frac{A}{2}[3(4)-2(3)] = 0.252 \mu eV \\
+    \implies 3A = 0.252 \mu eV\\
+    \implies A = 0.084 \mu eV
+\end{gather}
+\section{Deuteron}
+\section{Cross-section and Beam Intensity for an interaction}      
+\label{sec:1} 
+\subsection*{ Cross-section for an interaction }
+It is the measure of the probability of a collision taking place between particles. It is expressed as an area.\\
+The total rate W $\propto$ NI \\
+where, \\ N = number of exposed targets \\ I = flux of incoming particles per unit area per unit time. \\
+Therefore, \(W = \sigma N I \)  \\
+where \(\mathbf{\sigma}\) is \textbf{cross-section} and the \textbf{constant of proportionality} with dimensions of area.
+
+\subsection*{Beam Intensity}
+Assume a small length dx of solid perpendicular to the beam of area A. The change in intensity is -dI. This is equal to number of particles removed from the beam per unit area in length dx. 
+Number of particles, N is 
+\[
+    N = n A dx \because \text{n is number of particles per unit volume }
+\]
+\begin{gather}
+    W = \sigma_t I N = - A dI \\
+    W = \sigma_t I (n A dx) = - A dI\\
+    \implies \frac{dI}{I} = - n \sigma_t dx \\
+    \implies I(x) = I_0 e^{-n\sigma_t x}
+\end{gather}
+\subsection*{Thickness of Lead required}
+Given, 
+\begin{equation}
+    I(d) = \frac{I_{o} }{1000}
+\end{equation}
+\begin{equation}
+    \rho(Pb) = 11300 kg m^{-3} 
+\end{equation}
+\begin{equation}
+   m_{pb} (\text{mass of Pb}) = 207.21 u  
+\end{equation}
+\begin{equation}
+    n = \frac{\rho}{m_{pb}}
+\end{equation} 
+from above 3 equations, 
+\begin{equation}
+    n = \frac{11300 kgm^{-3}}{207.21X1.66
+    X10^{-27}kg} = 3.28 X 10^{28} m^{-3}  
+\end{equation} 
+\begin{equation}
+    \sigma_t = 2.6X10^3 \text{barns} = 2.6X10^{-25} m^2
+\end{equation}
+\begin{equation}
+    \frac{I(d)}{I_o} = e^{-n \sigma_t d}
+\end{equation}
+\begin{gather}
+    10^{-3} = e^{-n \sigma_t d} \\
+    3\ln (10) = 3.28X10^{28}X2.6X10^{-25}Xd \\
+    d = 0.81 \text{mm} 
+\end{gather}
+\subsection*{Thickness of Aluminum required }
+Given, 
+\begin{equation}
+    I(d) = \frac{I_{o} }{1000}
+\end{equation}
+\begin{equation}
+    \rho(Al) = 2700 kg m^{-3} 
+\end{equation}
+\begin{equation}
+   m_{Al} (\text{mass of Al}) = 26.29 u  
+\end{equation}
+\begin{equation}
+    n = \frac{\rho}{m_{Al}}
+\end{equation} 
+from above 3 equations, 
+\begin{equation}
+    n = \frac{2700 kgm^{-3}}{26.29X1.66
+    X10^{-27}kg} = 6.18 X 10^{28}  m^{-3}  
+\end{equation} 
+\begin{equation}
+    \sigma_t = 13 \text{barns} = 13X10^{-28} m^2
+\end{equation}
+\begin{equation}
+    \frac{I(d)}{I_o} = e^{-n \sigma_t d}
+\end{equation}
+\begin{gather}
+    10^{-3} = e^{-n \sigma_t d} \\
+    3\ln (10) = 6.18X10^{28}X13X10^{-28}Xd \\
+    d = 85.98 \text{mm} 
+\end{gather}
+\section{Elastic scattering, De-excitation, Fission}
+\subsection*{Attenuation rate}
+Given,
+\begin{gather}
+    I_o = 10^5 s^{-1} \\
+    \rho x = 10^{-1} kgm^{-2} \\
+    \sigma_e = 20 mb\\
+    \sigma_c = 70 b\\
+    \sigma_f = 200 b \\
+    A = 235\\
+    N_A = \text{Avogadro's Number}
+\end{gather}
+\begin{gather}
+    I(x) = I_o e^{-n \sigma_t x}\\
+    n = \frac{\rho}{m_U} \\
+    m_U = \frac{A}{N_A X 10^3} \text{ in Kg} = \frac{235}{6.023 X10 ^26} = 3.90X10^{-25} kg\\
+    \sigma_t = \sigma_e + \sigma_c + \sigma_f = 270.02 X 10^{-28} m^2 \\
+    nx = \frac{\rho x}{m_U} = \frac{10^{-1} }{3.90X10^{-25}}m^{-2} = 2.56X10^{23} m^{-2}\\
+    n\sigma_{t}x = 6.92X10^{-3}\\
+    e^{-n\sigma_{t}x} =  0.9931 
+\end{gather}
+\begin{equation}
+    \boxed{\text{Attenuation rate,}\frac{I(x)}{I_{o}} = 0.9931}
+\end{equation}
+\subsection*{Number of fission reactions per second}
+Replacing \(\sigma_t\) with \(\sigma_f\) to get only Intensity decreased by fission reaction.
+\begin{gather}
+    \frac{I_f(x)}{I_{o} } = e^{-n\sigma_{f}x}\\
+    \implies nx = 2.56X10^{23}m^{-2} \text{ and } \sigma_f = 200 X 10^{-28}m^2 \\
+    -n\sigma_{f}x = 5.12X10^{-3} \\
+    e^{-n\sigma_{f}x }  = 0.9948\\
+    \frac{I_f(x)}{I_{o} }= 0.9948
+\end{gather}
+Intensity decreased by fission is equal to \(I_{o} -I_{f} (x)\),
+\begin{gather}
+    I_{o} -I_{f} (x) = I_{o} (1-e^{-n\sigma_f}x ) = 10^5(1-0.9948)=510 s^{-1} 
+\end{gather}
+\begin{equation}
+    \boxed{\text{Number of fission reactions per second =}510s^{-1} }
+\end{equation}
+\subsubsection*{Elastic scattering}
+Attenuation due to elastic scattering,
+\begin{gather}
+    \frac{I_e(x)}{I_{o} } = e^{-n\sigma_{e}x}\\
+    \implies nx = 2.56X10^{23}m^{-2} \text{ and } \sigma_e = 20 X 10^{-31}m^2 \\
+    -n\sigma_{e}x = 5.12X10^{-7} \\
+    e^{-n\sigma_{e}x }  = 0.999999488\\
+    \frac{I_e(x)}{I_{o} }=0.999999488
+\end{gather}
+Number of scattered per second = \(I_{o} (1-\frac{I_e(x)}{I_{o} }) = 5.1X10^{-2} s^{-1} \). \\
+Area of sphere at 10m = \(400 \pi m^2\) \\
+\begin{equation}
+    \boxed{\text{Flux = } \frac{I}{A} = \frac{5.1X10^{-2}}{400 \pi}m^{-2}s^{-1}  = 4.074X10^{-5}m^{-2}s^{-1} }
+\end{equation}
+For gamma rays,
+\begin{gather}
+    \frac{I_c(x)}{I_{o} } = e^{-n\sigma_{c}x}\\
+    \implies nx = 2.56X10^{23}m^{-2} \text{ and } \sigma_c = 70 X 10^{-28}m^2 \\
+    -n\sigma_{c}x = 1.792X10^{-3} \\
+    e^{-n\sigma_{c}x }  = 0.9982\\
+    \frac{I_{c} (x)}{I_{o} }=0.9982
+\end{gather}
+Number of scattered per second = \(I_{o} (1-\frac{I_c(x)}{I_{o} }) = 179 s^{-1} \). \\
+Area of sphere at 10m = \(400 \pi m^2\) \\
+\begin{equation}
+    \boxed{\text{Flux = } \frac{I}{A} = \frac{179}{400 \pi}m^{-2}s^{-1}  = 0.1424m^{-2}s^{-1} }
+\end{equation}
+\end{document} 

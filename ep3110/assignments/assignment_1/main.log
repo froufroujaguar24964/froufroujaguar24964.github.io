@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  11 AUG 2022 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  3 SEP 2022 00:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1244,7 +1244,7 @@ AED: lastpage setting LastPage
 Here is how much of TeX's memory you used:
  35546 strings out of 478268
  693751 string characters out of 5846347
- 971923 words of memory out of 5000000
+ 971921 words of memory out of 5000000
  53027 multiletter control sequences out of 15000+600000
  519570 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'experiment_8.blg'
+[63] biber-darwin:340> INFO - === Tue Sep  6, 2022, 15:51:15
+[77] Biber.pm:418> INFO - Reading 'experiment_8.bcf'
+[158] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[171] bbl.pm:654> INFO - Writing 'experiment_8.bbl' with encoding 'UTF-8'
+[171] bbl.pm:757> INFO - Output to experiment_8.bbl
+[171] Biber.pm:130> WARN - The file 'experiment_8.bcf' does not contain any citations!
+[172] Biber.pm:132> INFO - WARNINGS: 1

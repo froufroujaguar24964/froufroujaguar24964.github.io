@@ -1,0 +1,89 @@
+\lecture{15}{05 sept 2022}{}
+
+\section{Oblique Incidence}
+
+\begin{figure}[H]
+    \centering
+    \incfig{oblique}
+    \caption{title}
+    \label{fig:oblique}
+\end{figure}
+\[
+    \vec{E}_r = - \hat{y} E_{io} e^{-j\beta_1 \hat{n}_r . \vec{R} } 
+\]
+\[
+    \vec{E}_1 (x,z) = -\hat{y} j 2 E_{io} \sin (\beta_1 z \cos \theta_i) e^{-j \beta_1 x \sin \theta_i}
+\]
+\[
+    \vec{H}_1 (x,z) = -2 \frac{E_{ro} }{\eta_1}[\hat{x} \cos \theta_i \cos (\beta_1 z \cos \theta_i)e^{-j \beta_1 x \sin \theta_i}+ \hat{z} \sin \theta_i \sin (\beta_1 z \cos  \theta_i)e^{-j \beta_1 x \sin \theta_i}]
+\]
+\subsection{along z - direction}
+\[
+    \beta_1 \cos \theta_i = \beta_{1z} 
+\]
+\[
+    S_{av }  =  \frac{1}{2} Re[\vec{E}_y X \vec{H^*}_x] = 0. 
+\]
+no propagation of EM wave along z-direction. 
+\subsection{along x - direction}
+Surface wave 
+\begin{enumerate}
+    \item Plane wave - x-direction
+    \item Non uniform plane wave. 
+\end{enumerate}
+\textbf{Electric field becomes "0" at} 
+
+\[
+    \beta_{1}z \cos \theta_i = - n \pi
+\]
+\[
+    z = - \frac{n \pi }{\beta_1 \cos \theta_i}
+\]
+\[
+    \boxed{z = -\frac{n \lambda_1}{2 \cos  \theta_i}} 
+\]
+\begin{figure}[H]
+    \centering
+  \incfig{field}
+   \caption{title}
+\end{figure}
+\label{fig:field}
+
+\[
+    \vec{E_i} = (\hat{x}\cos \theta_i - \hat{z}  \sin  \theta_i )e^{-j \beta_1 \hat{n}_i . \vec{R}}
+\]
+\[
+    \vec{H}_i = \frac{\hat{n}_i X \vec{E}_i}{\eta_1}
+\]
+\[
+    \hat{n} _i = \hat{x} \sin \theta_i + \hat{z} \cos \theta_i
+\]
+\[
+    \hat{n} _r = \hat{x}  x \sin \theta_i - \hat{z}  \cos\theta_i
+\]
+\[
+    \boxed{E_{10} = - E_{ro}  \text{ and } \theta_i = \theta_r}
+\]
+\begin{eg}
+Given \(\theta_i\)  and \(\omega\), Find out \(\vec{J_s}(x)\) 
+\begin{answer}
+    \[
+        E_1(x,0) = 0, \;\;\;\; E_2 = 0
+    \]
+    \[
+        H_1(x,0) = ? \;\;\;\; H_2 - 0
+    \]
+    \[
+        \hat{n} _2 X \vec{H}_1 = \vec{J}_s (x)
+    \]
+    \[
+        \vec{H}_1(x,0) = \frac{E_{io} }{\eta_o}(\hat{x} 2 \cos \theta_i)e^{-j \beta_o x \sin  \theta_i}
+    \]
+    \[
+        \vec{J}_s (x) = \hat{n}_2 X \vec{H}_1 (x,0)
+    \]
+    \[
+        \vec{J}_s = - \hat{y} \frac{E_{io} }{\eta_o} 2 \cos \theta_i e^{- j \frac{\omega}{c} x \sin \theta_i}
+    \]
+\end{answer}
+\end{eg}

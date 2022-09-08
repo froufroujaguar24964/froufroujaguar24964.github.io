@@ -132,19 +132,32 @@
             =  e^{-j \vec{k}.\vec{R}}[-j \left(\pdv{}{x}\hat{x} + \pdv{}{y} \hat{y} + \pdv{}{z} \hat{z} \right)(k_{x} x + k_{y} y + k_{z} z)] 
         \]
         \begin{equation}
-            \vec{\nabla}(e^{-j \vec{k}.\vec{R}}) = e^{-j \vec{k}.\vec{R}}[-j \vec{k}] 
+            \boxed{\vec{\nabla}(e^{-j \vec{k}.\vec{R}}) = e^{-j \vec{k}.\vec{R}}[-j \vec{k}] }
         \end{equation}
         \[
-            \vec{\nabla}(e^{-j \vec{k}.\vec{R}})X\vec{E_o}  = e^{-j \vec{k}.\vec{R}}[-j \vec{k}]X\vec{E_o} = -j \mu \vec{H} 
+            \vec{\nabla}(e^{-j \vec{k}.\vec{R}})X\vec{E_o}  = e^{-j \vec{k}.\vec{R}}[-j \vec{k}]X\vec{E_o} = -j \mu\omega\vec{H} 
         \]
         \[
+            \boxed{\vec{k}X\vec{E} = \mu\omega \vec{H}}
+        \]
+        using equation (8)
+        \[
             \vec{\nabla}X\vec{H} = \vec{\nabla}(e^{-j \vec{k}.\vec{R}})X\vec{H_o} = j \omega \epsilon \vec{E}
+        \]
+        \[
+            \boxed{\vec{k}X\vec{H} = -\omega \epsilon \vec{E} }
         \]
         \[
             \vec{\nabla}.\vec{E} = \vec{\nabla}(e^{-j \vec{k}.\vec{R}}).\vec{E_o} = 0
         \]
         \[
+            \boxed{\vec{k}.\vec{E} = 0}
+        \]
+        \[
             \vec{\nabla}.\vec{H} = 0
+        \]
+        \[
+            \boxed{\vec{k}.\vec{H} = 0}
         \]
     \end{answer}
     \begin{answer}[Question 5]
@@ -216,5 +229,43 @@
         \item Elliptically polarized. 
         \item $\vec{H} = 4.59\times 10^{-3 } (\sin (10^8 t - \frac{z}{\sqrt{3} }) \hat{x}+2 \cos (10^8 t - \frac{z}{\sqrt{3} })\hat{y}) \left(\frac{A}{m}\right)$
         \end{enumerate}
+    \end{answer}
+    \begin{answer}[Question 6]
+        Let \(\alpha = \omega t - k z\) \\
+        \(\vec{E} = \hat{a}_x E_{10}\sin(\alpha) + \hat{a}_y E_{20} \sin(\alpha + \psi)  = \hat{a}_x E_x + \hat{a}_y E_y\) 
+        \[
+            \frac{E_x}{E_{10} } = \sin(\alpha) , \frac{E_y}{E_{20} } = \sin (\alpha + \psi) = \sin (\alpha)\cos (\psi) + \cos (\alpha)\sin (\psi)
+        \]
+        \[
+            \frac{E_{y} }{E_{20} } = \frac{E_x}{E_{10} }\cos (\psi) + \sqrt{1-\left(\frac{E_x}{E_{10} }\right)^2} \sin (\psi)
+        \]
+        \begin{equation}
+            \left(\frac{E_{y} }{E_{20} \sin \psi }\right)^2 + \left(\frac{E_{x} }{E_{10} \sin \psi }\right)^2 - 2 \frac{E_x E_y}{E_{10}E_{20}  }\frac{\cos \psi}{\sin ^2 \psi}=1
+        \end{equation}
+        Coordinates transform 
+        \[
+            \left(\frac{E_x^\prime }{a}  \right)^2 + \left(\frac{E_y^\prime }{b}  \right)^2 = 1
+        \]
+        \[
+            E_{x} ^\prime  = E _{x} \cos \theta + E_{y} \sin \theta
+        \]
+        \[
+            E_{y} ^\prime = -E_{x} \sin \theta + E_{y} \cos\theta
+        \]
+        substituting and rearranging,
+        \begin{equation}
+            E_{x}^{2}\left(\frac{\cos ^2 \theta}{a^2}+\frac{\sin ^2 \theta}{b^2}\right) + E_{y}^{2}\left(\frac{\sin ^2 \theta}{a^2}+\frac{\cos ^2 \theta}{b^2}\right) - 2 E_{x} E_{y} \sin \theta \cos \theta (\frac{1}{b^2}-\frac{1}{a^2}) = 1
+        \end{equation}
+        Comparing equations 13 and 14. 
+        \[
+            \theta = \frac{1}{2}\tan^{-1}(\frac{2 E_{10}E_{20}\cos \psi  }{E_{10}^2 - E_{20}^2 } ) 
+        \]
+        \[
+            a = \sqrt{\frac{2}{\frac{1}{E_{10}^{2}  }(1+\sec 2\theta)+\frac{1}{E_{20}^2 }(1-\sec 2\theta)}} \sin \psi
+        \]
+        \[
+            b = \sqrt{\frac{2}{\frac{1}{E_{10}^{2}  }(1-\sec 2\theta)+\frac{1}{E_{20}^2 }(1+\sec 2\theta)}} \sin \psi
+        \]
+
     \end{answer}
 \end{document}

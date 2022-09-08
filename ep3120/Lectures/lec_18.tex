@@ -1,0 +1,93 @@
+\lecture{18}{06 sep 2022}{Canonical Ensemble - II}
+\textbf{Partition function} 
+\[
+    Z(T) = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}} e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})} = \frac{1}{h^{3N} }\int_{\{\vec{p}_s,\vec{q}_s\}} d\vec{p}_s d\vec{q}_s  e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})}
+\]
+\textbf{Internal}  \textbf{Energy} 
+\[
+    p(\epsilon ) = \frac{e^{- \beta (\epsilon -TS(\epsilon))}}{Z(T)} = \frac{e^{-\beta F(\epsilon )}}{Z(T)}
+\]
+\[
+    \text{ Helmholtz energy } F = \epsilon - T S
+\]
+\[
+    \text{ Internal Energy } U = F + TS
+\]
+\[
+    \text{ Most Probable energy } \epsilon^* : \text{ minimizes } F(\epsilon )
+\]
+Recall,
+\[
+    U = F + T S
+\]
+\[
+    dU = dF + TdS + SdT
+\]
+\[
+    S = - \left( \pdv{F}{T}\right)_{V,N}
+\]
+\(\epsilon ^* \equiv \) most Probable energy. 
+
+\[
+    Z(T) = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}} e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})} = \sum\limits_{\{\epsilon\}}e^{-\beta F(\epsilon )} \approx e^{- \beta F(\epsilon^*)} (\because \text{dominant term})
+\]
+\[
+    F(\epsilon^*) = - k_B T \ln  Z
+\]
+\[
+    \epsilon^* \approx <H_s> (\text{ average energy }) = U \to(\text{ At equlibrium  }) F = -k_B T \ln Z 
+\]
+\[
+    <H_s> = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}} \frac{e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})}}{Z(T)} H_s(\{\vec{p}_s,\vec{q}_s\}) = -\frac{1}{z}\pdv{Z}{\beta} = -\pdv{\ln Z}{\beta}
+\]
+\[
+    \beta \iff ik \begin{cases}
+        \ln Z \equiv \text{ cummulant generating function }\\
+        Z \equiv \text{ Characteristic function }
+    \end{cases}
+\]
+\[
+    <H_s ^2> = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}}H_s ^2  \frac{e^{-\beta H_s}}{Z(T)} = \frac{1}{Z}\pdv{Z}{\beta^2}
+\]
+variance of energy 
+\[
+    \Delta^2 H_s = <H_s ^2> - <H_s>^2 \equiv <H_s ^2>_c (\text{ 2nd cummmulants })
+\]
+\[
+    \Delta^2 H_s = \frac{1}{Z}\pdv{Z}{\beta^2} - \frac{1}{Z^2}\left(\pdv{Z}{\beta}\right)^2 = \pdv{}{\beta}\left(\frac{1}{Z}\pdv{Z}{\beta}\right)
+\]
+\[
+    \Delta^2 H_s  = \pdv{<H_s>}{\beta} \;\;\; (\because <H_s> = \frac{1}{Z}\pdv{Z}{\beta} )
+\]
+\[
+    \Delta^2 H_s = k_B T^2 \left(\pdv{<H_s>}{T}\right) = k_B T^2 \left(\pdv{U}{T}\right)_{N,V} (\because \beta = \frac{1}{k_B T} \implies d\beta = -\frac{1}{k_B T^2}dT)
+\]
+\[
+    \Delta^2 H_s = k_B T^2 C_V
+\]
+\[
+    C_V \approx O(N);\;\; \text{ fluctuations } = \frac{\text{std. deviation}}{<H_s>} =\frac{\sqrt{k_B T^2 C_V} }{<H_s>} \approx \frac{\sqrt{N} }{N} \approx\frac{1}{\sqrt{N} } \to 0 \text{ as } N\to \infty 
+\]
+%────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+figure
+\[
+    <H_s> = - \pdv{\ln Z}{\beta} 
+\]
+\[
+    U = F + TS = F - T \left(\pdv{F}{T}\right)_{N,V} = F - \beta \pdv{F}{\beta}= \pdv{(\beta F)}{\beta}
+\]
+\[
+    \text{ from above 2 equations } \implies \boxed{F = -k_B T \ln Z} \text{ average internal energy }
+\]
+Recall,for a Microcanonical Ensemble,
+\[
+    S = k_B \ln  \Omega \text{ Boltzmann }
+\]
+\[
+    -\sum\limits_{\{\vec{p}_s,\vec{q}\}} p_E(\{\vec{p}_s,\vec{q}\}) \ln p_E(\{\vec{p}_s,\vec{q}\}) \text{ Shannon definition }
+\]
+For a uniform distribution, \(p_E (\{\vec{p}_s,\vec{q}\}) = \frac{1}{\Omega} \forall \{\vec{p}_s,\vec{q}\}\) 
+\[
+    \text{ Shannon Entropy }, S =  k_B \Omega \left(\frac{1}{\Omega}\ln \Omega\right) = k_B \ln  \Omega
+\]
+Shannon entropy is same as Boltzmann entropy. 

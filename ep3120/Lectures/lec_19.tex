@@ -1,0 +1,77 @@
+\lecture{19}{07 sep 2022}{Canonical ensemble-III}
+\[
+    p_{T,V} = \frac{e^{- \beta H_s (\{\vec{p}_s,\vec{q}_s\})}}{Z(T)};; Z(T) = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}} e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})}
+\]
+\[
+    F = - k_B T \ln  Z = U - TS
+\]
+\[
+    S = - k_B \sum\limits_{\{\vec{p}_s,\vec{q}_s\}}p_{T,N}(\{\vec{p}_s,\vec{q}_s\})\ln p_{T,N}(\{\vec{p}_s,\vec{q}_s\})
+\]
+\[
+    S = - k_{B} <\ln p_{T,V}(\{\vec{p}_s,\vec{q}_s\})>
+\]
+\[
+    \ln (p_{T,V} \{\vec{p}_s,\vec{q}_s\}) = - \beta H(\{\vec{p}_s,\vec{q}_s\}) - \ln Z
+\]
+\[
+    \implies S = k_B \beta <H> + k_B <\ln Z> = \frac{<H>}{T} + <k_B \ln Z>
+\]
+\[
+    S = \frac{U}{T} + \frac{<F>}{T} \implies TS = U - F
+\]
+\section{Two-level system}
+Occupation number \(n_i = \{0,1\}\) \\
+Random variables \(\equiv {n_i, i = 1,2,3\ldots N }\) (state space)\\
+At equilibrium with a bath at temperature T.\\
+Total energy E = \(\sum\limits_{i} n_i \epsilon = \epsilon N_1\) where \(N_1\)  of system of particles in the excited state. \\
+\textbf{Process} 
+\begin{enumerate}
+    \item Find partition function first. Z(T)
+\end{enumerate}
+\textbf{partition function} 
+\[
+    Z(T) = \sum\limits_{n_i} e^{-\beta H}  = \sum\limits_{n_i} e^{-\beta \sum\limits_{i}n_i \epsilon  }
+\]
+\[
+    Z(T) = \sum\limits_{\{n_i\}} \Pi_{i} e^{-\beta n_i \epsilon } = \Pi_{i=1}^{N}\sum\limits_{n_i=0}^{1} e^{-\beta n_i \epsilon } = \Pi_{i=1}^{N} (1+ e^{-\beta \epsilon } ) = (1+e^{-\beta \epsilon })^N
+    \]
+\[
+    Z(T) = (1+e^{-\beta \epsilon })^N
+\]
+\[
+    F(T,N) = - k_B T N \ln [1+ e^{-\beta \epsilon }]
+\]
+\[
+    S = -\left(\pdv{F}{T}\right)_N = Nk_B \ln [1+e^{-\beta \epsilon }]+\frac{N \epsilon e^{-\beta \epsilon }}{T(1+e^{o-\beta \epsilon })}
+\]
+\[
+    \boxed{S = -\frac{F}{T}+ \frac{N \epsilon e^{-\beta \epsilon }}{T(1+e^{o-\beta \epsilon }) }}
+\]
+\[
+    \boxed{U = F+TS = \frac{N \epsilon e^{-\beta \epsilon }}{T(1+e^{-\beta \epsilon })}}
+\]
+\[
+    p_{T,N}(\{n_i\}) = \frac{e^{-\beta \sum\limits_{i}n_i \epsilon  }}{Z} = \frac{\Pi_i  e^{-\beta n_i \epsilon }}{(1+e^{-\beta \epsilon })^N}
+\]
+Distribution of a given composition \(n_i\) = marginal of \(p(\{n+i\}) = \frac{e^{-\beta n_i \epsilon } }{1+e^{-\beta \epsilon }}\).
+\section{Ideal Gas} 
+\begin{enumerate}
+    \item N particles in vol V at temp T( non - interacting)
+    \item Macrostate \(\equiv \) (T,V,N)
+    \item Microstate \(\equiv \{p_i,q_i ; i =1,2\ldots 3N \}\) 
+    \item \(H = \sum\limits_{i=1}^{3N}\frac{p_i ^2}{2m} \) 
+\end{enumerate}
+\textbf{Partition function} 
+\[
+    Z(T) = \frac{1}{h^{3N} N!} \int d\vec{p} \; d\vec{q} \; (e^{-\beta H})
+\]
+\[
+    Z(T) = \frac{1}{h^{3N} N! } \int d\vec{p} \; d\vec{q} \; e^{-\beta (\sum\limits_{i} \frac{p_i ^2}{2m} )}
+\]
+\[
+    Z(T) = \frac{1}{h^{3N} N! } \int d\vec{p} \int d\vec{q} \prod\limits_{i}^{N} e^{-\beta \frac{p_i ^2}{2m}}
+\]
+\[
+    Z(T) = \frac{V^N}{h^{3N} N! } 
+\]

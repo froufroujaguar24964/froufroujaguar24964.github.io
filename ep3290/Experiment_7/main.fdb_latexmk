@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1661861908 "main.bcf" "main.bbl" "main" 1661861911
-  "main.bcf" 1661861911 106685 0ccfeca7b0482aafd71330e024982c14 "pdflatex"
+["biber main"] 1661861908 "main.bcf" "main.bbl" "main" 1662451723
+  "main.bcf" 1662451723 106685 0ccfeca7b0482aafd71330e024982c14 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1661861910 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3290/Experiment_7/main.tex" "main.pdf" "main" 1661861911
-  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3290/Experiment_7/main.tex" 1661861888 10007 13188c25f4165f784bdd0f77a16ae6ef ""
+["pdflatex"] 1662451722 "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3290/Experiment_7/main.tex" "main.pdf" "main" 1662451723
+  "/Users/siddhartha/Documents/froufroujaguar24964.github.io/ep3290/Experiment_7/main.tex" 1662451723 10007 13188c25f4165f784bdd0f77a16ae6ef ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -142,10 +142,10 @@
   "Exp7.pdf" 1661860458 113694 c712d6a7af8df7cb08d5c1b4984ed28e ""
   "Figures//graph1.pdf" 1661860356 26483 72d60915561d3eb2bb23845e3b881b35 ""
   "Figures//graph2.pdf" 1661860364 32150 9c1695c95b4377578c2f2fffbc4b84ab ""
-  "main.aux" 1661861911 2110 11dd94eeaccfc228e5371535966c0233 "pdflatex"
+  "main.aux" 1662451723 2110 11dd94eeaccfc228e5371535966c0233 "pdflatex"
   "main.bbl" 1661861909 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.run.xml" 1661861911 2307 8845b0ade2d45e62d45995dec6ec4831 "pdflatex"
-  "main.tex" 1661861888 10007 13188c25f4165f784bdd0f77a16ae6ef ""
+  "main.run.xml" 1662451723 2307 8845b0ade2d45e62d45995dec6ec4831 "pdflatex"
+  "main.tex" 1662451723 10007 13188c25f4165f784bdd0f77a16ae6ef ""
   (generated)
   "main.aux"
   "main.bcf"

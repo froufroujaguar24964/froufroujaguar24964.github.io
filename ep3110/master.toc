@@ -2,5 +2,8 @@
 \contentsline {section}{\numberline {1.1}Electrostatics(Review)}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Magnetostatics(review)}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Correction in Ampere's law}{8}{subsection.1.2.1}%
-\contentsline {chapter}{\numberline {A}Additional Proofs}{12}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{12}{appendix.A.1}%
+\contentsline {section}{\numberline {1.3}Oblique Incidence}{10}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}along z - direction}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}along x - direction}{11}{subsection.1.3.2}%
+\contentsline {chapter}{\numberline {A}Additional Proofs}{15}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Proof of \autoref {thm}}{15}{appendix.A.1}%

@@ -1,0 +1,123 @@
+\documentclass[a4paper]{article}
+\usepackage{student}
+
+% Metadata
+\date{\today}
+\setmodule{EP3110:- Electro-magnetics and Applications}
+\setterm{Jul-Nov, 2022}
+
+%-------------------------------%
+% Other details
+% TODO: Fill these
+%-------------------------------%
+\title{Formulae Sheet}
+\setmembername{Chaganti Kamaraja Siddhartha}  % Fill group member names
+\setmemberuid{EP20B012}  % Fill group member uids (same order)
+
+%-------------------------------%
+% Add / Delete commands and packages
+% TODO: Add / Delete here as you need
+%-------------------------------%
+\usepackage{amsmath,amssymb,bm,derivative}
+\usepackage{empheq}
+
+\newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
+
+\newcommand{\KL}{\mathrm{KL}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\T}{\top}
+
+\newcommand{\expdist}[2]{%
+        \normalfont{\textsc{Exp}}(#1, #2)%
+    }
+\newcommand{\expparam}{\bm \lambda}
+\newcommand{\Expparam}{\bm \Lambda}
+\newcommand{\natparam}{\bm \eta}
+\newcommand{\Natparam}{\bm H}
+\newcommand{\sufstat}{\bm u}
+
+% Main document
+\begin{document}
+    % Add header
+    \header{}
+    \begin{empheq}[box=\widefbox]{align}
+        \frac{\omega}{k} = \frac{1}{\sqrt{\mu_r \mu_{o} \epsilon_r \epsilon_{o} } } = velocity; \; \; (\lambda = \frac{2\pi}{k}, \omega = 2 \pi f) \\
+        \frac{\left\vert \vec{E} \right\vert }{\left\vert \vec{H} \right\vert } = \eta = \sqrt{ \frac{\mu_r \mu_o}{\epsilon_r \epsilon_o}} \; \; \; \; \; (\vec{E}= \eta \vec{H}X \hat{k} \text{ and } \vec{H}=\frac{\hat{k} X \vec{E}}{\eta})
+    \end{empheq}
+    \textbf{Maxwell Equations} 
+    \begin{empheq}[box=\widefbox]{align}
+        \vec{\nabla}.\vec{D} = \rho\\
+        \vec{\nabla}. \vec{B} = 0 \\
+        \vec{\nabla}X\vec{E}  = -\pdv{B}{t}\\
+        \vec{\nabla}X\vec{H} = \vec{J}+\pdv{D}{t}
+    \end{empheq}
+    \begin{empheq}[box=\widefbox]{align}
+    \vec{\nabla}X\vec{E} =  -j \mu \omega \vec{H} \implies \vec{k}X\vec{E} = \omega \mu \vec{H}\\
+    \vec{\nabla}X\vec{H} =  j \omega \epsilon \vec{E} \implies \vec{k}X\vec{H} = -\omega \epsilon \vec{E}\\
+    \vec{\nabla}.\vec{E} = 0 \implies \vec{k}.\vec{E} = 0\\
+    \vec{\nabla}.\vec{H} = 0\implies \vec{k}.\vec{H} = 0
+\end{empheq}
+\textbf{Helmholtz} 
+\begin{empheq}[box = \widefbox]{align}
+    \nabla^2 {\vec{E}} + \omega^2 \mu \epsilon {\vec{E}} = 0\\
+    k_{x} ^2 + k_{y} ^2 + k_{z} ^2 = \omega ^2 \mu \epsilon 
+\end{empheq}
+\textbf{ poynting vector }
+    \begin{empheq}[box=\widefbox]{align}
+        \vec{S} = \vec{E}X\vec{H} (W/m^2)\\
+        \vec{S}(z,t) = Re[\vec{E}(z)e^{j\omega t}]XRe[\vec{H}(z)e^{j\omega t}]\\
+        \vec{S}(z,t) = \frac{1}{2}Re[\vec{E}(z)X\vec{H}^*(z)+\vec{E}(z)X\vec{H}(z)e^{2j\omega t} ]\\
+        \vec{S}_{avg}(Z) = \frac{1}{2} Re[\vec{E}(z)X\vec{H}^*(z)] = \frac{E^2}{2 \eta} \\
+        Power_{avg} = \oint _S S_{avg}.dS =\int_0 ^ {2\pi} \int_0 ^ \pi S_{avg} (R,\theta) R^2 \sin^2 \theta d\theta d\phi  
+    \end{empheq}
+    \textbf{Dipole}
+    \begin{empheq}[box=\widefbox]{align}
+        \vec{E}(R) = \frac{1}{4 \pi \epsilon_{o} R^3}\left(3(\vec{p}.\hat{R})\hat{R} -\vec{p} \right)\\
+       V(R) = \frac{1}{4\pi \epsilon_{o} } \frac{\vec{p}.\hat{R}}{R^2}
+    \end{empheq}
+    \textbf{Boundary Conditions} 
+    \begin{empheq}[box=\widefbox]{align}
+        E_{1t} = E_{2t}\\
+        D_{1n}-D_{2n} = \sigma_f \implies \epsilon_{1} E_{1n} - \epsilon_2 E_{2n} = \sigma_f\\
+        B_{1n} = B_{2n}\\
+        H_{1t} - H_{2t} = k_s  \implies \frac{B_{1t}}{\mu_1} -  \frac{B_{2t}}{\mu_2} = k_s
+    \end{empheq}
+    \textbf{Properties of \(\vec{\nabla}\) } 
+    \begin{gather*}
+        \text{Cylindrical} \;\;\;\;\vec{\nabla}.\vec{A} =\frac{1}{r}\pdv{(rA_r)}{r}+\frac{1}{r}\pdv{A_\phi}{\phi}+\pdv{A_{z} }{z}\\
+        \text{Cylindrical} \;\;\;\;\vec{\nabla}X\vec{A} = (\frac{1}{r}\pdv{A_z}{\phi}-\pdv{A_\phi}{z})\hat{r} +(\pdv{A_r}{z}-\pdv{A_z}{r})\hat{\phi} +(\pdv{(rA_\phi)}{r}-\pdv{A_r}{\phi})\hat{z}  \\
+        \text{Spherical} \;\;\;\;\; \vec{\nabla}.\vec{A} = \frac{1}{r^2}\pdv{(r^2 A_r)}{r}+\frac{1}{r \sin \theta}\pdv{A_\theta \sin \theta}{\theta}+\frac{1}{r \sin \theta}\pdv{A_\phi}{\phi} \\
+        \vec{\nabla}X\vec{A}=\frac{1}{r \sin \theta}\left(\pdv{A_\phi \sin \theta}{\theta}-\pdv{A_\theta}{\phi}\right) \hat{r} +\frac{1}{r}\left(\frac{1}{\sin \theta}\pdv{A_r}{\phi}-\pdv{(rA_\phi)}{r}\right) \hat{\theta} + \frac{1}{r}\left(\pdv{(rA_\theta)}{r}-\pdv{A_r}{\theta}\right) \hat{\phi} 
+    \end{gather*}
+    \begin{tabular}{|c|c|c|c|c|}\hline
+        Quantity & Any medium & Loss Less& Low loss&Conductor\\ &&&&\\ \hline&&&&\\
+        $\alpha$- attenuation factor & $\omega \sqrt{\frac{\mu \epsilon^\prime }{2}[\sqrt{1+\frac{\epsilon"}{e^\prime}} -1]}   $ & 0 & \(\frac{\sigma}{2}\sqrt{\frac{\mu}{\epsilon }}  \) & \(\sqrt{\pi f \mu \sigma} \) \\ &&&&\\ \hline&&&&\\
+        $\beta$ = \( \frac{2\pi}{\lambda}\) & $\omega \sqrt{\frac{\mu \epsilon^\prime }{2}[\sqrt{1+\frac{\epsilon"}{e^\prime}} +1]}$ & \(\omega \sqrt{\mu \epsilon } \)& \(\omega\sqrt{\mu \epsilon }[1+\frac{1}{8}\left(\frac{\sigma}{\omega \epsilon }\right)^2] \) & \(\sqrt{\pi f \mu \sigma} \) \\ &&&&\\ \hline&&&&\\
+        $\eta$-intrinsic impedance & \(\sqrt{\frac{\mu}{\epsilon^\prime }}(1-j \frac{\epsilon "}{\epsilon ^\prime })^{-\frac{1}{2}}   \) & \(\sqrt{\frac{\mu}{\epsilon }} \) &\(\sqrt{\frac{\mu}{\epsilon }}(1+j \frac{\sigma}{2\omega \epsilon }) \) &$(1 + j)$ \(\frac{\alpha}{\sigma}\) \\ &&&&\\ \hline&&&&\\
+        \(u_p\)-Phase velocity & \(\frac{\omega}{\beta} \) & \(\frac{1}{\sqrt{\mu \epsilon } }\) & \(\frac{1}{\sqrt{\mu \epsilon } }[1-\frac{1}{8}\left(\frac{\sigma}{\omega \epsilon }\right)^2]\) & \(\sqrt{\frac{4 \pi f }{\mu \sigma}} \)\\ &&&&\\ \hline&&&&\\
+        \(u_g\) - group velocity & \(\frac{1}{\frac{d\beta}{d\omega}} \) & $\frac{1}{\sqrt{\mu \epsilon} }$ &\(\frac{1}{\sqrt{\mu \epsilon} }[1+\frac{1}{8}\left(\frac{\sigma}{\omega \epsilon }\right)^2]\) &4\(\sqrt{\frac{ \pi f }{\mu \sigma}} \)\\ &&&&\\\hline
+    \end{tabular}
+
+    \begin{empheq}[box=\widefbox]{align}
+        \tan(\delta_c) = \frac{\epsilon "}{\epsilon ^\prime } = \frac{\sigma}{\omega \epsilon}; \; \; \; \; \;  \epsilon^\prime  = \epsilon = \epsilon_0 \epsilon_r\\
+        u_g =\frac{u_{p} }{1-\frac{\omega}{u_{p} }\frac{du_{p} }{d\omega}}\\
+        \frac{E(x)}{E_o } = e^{-\alpha x} 
+    \end{empheq}
+\textbf{Normal Incidence} 
+\begin{empheq}[box=\widefbox]{align}
+    \vec{E_1}(z) = \vec{E_i}(z)+ \vec{E_j}(z) = a_{x} E_{i}(e^{-j\beta z} - e^{j\beta z}) \\
+    \vec{E_1}(0) = 0 \\
+    \vec{H_1}(z) = \frac{1}{\eta}\left(\hat{a}_z X(E_i) + (-\hat{a}_z)XE_r \right)= \frac{1}{\eta}E_i(e^{-j\beta z} + e^{j\beta z})\\
+    \hat{a}_{n} X \vec{H_1}(0) = \vec{J_s}
+\end{empheq}
+\textbf{Lorentz gauge}:- \(\vec{\nabla}.\vec{A} = - \mu \epsilon \frac{\partial V}{\partial t}\) 
+\textbf{Poisson equations}
+\begin{empheq}[box = \widefbox]{align}
+    \nabla^2 V = -\frac{\rho}{\epsilon_{o}}\\
+    V = \frac{1}{4\pi\epsilon_{o} }\int \frac{\rho}{R}dV^\prime \\
+    \nabla^2 \vec{A} = - \mu_{o} \vec{J}\\
+    \vec{A} = \frac{\mu_{o} }{4\pi} \int \frac{\vec{J}}{R}dV^\prime
+\end{empheq}
+
+\end{document}

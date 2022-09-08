@@ -1,0 +1,105 @@
+\chapter{Canonical Ensemble}
+\lecture{17}{05 sep 2022}{}
+%────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+\begin{figure}[H]
+    \centering
+    \incfig{system}
+    \caption{title}
+    \label{fig:system}
+\end{figure}
+System + Reservoir $\to $ isolated system\\
+Microcanonical Ensemble
+\[
+    H_s (\{\vec{p}_s ,\vec{q}_s\}) \;\;\;\; \{\vec{p}_s ,\vec{q}_s\} = \text{ gen. coordinates for system }
+\]
+\[
+    H_R (\{\vec{p}_R ,\vec{q}_R\}) \;\;\;\; \{\vec{p}_R ,\vec{q}_R\} = \text{ gen. coordinates for reservoir }
+\]
+\[
+    H_{tot}  = H_s + H_R = E_{tot} = E_R + E_s \gg  E_s \implies  E_{tot} = E_{tot} \approx E_R   
+\]
+\[
+   \text{Joint p.d.f} \to  p_{TVNM} (\{\vec{p}_s , \vec{q}_s, \vec{p}_R, \vec{q}_R \}) = \frac{1}{\Omega_{s\oplus R}(E_{tot},N,V )} 
+     \begin{dcases}
+       1 , &\text{ when } H_s + H_R = E_{tot}   ; \\
+        0, &\text{ otherwise }  .
+     \end{dcases}
+\]
+\[
+    \text{Marginal p.d.f} p_{TVN} (\{\vec{p}_s,\vec{q}_s\}) = \sum\limits_{\{\vec{p}_R,\vec{q}_R\}}p_{TVNM} (\{\vec{p}_s , \vec{q}_s, \vec{p}_R, \vec{q}_R \}) = \int d\vec{p}_R d\vec{q}_R p_{TVNM} (\{\vec{p}_s , \vec{q}_s, \vec{p}_R, \vec{q}_R \})
+\]
+\[
+    H_s(\{\vec{p}_s,\vec{q}_s\}) = E_{tot} = H(\{\vec{p}_R,\vec{q}_R\}) 
+\]
+\[
+    p_{TVN}(\{\vec{p}_s,\vec{q}_s\})  = \frac{\Omega_R[E_{tot} - H_s(\{\vec{p}_s,\vec{q}_s\}) ]}{\Omega_{R\oplus s}(E_R + E_s)}
+\]
+\[
+     \approx \frac{e^{\frac{1}{k_B}S_R[E_{tot} - H_s(\{\vec{p}_s,\vec{q}_s\}) ]}}{e^{\frac{1}{k_B}S_R(E_R)}} \;\;\;\; (\because S_{tot} = k_B \Omega_{tot}(E_s+ E_R) and S_R = k_B \Omega_R (E_R))
+\]
+\[
+    p_{TV}(\{\vec{p}_s,\vec{q}_s\}) \approx \frac{e^{\frac{1}{k_B}[S_R(E_R)-\pdv{S}{E}_V H_s(\{\vec{p}_s,\vec{q}_s\})]}}{e^{\frac{1}{k_B}[S_R(E_R)]}} \approx e^{-\frac{1}{k_{B}T }[H_s(\{\vec{p}_s,\vec{q}_s\})]} \;\;(\because E_{tot} \gg  H_S(\{\vec{p}_s,\vec{q}_s\}) \forall \{\vec{p}_s,\vec{q}_s\} \text{ and } \beta = \frac{1}{k_B T}) 
+\]
+Phase space distribution 
+\[
+    p_{TVN}(\{\vec{p}_s,\vec{q}_s\}) = \frac{1}{Z(T)}[e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})}]
+\]
+Normalize: 
+\[
+    \sum\limits_{\{\vec{p}_s,\vec{q}_s\}}p_{T,V}(\{\vec{p}_s,\vec{q}_s\})  = 1 \text{ Canonical Ensemble }
+\]
+\textbf{ Partition Function }
+\[
+    \boxed{Z(T) = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}} e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})} = \int d\vec{p}_{s}d\vec{q}_s e^{-\beta H_s(\{\vec{p}_s,\vec{q}_s\})}} 
+\]
+\textbf{Internal energy} 
+\(E_s\) is a random variable \(\equiv \epsilon \)  
+\[
+    p_{TV}(\epsilon ) = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}}p(\{\vec{p}_s,\vec{q}_s\}) \delta (H_s(\{\vec{p}_s,\vec{q}_s\})-\epsilon )
+\]
+\[
+     = \frac{1}{Z(T)}e^{\frac{\beta}{\epsilon }}\int_{H_S(\{\vec{p}_s,\vec{q}_s\})=\epsilon } d\vec{p}_{s}d\vec{q}_s 
+\]
+\[
+    \int_{H_S(\{\vec{p}_s,\vec{q}_s\})=\epsilon } d\vec{p}_{s}d\vec{q}_s  \text{ is Number of microstates corresponding to energy }\epsilon 
+\]
+\[
+    p_{T,V}(\epsilon ) = \frac{e^{\frac{\beta}{\epsilon }}}{Z(T)}[\Omega_s(\epsilon )]
+\]
+\[
+    = \frac{e^{-\frac{\epsilon}{k_B T}}e^{\frac{1}{k_B}S(\epsilon )}}{Z(T)} = \frac{e^{-\frac{1}{k_B T}(\epsilon - TS)}}{Z(T)}
+\]
+\begin{definition}
+    Helmholtz free energy \(\implies \) Thermodynamic "Potentials"
+    \[
+        F = \epsilon - TS
+    \]
+\end{definition}
+\[
+    p_{TV}(\epsilon ) = \frac{e^{-\beta F(\epsilon )}}{Z(T)}  \to \text{ Normalized ? }
+\]
+\[
+    Z(T) = \sum\limits_{\epsilon }e^{-\beta F(\epsilon )} = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}}e^{-\beta H_s}
+\]
+Most Probable value of energy ? \(\implies F(\epsilon )\) is minimized ! \(\epsilon^* \) that minimizes \(F(\epsilon ) = \epsilon - TS\) (potential)
+\begin{figure}[H]
+    \centering
+    \incfig{distenergy}
+    \caption{title}
+    \label{fig:distenergy}
+\end{figure}
+\textbf{Average}  \textbf{Energy} 
+\[
+    <H_{s} > = \sum\limits_{\{\vec{p}_s,\vec{q}_s\}} p_{TV}(\{\vec{p}_s,\vec{q}_s\}) H_s(\{\vec{p}_s,\vec{q}_s\}) = \frac{1}{Z(T)}\sum\limits_{\{\vec{p}_s,\vec{q}_s\}} e^{- \beta H_s}H_s
+\]
+\[
+    <H_s> = \frac{1}{Z(T)}\left(-\pdv{Z(T)}{\beta}\right)
+\]
+\[
+    \boxed{<H_s> = -\pdv{\ln Z(T)}{\beta}} 
+\]
+\begin{gather}
+    H_s(\{\vec{p}_s,\vec{q}_s\})\to  \text{ random variable}\\
+    Z(T) \text{ is like a characteristic function} (ik \equiv \beta)\\
+    \ln (Z) \text{ generates cummmulants!}
+\end{gather}
